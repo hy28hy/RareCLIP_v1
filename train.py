@@ -195,7 +195,7 @@ def train(args, default_args):
             torch.save({'trainable_linearlayer': trainable_layer.state_dict()}, ckp_path)
 
 if __name__ == '__main__':
-    root = '../RareCLIP/'
+    root = './'
     exps_name = 'train'
     
     parser = argparse.ArgumentParser("RareCLIP", add_help=True)

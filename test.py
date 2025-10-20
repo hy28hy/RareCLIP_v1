@@ -172,7 +172,7 @@ def test(args, default_args):
     logger.info("\n%s", results)
 
 if __name__ == '__main__':
-    root = '../RareCLIP/'
+    root = './'
     exps_name = 'default'
     
     parser = argparse.ArgumentParser("RareCLIP", add_help=True)
