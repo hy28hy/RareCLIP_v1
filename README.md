@@ -1,6 +1,5 @@
-# [ICCV2025] RareCLIP
-## Paper 
-[Paper Link](https://openaccess.thecvf.com/content/ICCV2025/html/He_RareCLIP_Rarity-aware_Online_Zero-shot_Industrial_Anomaly_Detection_ICCV_2025_paper.html) 
+# [ICCV2025] RareCLIP: Rarity-aware Online Zero-shot Industrial Anomaly Detection ([Paper Link](https://openaccess.thecvf.com/content/ICCV2025/html/He_RareCLIP_Rarity-aware_Online_Zero-shot_Industrial_Anomaly_Detection_ICCV_2025_paper.html))
+
 ## Poster
 <img src='./assets/poster.png'>
 
