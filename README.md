@@ -1,4 +1,6 @@
 # [ICCV2025] RareCLIP
+## Paper 
+[Paper Link](https://openaccess.thecvf.com/content/ICCV2025/html/He_RareCLIP_Rarity-aware_Online_Zero-shot_Industrial_Anomaly_Detection_ICCV_2025_paper.html) 
 ## Poster
 <img src='./assets/poster.png'>
 
@@ -99,3 +101,15 @@ Comparison of image-level and pixel-level zero-shot anomaly detection on the MVT
 
 ## Acknowledgements
 We appreciate the inspiration provided by [APRIL-GAN](https://github.com/ByChelsea/VAND-APRIL-GAN) and [MuSc](https://github.com/xrli-U/MuSc) for our work.
+
+## Citation
+If our work is helpful for your research, please consider citing:
+```
+@inproceedings{he2025RareCLIP,
+  title={RareCLIP: Rarity-aware Online Zero-shot Industrial Anomaly Detection},
+  author={He, Jianfang and Cao, Min and Peng, Silong and Xie, Qiong},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  pages={24478-24487},
+  year={2025}
+}
+```
