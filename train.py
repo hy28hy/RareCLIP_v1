@@ -111,7 +111,7 @@ def train(args, default_args):
     
     # datasets
     train = args.train
-    train_set_path = '../dataset/' + train
+    train_set_path = args.train_set_path
     if train == 'mvtec':
         train_data = MVTecDataset(root=train_set_path, transform=preprocess, target_transform=transform,
                                   train_aug=args.aug_rate, set='test')
