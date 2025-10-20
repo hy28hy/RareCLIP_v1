@@ -181,7 +181,7 @@ if __name__ == '__main__':
     parser.add_argument("--save_path", type=str, default='exps/mvtec/'+exps_name, help='path to save results')
     parser.add_argument("--load_path", type=str, default='weights/visa_pretrained.pth', help='path to load TPB weight')
     # dataset
-    parser.add_argument("--test", type=str, default='mvtec', help="test dataset name mvtec or visa")
+    parser.add_argument("--test", type=str, default='mvtec', help="test dataset name, mvtec or visa")
     parser.add_argument("--test_set_path", type=str, default='../dataset/mvtec', help="test dataset path")
     parser.add_argument("--seed", type=int, default=0, help="random seed to use")
     parser.add_argument("--num_workers", type=int, default=4, help="num_workers when test")
@@ -210,10 +210,10 @@ if __name__ == '__main__':
     parser.add_argument("--sampler", type=str, default='SCS', help="SCS, GCS, RS or KCS")
     # other
     parser.add_argument("--k_shot", type=int, default=0, help="k-normal-shot")
-    parser.add_argument("--online", type=int, default=1, help="update when test, 1 for online, 0 for offline")
+    parser.add_argument("--online", type=int, default=1, help="update or not when test, 1 for online, 0 for offline")
     parser.add_argument("--direct", type=int, default=0, help="use RareCLIP-d")
     parser.add_argument("--metric", type=str, default='px+sp', help="result metric, pixel- or sample- level")
-    parser.add_argument("--resize_mask", type=int, default=256, help="resize pixel-level result")
+    parser.add_argument("--resize_mask", type=int, default=256, help="resize pixel-level result to accelerate metric")
     parser.add_argument("--pool_num", type=int, default=3, help="number of process pools to accelerate metric")
     parser.add_argument("--vis_type", type=str, default=None, help="vis type:'no_norm', 'single_norm', 'all_norm'")
     parser.add_argument("--wait", type=int, default=0, help="minutes to wait")
