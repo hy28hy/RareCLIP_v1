@@ -1,0 +1,420 @@
+26-05-25 20:47:47.145 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_RESC_AD --seed 1 --num_workers 8 --k_shot 2
+26-05-25 20:52:25.690 - INFO: inference time: 72.1ms per image
+26-05-25 20:57:57.688 - INFO: 
+| objects        |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:---------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_RESC_AD |       94.8 |    52.7 |   55.52 |   80.97 |      87.76 |   78.73 |   87.07 |
+| mean           |       94.8 |    52.7 |   55.52 |   80.97 |      87.76 |   78.73 |   87.07 |
+26-05-25 21:06:04.079 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_RESC_AD --num_workers 8 --k_shot 16
+26-05-25 21:10:56.957 - INFO: inference time: 72.6ms per image
+26-05-25 21:16:33.016 - INFO: 
+| objects        |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:---------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_RESC_AD |      95.82 |   56.97 |   61.15 |   83.95 |      90.74 |   80.84 |   90.43 |
+| mean           |      95.82 |   56.97 |   61.15 |   83.95 |      90.74 |   80.84 |   90.43 |
+26-05-25 21:23:50.599 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_RESC_AD --num_workers 8 --k_shot 2
+26-05-25 21:24:50.507 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_RESC_AD --seed 4 --num_workers 8 --k_shot 16
+26-05-25 21:30:14.359 - INFO: inference time: 77.0ms per image
+26-05-25 21:30:26.581 - INFO: inference time: 73.4ms per image
+26-05-25 21:35:50.517 - INFO: 
+| objects        |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:---------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_RESC_AD |      95.23 |   53.72 |   57.77 |   82.59 |      90.75 |   81.38 |   89.63 |
+| mean           |      95.23 |   53.72 |   57.77 |   82.59 |      90.75 |   81.38 |   89.63 |
+26-05-25 21:35:59.630 - INFO: 
+| objects        |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:---------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_RESC_AD |      95.62 |   56.23 |    60.9 |   83.09 |      90.29 |   81.58 |    89.2 |
+| mean           |      95.62 |   56.23 |    60.9 |   83.09 |      90.29 |   81.58 |    89.2 |
+26-05-25 21:44:46.859 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_RESC_AD --seed 2 --num_workers 8 --k_shot 2
+26-05-25 21:44:48.270 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_RESC_AD --seed 3 --num_workers 8 --k_shot 2
+26-05-25 21:44:48.369 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_RESC_AD --seed 4 --num_workers 8 --k_shot 2
+26-05-25 21:45:05.291 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_RESC_AD --seed 3 --num_workers 8 --k_shot 64
+26-05-25 21:53:20.282 - INFO: inference time: 70.4ms per image
+26-05-25 21:53:20.344 - INFO: inference time: 71.1ms per image
+26-05-25 21:53:22.656 - INFO: inference time: 88.2ms per image
+26-05-25 21:53:36.574 - INFO: inference time: 69.8ms per image
+26-05-25 21:58:52.913 - INFO: 
+| objects        |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:---------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_RESC_AD |      95.23 |   54.01 |   57.53 |   82.15 |      88.72 |   78.42 |   87.39 |
+| mean           |      95.23 |   54.01 |   57.53 |   82.15 |      88.72 |   78.42 |   87.39 |
+26-05-25 21:58:53.895 - INFO: 
+| objects        |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:---------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_RESC_AD |      94.85 |   52.69 |   55.74 |   81.01 |      87.51 |   78.14 |   85.92 |
+| mean           |      94.85 |   52.69 |   55.74 |   81.01 |      87.51 |   78.14 |   85.92 |
+26-05-25 21:58:55.966 - INFO: 
+| objects        |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:---------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_RESC_AD |      94.78 |   53.05 |   56.86 |   80.53 |      87.51 |   77.94 |   86.32 |
+| mean           |      94.78 |   53.05 |   56.86 |   80.53 |      87.51 |   77.94 |   86.32 |
+26-05-25 21:59:09.214 - INFO: 
+| objects        |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:---------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_RESC_AD |      95.79 |   57.73 |   62.53 |   83.42 |      91.49 |   81.76 |   90.37 |
+| mean           |      95.79 |   57.73 |   62.53 |   83.42 |      91.49 |   81.76 |   90.37 |
+26-05-25 22:04:58.718 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_RESC_AD --seed 1 --num_workers 8 --k_shot 16
+26-05-25 22:04:58.782 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_OCT2017_AD --seed 2 --num_workers 8 --k_shot 2
+26-05-25 22:04:58.923 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_RESC_AD --seed 3 --num_workers 8 --k_shot 16
+26-05-25 22:05:19.447 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_RESC_AD --seed 2 --num_workers 8 --k_shot 16
+26-05-25 22:11:38.638 - INFO: inference time: 69.9ms per image
+26-05-25 22:11:40.497 - INFO: 
+| objects           |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_OCT2017_AD |          0 |       0 |       0 |       0 |      94.03 |   92.01 |   98.03 |
+| mean              |          0 |       0 |       0 |       0 |      94.03 |   92.01 |   98.03 |
+26-05-25 22:13:45.684 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_OCT2017_AD --seed 1 --num_workers 8 --k_shot 16
+26-05-25 22:19:50.399 - INFO: inference time: 87.9ms per image
+26-05-25 22:19:54.201 - INFO: inference time: 103.7ms per image
+26-05-25 22:20:04.023 - INFO: inference time: 104.7ms per image
+26-05-25 22:20:19.638 - INFO: inference time: 69.3ms per image
+26-05-25 22:20:21.152 - INFO: 
+| objects           |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_OCT2017_AD |          0 |       0 |       0 |       0 |      98.04 |   96.28 |   99.36 |
+| mean              |          0 |       0 |       0 |       0 |      98.04 |   96.28 |   99.36 |
+26-05-25 22:24:07.558 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_OCT2017_AD --num_workers 8 --k_shot 64
+26-05-25 22:25:21.196 - INFO: 
+| objects        |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:---------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_RESC_AD |       95.7 |   56.59 |   61.09 |   83.02 |      89.87 |   79.13 |   89.56 |
+| mean           |       95.7 |   56.59 |   61.09 |   83.02 |      89.87 |   79.13 |   89.56 |
+26-05-25 22:25:32.246 - INFO: 
+| objects        |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:---------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_RESC_AD |      95.47 |   55.89 |   60.15 |   82.65 |      90.01 |   79.97 |   89.01 |
+| mean           |      95.47 |   55.89 |   60.15 |   82.65 |      90.01 |   79.97 |   89.01 |
+26-05-25 22:25:40.210 - INFO: 
+| objects        |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:---------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_RESC_AD |      96.07 |   57.37 |   62.31 |   84.56 |      90.57 |   79.37 |   88.77 |
+| mean           |      96.07 |   57.37 |   62.31 |   84.56 |      90.57 |   79.37 |   88.77 |
+26-05-25 22:31:21.155 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_RESC_AD --seed 2 --num_workers 8 --k_shot 64
+26-05-25 22:31:21.220 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_RESC_AD --seed 1 --num_workers 8 --k_shot 64
+26-05-25 22:31:46.533 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_RESC_AD --num_workers 8 --k_shot 64
+26-05-25 22:33:55.990 - INFO: inference time: 73.4ms per image
+26-05-25 22:33:57.419 - INFO: 
+| objects           |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_OCT2017_AD |          0 |       0 |       0 |       0 |      98.66 |   97.04 |   99.56 |
+| mean              |          0 |       0 |       0 |       0 |      98.66 |   97.04 |   99.56 |
+26-05-25 22:40:03.414 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_OCT2017_AD --seed 4 --num_workers 8 --k_shot 64
+26-05-25 22:42:44.647 - INFO: inference time: 72.8ms per image
+26-05-25 22:42:46.932 - INFO: inference time: 72.0ms per image
+26-05-25 22:42:53.723 - INFO: inference time: 72.9ms per image
+26-05-25 22:42:54.134 - INFO: inference time: 72.7ms per image
+26-05-25 22:42:55.545 - INFO: 
+| objects           |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_OCT2017_AD |          0 |       0 |       0 |       0 |      98.46 |   96.64 |   99.49 |
+| mean              |          0 |       0 |       0 |       0 |      98.46 |   96.64 |   99.49 |
+26-05-25 22:48:05.795 - INFO: 
+| objects        |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:---------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_RESC_AD |      96.04 |   57.61 |   62.07 |   84.49 |      91.12 |   81.44 |   89.25 |
+| mean           |      96.04 |   57.61 |   62.07 |   84.49 |      91.12 |   81.44 |   89.25 |
+26-05-25 22:48:17.389 - INFO: 
+| objects        |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:---------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_RESC_AD |       95.9 |   57.56 |   62.23 |   83.87 |      91.11 |   81.64 |    90.4 |
+| mean           |       95.9 |   57.56 |   62.23 |   83.87 |      91.11 |   81.64 |    90.4 |
+26-05-25 22:48:24.971 - INFO: 
+| objects        |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:---------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_RESC_AD |      95.88 |   57.85 |   62.69 |   83.75 |      90.86 |   80.56 |   90.41 |
+| mean           |      95.88 |   57.85 |   62.69 |   83.75 |      90.86 |   80.56 |   90.41 |
+26-05-25 22:53:32.975 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_OCT2017_AD --seed 1 --num_workers 8 --k_shot 2
+26-05-25 22:53:33.031 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_RESC_AD --seed 4 --num_workers 8 --k_shot 64
+26-05-25 22:54:00.412 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_OCT2017_AD --num_workers 8 --k_shot 2
+26-05-25 22:56:22.426 - INFO: inference time: 73.2ms per image
+26-05-25 22:56:23.816 - INFO: 
+| objects           |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_OCT2017_AD |          0 |       0 |       0 |       0 |      94.62 |   92.48 |    98.2 |
+| mean              |          0 |       0 |       0 |       0 |      94.62 |   92.48 |    98.2 |
+26-05-25 23:03:29.562 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_OCT2017_AD --num_workers 8 --k_shot 16
+26-05-25 23:04:13.237 - INFO: inference time: 72.6ms per image
+26-05-25 23:04:15.593 - INFO: 
+| objects           |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_OCT2017_AD |          0 |       0 |       0 |       0 |      94.17 |   91.81 |   98.11 |
+| mean              |          0 |       0 |       0 |       0 |      94.17 |   91.81 |   98.11 |
+26-05-25 23:06:20.870 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_OCT2017_AD --seed 4 --num_workers 8 --k_shot 2
+26-05-25 23:08:15.623 - INFO: inference time: 74.0ms per image
+26-05-25 23:08:29.430 - INFO: inference time: 74.4ms per image
+26-05-25 23:08:30.826 - INFO: 
+| objects           |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_OCT2017_AD |          0 |       0 |       0 |       0 |      98.28 |   96.35 |   99.44 |
+| mean              |          0 |       0 |       0 |       0 |      98.28 |   96.35 |   99.44 |
+26-05-25 23:13:06.424 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_OCT2017_AD --seed 4 --num_workers 8 --k_shot 16
+26-05-25 23:13:23.958 - INFO: inference time: 71.9ms per image
+26-05-25 23:13:25.392 - INFO: 
+| objects           |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_OCT2017_AD |          0 |       0 |       0 |       0 |      96.43 |   94.64 |   98.77 |
+| mean              |          0 |       0 |       0 |       0 |      96.43 |   94.64 |   98.77 |
+26-05-25 23:13:52.500 - INFO: 
+| objects        |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:---------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_RESC_AD |      95.93 |   57.94 |    62.9 |   83.91 |      91.85 |   82.33 |   90.57 |
+| mean           |      95.93 |   57.94 |    62.9 |   83.91 |      91.85 |   82.33 |   90.57 |
+26-05-25 23:19:01.201 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_OCT2017_AD --seed 3 --num_workers 8 --k_shot 16
+26-05-25 23:19:02.240 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_OCT2017_AD --seed 3 --num_workers 8 --k_shot 2
+26-05-25 23:22:03.549 - INFO: inference time: 166.2ms per image
+26-05-25 23:22:05.618 - INFO: 
+| objects           |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_OCT2017_AD |          0 |       0 |       0 |       0 |      98.09 |   95.99 |   99.35 |
+| mean              |          0 |       0 |       0 |       0 |      98.09 |   95.99 |   99.35 |
+26-05-25 23:25:15.084 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_OCT2017_AD --seed 3 --num_workers 8 --k_shot 64
+26-05-25 23:25:37.889 - INFO: inference time: 167.1ms per image
+26-05-25 23:25:39.049 - INFO: inference time: 167.0ms per image
+26-05-25 23:25:39.468 - INFO: 
+| objects           |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_OCT2017_AD |          0 |       0 |       0 |       0 |      97.94 |   96.54 |    99.3 |
+| mean              |          0 |       0 |       0 |       0 |      97.94 |   96.54 |    99.3 |
+26-05-25 23:25:40.554 - INFO: 
+| objects           |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_OCT2017_AD |          0 |       0 |       0 |       0 |      94.59 |   92.75 |    98.2 |
+| mean              |          0 |       0 |       0 |       0 |      94.59 |   92.75 |    98.2 |
+26-05-25 23:30:15.107 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_OCT2017_AD --seed 2 --num_workers 8 --k_shot 64
+26-05-25 23:30:15.478 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_OCT2017_AD --seed 2 --num_workers 8 --k_shot 16
+26-05-25 23:31:36.631 - INFO: inference time: 161.2ms per image
+26-05-25 23:31:38.131 - INFO: 
+| objects           |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_OCT2017_AD |          0 |       0 |       0 |       0 |      98.73 |   97.46 |   99.58 |
+| mean              |          0 |       0 |       0 |       0 |      98.73 |   97.46 |   99.58 |
+26-05-25 23:36:30.794 - INFO: inference time: 99.5ms per image
+26-05-25 23:36:32.635 - INFO: 
+| objects           |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_OCT2017_AD |          0 |       0 |       0 |       0 |      98.29 |   96.28 |   99.44 |
+| mean              |          0 |       0 |       0 |       0 |      98.29 |   96.28 |   99.44 |
+26-05-25 23:37:37.978 - INFO: inference time: 98.5ms per image
+26-05-25 23:37:39.316 - INFO: 
+| objects           |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_OCT2017_AD |          0 |       0 |       0 |       0 |       98.8 |   97.32 |    99.6 |
+| mean              |          0 |       0 |       0 |       0 |       98.8 |   97.32 |    99.6 |
+26-05-25 23:39:11.634 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_OCT2017_AD --seed 1 --num_workers 8 --k_shot 64
+26-05-25 23:42:19.865 - INFO: inference time: 70.5ms per image
+26-05-25 23:42:21.447 - INFO: 
+| objects           |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_OCT2017_AD |          0 |       0 |       0 |       0 |      98.65 |   96.94 |   99.55 |
+| mean              |          0 |       0 |       0 |       0 |      98.65 |   96.94 |   99.55 |
+26-05-26 03:17:24.989 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_RESC_AD --num_workers 8 --features_list_rare  --no_bank 1
+26-05-26 03:17:32.949 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_RESC_AD --seed 3 --num_workers 8 --features_list_rare  --no_bank 1
+26-05-26 03:17:33.671 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_RESC_AD --seed 2 --num_workers 8 --features_list_rare  --no_bank 1
+26-05-26 03:19:35.463 - INFO: inference time: 65.1ms per image
+26-05-26 03:19:41.903 - INFO: inference time: 64.6ms per image
+26-05-26 03:19:45.544 - INFO: inference time: 66.0ms per image
+26-05-26 03:24:38.893 - INFO: 
+| objects        |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:---------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_RESC_AD |      95.73 |   55.14 |   58.82 |   83.94 |      87.33 |   76.72 |   85.48 |
+| mean           |      95.73 |   55.14 |   58.82 |   83.94 |      87.33 |   76.72 |   85.48 |
+26-05-26 03:24:49.211 - INFO: 
+| objects        |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:---------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_RESC_AD |      95.54 |   54.81 |   58.46 |   83.05 |      85.57 |   75.12 |   83.39 |
+| mean           |      95.54 |   54.81 |   58.46 |   83.05 |      85.57 |   75.12 |   83.39 |
+26-05-26 03:24:52.443 - INFO: 
+| objects        |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:---------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_RESC_AD |      95.63 |   55.24 |   58.67 |   83.59 |      87.03 |   77.17 |    84.9 |
+| mean           |      95.63 |   55.24 |   58.67 |   83.59 |      87.03 |   77.17 |    84.9 |
+26-05-26 03:29:13.969 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_RESC_AD --seed 4 --num_workers 8 --features_list_rare  --no_bank 1
+26-05-26 03:29:21.897 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_RESC_AD --seed 2 --num_workers 8 --features_list_rare  --k_shot 2 --no_bank 1
+26-05-26 03:29:22.978 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_RESC_AD --seed 1 --num_workers 8 --features_list_rare  --k_shot 2 --no_bank 1
+26-05-26 03:31:26.335 - INFO: inference time: 65.1ms per image
+26-05-26 03:31:37.312 - INFO: inference time: 66.6ms per image
+26-05-26 03:31:41.080 - INFO: inference time: 68.1ms per image
+26-05-26 03:36:31.836 - INFO: 
+| objects        |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:---------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_RESC_AD |      95.75 |   55.06 |   58.11 |   84.21 |      86.33 |   76.47 |   83.59 |
+| mean           |      95.75 |   55.06 |   58.11 |   84.21 |      86.33 |   76.47 |   83.59 |
+26-05-26 03:36:45.268 - INFO: 
+| objects        |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:---------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_RESC_AD |      95.23 |   54.01 |   57.53 |   82.15 |      88.72 |   78.42 |   87.39 |
+| mean           |      95.23 |   54.01 |   57.53 |   82.15 |      88.72 |   78.42 |   87.39 |
+26-05-26 03:36:48.328 - INFO: 
+| objects        |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:---------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_RESC_AD |       94.8 |    52.7 |   55.52 |   80.97 |      87.76 |   78.73 |   87.07 |
+| mean           |       94.8 |    52.7 |   55.52 |   80.97 |      87.76 |   78.73 |   87.07 |
+26-05-26 03:41:06.444 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_RESC_AD --seed 3 --num_workers 8 --features_list_rare  --k_shot 2 --no_bank 1
+26-05-26 03:41:06.556 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_RESC_AD --seed 1 --num_workers 8 --features_list_rare  --k_shot 16 --no_bank 1
+26-05-26 03:41:15.996 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_RESC_AD --num_workers 8 --features_list_rare  --k_shot 16 --no_bank 1
+26-05-26 03:43:22.983 - INFO: inference time: 67.5ms per image
+26-05-26 03:43:23.209 - INFO: inference time: 66.9ms per image
+26-05-26 03:43:35.283 - INFO: inference time: 68.4ms per image
+26-05-26 03:48:30.738 - INFO: 
+| objects        |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:---------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_RESC_AD |       95.7 |   56.59 |   61.09 |   83.02 |      89.87 |   79.13 |   89.56 |
+| mean           |       95.7 |   56.59 |   61.09 |   83.02 |      89.87 |   79.13 |   89.56 |
+26-05-26 03:48:34.581 - INFO: 
+| objects        |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:---------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_RESC_AD |      94.78 |   53.05 |   56.86 |   80.53 |      87.51 |   77.94 |   86.32 |
+| mean           |      94.78 |   53.05 |   56.86 |   80.53 |      87.51 |   77.94 |   86.32 |
+26-05-26 03:48:44.910 - INFO: 
+| objects        |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:---------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_RESC_AD |      95.82 |   56.97 |   61.15 |   83.95 |      90.74 |   80.84 |   90.43 |
+| mean           |      95.82 |   56.97 |   61.15 |   83.95 |      90.74 |   80.84 |   90.43 |
+26-05-26 03:53:05.690 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_RESC_AD --seed 2 --num_workers 8 --features_list_rare  --k_shot 16 --no_bank 1
+26-05-26 03:53:06.061 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_RESC_AD --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+26-05-26 03:53:14.924 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_RESC_AD --seed 4 --num_workers 8 --features_list_rare  --k_shot 16 --no_bank 1
+26-05-26 03:55:23.071 - INFO: inference time: 67.4ms per image
+26-05-26 03:55:27.649 - INFO: inference time: 66.9ms per image
+26-05-26 03:55:34.582 - INFO: inference time: 68.4ms per image
+26-05-26 04:00:31.720 - INFO: 
+| objects        |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:---------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_RESC_AD |      96.07 |   57.37 |   62.31 |   84.56 |      90.57 |   79.37 |   88.77 |
+| mean           |      96.07 |   57.37 |   62.31 |   84.56 |      90.57 |   79.37 |   88.77 |
+26-05-26 04:00:38.691 - INFO: 
+| objects        |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:---------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_RESC_AD |      95.88 |   57.85 |   62.69 |   83.75 |      90.86 |   80.56 |   90.41 |
+| mean           |      95.88 |   57.85 |   62.69 |   83.75 |      90.86 |   80.56 |   90.41 |
+26-05-26 04:00:43.277 - INFO: 
+| objects        |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:---------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_RESC_AD |      95.62 |   56.23 |    60.9 |   83.09 |      90.29 |   81.58 |    89.2 |
+| mean           |      95.62 |   56.23 |    60.9 |   83.09 |      90.29 |   81.58 |    89.2 |
+26-05-26 04:05:06.387 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_RESC_AD --seed 1 --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+26-05-26 04:05:14.803 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_RESC_AD --seed 3 --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+26-05-26 04:05:15.252 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_RESC_AD --seed 4 --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+26-05-26 04:07:28.822 - INFO: inference time: 67.4ms per image
+26-05-26 04:07:37.615 - INFO: inference time: 67.2ms per image
+26-05-26 04:07:39.319 - INFO: inference time: 68.5ms per image
+26-05-26 04:12:37.010 - INFO: 
+| objects        |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:---------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_RESC_AD |       95.9 |   57.56 |   62.23 |   83.87 |      91.11 |   81.64 |    90.4 |
+| mean           |       95.9 |   57.56 |   62.23 |   83.87 |      91.11 |   81.64 |    90.4 |
+26-05-26 04:12:45.827 - INFO: 
+| objects        |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:---------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_RESC_AD |      95.93 |   57.94 |    62.9 |   83.91 |      91.85 |   82.33 |   90.57 |
+| mean           |      95.93 |   57.94 |    62.9 |   83.91 |      91.85 |   82.33 |   90.57 |
+26-05-26 04:12:48.565 - INFO: 
+| objects        |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:---------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_RESC_AD |      95.79 |   57.73 |   62.53 |   83.42 |      91.49 |   81.76 |   90.37 |
+| mean           |      95.79 |   57.73 |   62.53 |   83.42 |      91.49 |   81.76 |   90.37 |
+26-05-26 04:17:12.064 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_OCT2017_AD --num_workers 8 --features_list_rare  --no_bank 1
+26-05-26 04:17:15.977 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_OCT2017_AD --seed 2 --num_workers 8 --features_list_rare  --no_bank 1
+26-05-26 04:17:20.919 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_OCT2017_AD --seed 3 --num_workers 8 --features_list_rare  --no_bank 1
+26-05-26 04:18:21.199 - INFO: inference time: 63.4ms per image
+26-05-26 04:18:22.614 - INFO: 
+| objects           |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_OCT2017_AD |          0 |       0 |       0 |       0 |       91.8 |   90.86 |   97.22 |
+| mean              |          0 |       0 |       0 |       0 |       91.8 |   90.86 |   97.22 |
+26-05-26 04:19:25.176 - INFO: inference time: 63.5ms per image
+26-05-26 04:19:26.714 - INFO: 
+| objects           |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_OCT2017_AD |          0 |       0 |       0 |       0 |      91.21 |   89.94 |   97.12 |
+| mean              |          0 |       0 |       0 |       0 |      91.21 |   89.94 |   97.12 |
+26-05-26 04:20:59.524 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_OCT2017_AD --seed 4 --num_workers 8 --features_list_rare  --no_bank 1
+26-05-26 04:21:30.778 - INFO: inference time: 64.4ms per image
+26-05-26 04:21:32.226 - INFO: 
+| objects           |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_OCT2017_AD |          0 |       0 |       0 |       0 |       92.5 |   90.68 |   97.52 |
+| mean              |          0 |       0 |       0 |       0 |       92.5 |   90.68 |   97.52 |
+26-05-26 04:22:35.468 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_OCT2017_AD --seed 1 --num_workers 8 --features_list_rare  --k_shot 2 --no_bank 1
+26-05-26 04:23:17.063 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_OCT2017_AD --seed 2 --num_workers 8 --features_list_rare  --k_shot 2 --no_bank 1
+26-05-26 04:24:10.454 - INFO: inference time: 64.3ms per image
+26-05-26 04:24:11.824 - INFO: 
+| objects           |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_OCT2017_AD |          0 |       0 |       0 |       0 |      91.25 |    90.1 |   97.01 |
+| mean              |          0 |       0 |       0 |       0 |      91.25 |    90.1 |   97.01 |
+26-05-26 04:25:49.689 - INFO: inference time: 66.6ms per image
+26-05-26 04:25:51.390 - INFO: 
+| objects           |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_OCT2017_AD |          0 |       0 |       0 |       0 |      94.62 |   92.48 |    98.2 |
+| mean              |          0 |       0 |       0 |       0 |      94.62 |   92.48 |    98.2 |
+26-05-26 04:26:54.740 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_OCT2017_AD --seed 3 --num_workers 8 --features_list_rare  --k_shot 2 --no_bank 1
+26-05-26 04:27:31.274 - INFO: inference time: 66.2ms per image
+26-05-26 04:27:32.962 - INFO: 
+| objects           |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_OCT2017_AD |          0 |       0 |       0 |       0 |      94.03 |   92.01 |   98.03 |
+| mean              |          0 |       0 |       0 |       0 |      94.03 |   92.01 |   98.03 |
+26-05-26 04:28:36.454 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_OCT2017_AD --num_workers 8 --features_list_rare  --k_shot 16 --no_bank 1
+26-05-26 04:29:18.454 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_OCT2017_AD --seed 1 --num_workers 8 --features_list_rare  --k_shot 16 --no_bank 1
+26-05-26 04:30:07.978 - INFO: inference time: 65.9ms per image
+26-05-26 04:30:09.381 - INFO: 
+| objects           |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_OCT2017_AD |          0 |       0 |       0 |       0 |      94.59 |   92.75 |    98.2 |
+| mean              |          0 |       0 |       0 |       0 |      94.59 |   92.75 |    98.2 |
+26-05-26 04:31:52.191 - INFO: inference time: 66.4ms per image
+26-05-26 04:31:53.627 - INFO: 
+| objects           |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_OCT2017_AD |          0 |       0 |       0 |       0 |      98.28 |   96.35 |   99.44 |
+| mean              |          0 |       0 |       0 |       0 |      98.28 |   96.35 |   99.44 |
+26-05-26 04:31:54.554 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_OCT2017_AD --seed 2 --num_workers 8 --features_list_rare  --k_shot 16 --no_bank 1
+26-05-26 04:33:32.465 - INFO: inference time: 65.9ms per image
+26-05-26 04:33:33.910 - INFO: 
+| objects           |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_OCT2017_AD |          0 |       0 |       0 |       0 |      98.04 |   96.28 |   99.36 |
+| mean              |          0 |       0 |       0 |       0 |      98.04 |   96.28 |   99.36 |
+26-05-26 04:34:37.375 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_OCT2017_AD --seed 4 --num_workers 8 --features_list_rare  --k_shot 16 --no_bank 1
+26-05-26 04:35:18.670 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_OCT2017_AD --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+26-05-26 04:36:09.952 - INFO: inference time: 66.5ms per image
+26-05-26 04:36:11.505 - INFO: 
+| objects           |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_OCT2017_AD |          0 |       0 |       0 |       0 |      98.29 |   96.28 |   99.44 |
+| mean              |          0 |       0 |       0 |       0 |      98.29 |   96.28 |   99.44 |
+26-05-26 04:37:52.619 - INFO: inference time: 66.0ms per image
+26-05-26 04:37:54.119 - INFO: 
+| objects           |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_OCT2017_AD |          0 |       0 |       0 |       0 |      98.09 |   95.99 |   99.35 |
+| mean              |          0 |       0 |       0 |       0 |      98.09 |   95.99 |   99.35 |
+26-05-26 04:39:28.150 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_OCT2017_AD --seed 1 --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+26-05-26 04:39:38.412 - INFO: inference time: 66.7ms per image
+26-05-26 04:39:39.771 - INFO: 
+| objects           |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_OCT2017_AD |          0 |       0 |       0 |       0 |      98.66 |   97.04 |   99.56 |
+| mean              |          0 |       0 |       0 |       0 |      98.66 |   97.04 |   99.56 |
+26-05-26 04:39:39.983 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_OCT2017_AD --seed 3 --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+26-05-26 04:41:25.360 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_OCT2017_AD --seed 4 --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+26-05-26 04:42:18.317 - INFO: inference time: 66.2ms per image
+26-05-26 04:42:20.005 - INFO: 
+| objects           |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_OCT2017_AD |          0 |       0 |       0 |       0 |      98.65 |   96.94 |   99.55 |
+| mean              |          0 |       0 |       0 |       0 |      98.65 |   96.94 |   99.55 |
+26-05-26 04:43:58.357 - INFO: inference time: 66.6ms per image
+26-05-26 04:43:59.865 - INFO: 
+| objects           |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_OCT2017_AD |          0 |       0 |       0 |       0 |      98.73 |   97.46 |   99.58 |
+| mean              |          0 |       0 |       0 |       0 |      98.73 |   97.46 |   99.58 |
+26-05-26 04:45:44.397 - INFO: inference time: 66.5ms per image
+26-05-26 04:45:45.788 - INFO: 
+| objects           |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_OCT2017_AD |          0 |       0 |       0 |       0 |      98.46 |   96.64 |   99.49 |
+| mean              |          0 |       0 |       0 |       0 |      98.46 |   96.64 |   99.49 |

@@ -10,7 +10,7 @@ from multiprocessing import Pool
 from tqdm import tqdm
 from tabulate import tabulate
 
-from dataset import VisaDataset, MVTecDataset, BtadDataset, CombineDataset
+from dataset import VisaDataset, MVTecDataset, BtadDataset, CombineDataset, MedicalAnomalyDataset, PolypDataset, MpddDataset, DAGMDataset, DTDSyntheticDataset, SDDDataset
 from rareclip import RareCLIP
 from rareclip_d import RareCLIP_d
 from utils import setup_seed, evaluate_obj, visualization
@@ -28,7 +28,7 @@ def test(args, default_args):
         save_path = save_path.replace('mvtec', 'visa')
     else:
         save_path = save_path.replace('mvtec', args.test)
-    test_set_path = args.root_path + '../dataset/' + test_set
+    test_set_path = args.test_set_path
     if not os.path.exists(save_path):
         os.makedirs(save_path)
     txt_path = os.path.join(save_path, 'log.txt')  # log
@@ -70,14 +70,37 @@ def test(args, default_args):
     ])
 
     
+# 找到原来的这段代码：
+    # if args.test == 'mvtec':
+    #     TestDataset = MVTecDataset
+    # elif args.test == 'visa':
+    #     TestDataset = VisaDataset
+    # elif args.test == 'btad':
+    #     TestDataset = BtadDataset
+    
+    # 将其完全替换为以下完整的分支：
     if args.test == 'mvtec':
         TestDataset = MVTecDataset
     elif args.test == 'visa':
         TestDataset = VisaDataset
     elif args.test == 'btad':
         TestDataset = BtadDataset
+    elif args.test == 'mpdd':
+        TestDataset = MpddDataset
+    elif args.test == 'dagm':
+        TestDataset = DAGMDataset
+    elif args.test == 'dtd':
+        TestDataset = DTDSyntheticDataset
+    elif args.test == 'sdd':
+        TestDataset = SDDDataset
+    elif args.test.lower() in ['brain_ad', 'liver', 'retina']:
+        TestDataset = MedicalAnomalyDataset
+    elif args.test.lower() in ['colondb', 'clinicdb', 'kvasir', 'cvc-300']:
+        TestDataset = PolypDataset
+    else:
+        raise ValueError(f"Unsupported test dataset: {args.test}")
         
-    test_dataset = TestDataset()
+    test_dataset = TestDataset(root=test_set_path)
     obj_list = test_dataset.CLSNAMES if args.obj is None else args.obj
     starter, ender = torch.cuda.Event(enable_timing=True), torch.cuda.Event(enable_timing=True)
 
@@ -87,7 +110,19 @@ def test(args, default_args):
         total_test_num = 0
         for obj in obj_list:
             results[obj] = {}
-            results[obj]['metric'] = args.metric
+            # 如果当前测试的数据集是息肉相关的，就只算 px 级指标；否则按照命令行参数来。
+            # 1. 肠息肉数据集：测试集全是异常图，无法计算 sp 指标，强制只测 px（像素级）
+            if args.test.lower() in ['colondb', 'clinicdb', 'kvasir', 'cvc-300']:
+                results[obj]['metric'] = 'px'
+            
+            # 2. Retina OCT2017 数据集：只有图像级标签，无法计算 px 指标，强制只测 sp（图像级）
+            elif 'oct2017' in args.test_set_path.lower():
+                results[obj]['metric'] = 'sp'
+            
+            # 3. 其他数据集（包括 Retina RESC, Brain_AD, Liver_CT 等）：
+            # 它们都有像素级掩码 (Segmentation mask)，可以同时测试 px 和 sp
+            else:
+                results[obj]['metric'] = args.metric
             results[obj]['cls_names'] = obj
             results[obj]['imgs_masks'] = []
             results[obj]['anomaly_maps'] = []
@@ -217,6 +252,7 @@ if __name__ == '__main__':
     parser.add_argument("--pool_num", type=int, default=3, help="number of process pools to accelerate metric")
     parser.add_argument("--vis_type", type=str, default=None, help="vis type:'no_norm', 'single_norm', 'all_norm'")
     parser.add_argument("--wait", type=int, default=0, help="minutes to wait")
+    parser.add_argument("--no_bank", type=int, default=0, help="disable prototype patch feature memory bank (PFM/PSM)")
     parser.add_argument("--other", type=str, default='', help="other thing")
 
     args = parser.parse_args()

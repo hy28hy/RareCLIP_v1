@@ -1,0 +1,7 @@
+26-04-30 00:02:03.875 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test kvasir --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/Kvasir --num_workers 8
+26-04-30 00:03:13.686 - INFO: inference time: 63.7ms per image
+26-04-30 00:08:55.377 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Kvasir    |      80.92 |    47.5 |   38.67 |   46.78 |          0 |       0 |       0 |
+| mean      |      80.92 |    47.5 |   38.67 |   46.78 |          0 |       0 |       0 |

@@ -1,0 +1,7 @@
+26-04-29 23:59:08.098 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test clinicdb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ClinicDB --num_workers 8
+26-04-29 23:59:51.450 - INFO: inference time: 64.5ms per image
+26-04-30 00:01:51.431 - INFO: 
+| objects      |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:-------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ClinicDB |      83.53 |   40.56 |   31.46 |   63.65 |          0 |       0 |       0 |
+| mean         |      83.53 |   40.56 |   31.46 |   63.65 |          0 |       0 |       0 |

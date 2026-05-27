@@ -1,0 +1,12 @@
+26-05-25 18:45:13.294 - INFO: python test.py --test mpdd --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MPDD --features_list_rare  --k_shot 2 --no_bank 1
+26-05-25 18:45:50.871 - INFO: inference time: 64.0ms per image
+26-05-25 18:46:27.011 - INFO: 
+| objects       |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:--------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| bracket_black |      98.82 |   36.23 |   24.41 |   97.69 |      89.63 |   85.71 |   93.62 |
+| bracket_brown |      93.2  |    7.47 |    3.79 |   87.99 |      42.99 |   80.31 |   61.36 |
+| bracket_white |      98.65 |   21.5  |   11.46 |   93.97 |      60.33 |   67.42 |   72.44 |
+| connector     |      98.32 |   46.88 |   40.95 |   94.44 |      90.95 |   83.87 |   75.77 |
+| metal_plate   |      99.52 |   90.35 |   96.41 |   98.07 |     100    |  100    |  100    |
+| tubes         |      98.6  |   67.24 |   69.75 |   95.5  |      96.69 |   94.89 |   98.78 |
+| mean          |      97.85 |   44.94 |   41.13 |   94.61 |      80.1  |   85.37 |   83.66 |

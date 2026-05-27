@@ -1,0 +1,9 @@
+26-04-29 23:25:38.502 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test btad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/BTech_Dataset_transformed --num_workers 8
+26-04-29 23:26:31.554 - INFO: inference time: 64.0ms per image
+26-04-29 23:27:33.022 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| 01        |      97.27 |   65.44 |   66.17 |   85.05 |      97.96 |   96.91 |   99.29 |
+| 02        |      96.26 |   62.8  |   63.28 |   64.9  |      89.92 |   94.58 |   98.36 |
+| 03        |      99.09 |   55.46 |   58.75 |   96.51 |      99.87 |   95.35 |   98.63 |
+| mean      |      97.54 |   61.23 |   62.73 |   82.15 |      95.91 |   95.61 |   98.76 |

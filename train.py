@@ -11,7 +11,7 @@ import logging
 from tqdm import tqdm
 
 import open_clip
-from dataset import VisaDataset, MVTecDataset
+from dataset import VisaDataset, MVTecDataset, BtadDataset, MpddDataset, MedicalAnomalyDataset, PolypDataset, DAGMDataset, DTDSyntheticDataset, SDDDataset
 from loss import FocalLoss, BinaryDiceLoss
 
 def setup_seed(seed):
@@ -109,15 +109,43 @@ def train(args, default_args):
         transforms.ToTensor()
     ])
     
-    # datasets
+# datasets
     train = args.train
     train_set_path = args.train_set_path
+    k_shot = args.k_shot if hasattr(args, 'k_shot') else 0
+    
+    # 统一将其设为 set='train' 进行训练
     if train == 'mvtec':
         train_data = MVTecDataset(root=train_set_path, transform=preprocess, target_transform=transform,
-                                  train_aug=args.aug_rate, set='test')
-    else:
+                                  train_aug=args.aug_rate, set='train', k_shot=k_shot)
+    elif train == 'visa':
         train_data = VisaDataset(root=train_set_path, transform=preprocess, target_transform=transform,
-                                  set='test')
+                                  set='train', k_shot=k_shot)
+    elif train == 'btad':
+        train_data = BtadDataset(root=train_set_path, transform=preprocess, target_transform=transform,
+                                 train_aug=args.aug_rate, set='train', k_shot=k_shot)
+    elif train == 'mpdd':
+        train_data = MpddDataset(root=train_set_path, transform=preprocess, target_transform=transform,
+                                 train_aug=args.aug_rate, set='train', k_shot=k_shot)
+    elif train == 'dagm':
+        train_data = DAGMDataset(root=train_set_path, transform=preprocess, target_transform=transform,
+                                 train_aug=args.aug_rate, set='train', k_shot=k_shot)
+    elif train == 'dtd':
+        train_data = DTDSyntheticDataset(root=train_set_path, transform=preprocess, target_transform=transform,
+                                         train_aug=args.aug_rate, set='train', k_shot=k_shot)
+    elif train == 'sdd':
+        train_data = SDDDataset(root=train_set_path, transform=preprocess, target_transform=transform,
+                                train_aug=args.aug_rate, set='train', k_shot=k_shot)
+    # 匹配各类医学/器官数据集 (统一使用 MedicalAnomalyDataset)
+    elif train.lower() in ['brain', 'liver', 'retina', 'brain_ad']:
+        train_data = MedicalAnomalyDataset(root=train_set_path, transform=preprocess, target_transform=transform,
+                                           train_aug=args.aug_rate, set='train', k_shot=k_shot)
+    # 匹配息肉数据集 (统一使用 PolypDataset)
+    elif train.lower() in ['colondb', 'clinicdb', 'kvasir', 'cvc-300']:
+        train_data = PolypDataset(root=train_set_path, transform=preprocess, target_transform=transform,
+                                  train_aug=args.aug_rate, set='train', k_shot=k_shot)
+    else:
+        raise ValueError(f"Unsupported dataset type: {train}")
     train_dataloader = torch.utils.data.DataLoader(train_data, batch_size=batch_size, shuffle=True)
     
     
@@ -215,6 +243,7 @@ if __name__ == '__main__':
     parser.add_argument("--batch_size", type=int, default=16, help="batch size")
     parser.add_argument("--image_size", type=int, default=518, help="image size")
     parser.add_argument("--aug_rate", type=float, default=0.2, help="image size")
+    parser.add_argument("--k_shot", type=int, default=0, help="k-shot for training (0 means full-shot)")
     parser.add_argument("--print_freq", type=int, default=1, help="print frequency")
     parser.add_argument("--save_freq", type=int, default=-1, help="save frequency, 0 for no save, -1 for last save")
     parser.add_argument("--seed", type=int, default=42, help="random seed")

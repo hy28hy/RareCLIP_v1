@@ -1,0 +1,6 @@
+26-04-29 15:58:30.089 - INFO: python train.py --train_set_path /data/chenxuwu/zihaowan_workplace/dataset/BTech_Dataset_transformed --train btad
+26-04-29 16:00:36.780 - INFO: epoch [1/5], loss:4.2560
+26-04-29 16:02:42.623 - INFO: epoch [2/5], loss:4.1100
+26-04-29 16:04:45.271 - INFO: epoch [3/5], loss:4.0980
+26-04-29 16:06:45.810 - INFO: epoch [4/5], loss:4.0931
+26-04-29 16:08:46.388 - INFO: epoch [5/5], loss:4.0911

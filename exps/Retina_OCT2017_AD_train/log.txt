@@ -1,0 +1,6 @@
+26-04-29 19:19:33.134 - INFO: python train.py --train_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_OCT2017_AD --train retina
+26-04-29 19:45:26.927 - INFO: epoch [1/5], loss:4.1367
+26-04-29 20:11:19.922 - INFO: epoch [2/5], loss:4.1239
+26-04-29 20:37:01.604 - INFO: epoch [3/5], loss:4.1222
+26-04-29 21:04:20.948 - INFO: epoch [4/5], loss:4.1204
+26-04-29 21:42:31.221 - INFO: epoch [5/5], loss:4.1204

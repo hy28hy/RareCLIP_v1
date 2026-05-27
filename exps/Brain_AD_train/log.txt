@@ -1,0 +1,6 @@
+26-04-29 17:17:29.643 - INFO: python train.py --train_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Brain_AD --train brain_ad
+26-04-29 17:24:41.763 - INFO: epoch [1/5], loss:4.1798
+26-04-29 17:31:50.794 - INFO: epoch [2/5], loss:4.1348
+26-04-29 17:39:04.572 - INFO: epoch [3/5], loss:4.1344
+26-04-29 17:46:10.666 - INFO: epoch [4/5], loss:4.1311
+26-04-29 17:53:12.585 - INFO: epoch [5/5], loss:4.1294

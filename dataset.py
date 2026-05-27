@@ -131,7 +131,14 @@ class MVTecDataset(data.Dataset):
                 data_cls = meta_info[cls_name]
                 random.seed(shuffle_seed)
                 random.shuffle(data_cls)
-                self.data_all.extend(data_cls[:k_shot] if k_shot < len(data_cls) else data_cls)
+                # 支持重复采样：如果样本不足 k_shot，则重复采样凑够
+                if k_shot <= len(data_cls):
+                    self.data_all.extend(data_cls[:k_shot])
+                else:
+                    # 重复采样：先取全部，再重复取直到凑够 k_shot
+                    self.data_all.extend(data_cls)
+                    remaining = k_shot - len(data_cls)
+                    self.data_all.extend(data_cls[:remaining])
             else:
                 if train_aug > 0 and cls_name in ['transistor', 'cable']:
                     cls_data = meta_info[cls_name]
@@ -280,7 +287,14 @@ class BtadDataset(data.Dataset):
                 data_cls = meta_info[cls_name]
                 random.seed(shuffle_seed)
                 random.shuffle(data_cls)
-                self.data_all.extend(data_cls[:k_shot] if k_shot < len(data_cls) else data_cls)
+                # 支持重复采样：如果样本不足 k_shot，则重复采样凑够
+                if k_shot <= len(data_cls):
+                    self.data_all.extend(data_cls[:k_shot])
+                else:
+                    # 重复采样：先取全部，再重复取直到凑够 k_shot
+                    self.data_all.extend(data_cls)
+                    remaining = k_shot - len(data_cls)
+                    self.data_all.extend(data_cls[:remaining])
             else:
                 self.data_all.extend(meta_info[cls_name])
         self.length = len(self.data_all)
@@ -379,3 +393,638 @@ class CombineDataset(data.Dataset):
         random.shuffle(part)
         index_zip[start:] = part
         self.index2set, self.index2set_index = zip(*index_zip)
+
+# =================================================================
+# 1. 统一医学异常数据集 (Brain, Liver, Retina)
+# 适用结构: root/test/good/img, 或 root/test/good/000.png 均可兼容
+# =================================================================
+class MedicalAnomalyDataset(data.Dataset):
+    def __init__(self, root=None, transform=None, target_transform=None, train_aug=0, set='test', k_shot=0, save_dir=None, obj_name=None, shuffle_seed=None):
+        if root is None:
+            return
+        self.root = root
+        self.transform = transform
+        self.target_transform = target_transform
+        self.train_aug = train_aug
+        self.set = set
+        
+        # 自动获取根目录的名称作为类别名 (例如 "Brain", "Liver")
+        dataset_name = os.path.basename(os.path.normpath(self.root))
+        self.CLSNAMES = [dataset_name]
+
+        self.data_all = []
+        meta_path = f'{self.root}/meta.json'
+        if not os.path.exists(meta_path):
+            print(f'Generating meta.json for {dataset_name}...')
+            self.make_meta_json()
+            
+        meta_info = json.load(open(meta_path, 'r'))
+        if set in meta_info:
+            meta_info = meta_info[set]
+        else:
+            meta_info = {dataset_name: []}
+
+        self.cls_names = self.CLSNAMES if obj_name is None else [obj_name]
+        for cls_name in self.cls_names:
+            if k_shot > 0:
+                data_cls = meta_info.get(cls_name, [])
+                random.seed(shuffle_seed)
+                random.shuffle(data_cls)
+                self.data_all.extend(data_cls[:k_shot] if k_shot < len(data_cls) else data_cls)
+            else:
+                self.data_all.extend(meta_info.get(cls_name, []))
+        self.length = len(self.data_all)
+
+        if shuffle_seed is not None and k_shot <= 0:
+            random.seed(shuffle_seed)
+            random.shuffle(self.data_all)
+
+    def make_meta_json(self):
+        meta_path = f'{self.root}/meta.json'
+        info = dict(train={}, test={}, valid={})
+        dataset_name = self.CLSNAMES[0]
+        
+        for phase in ['train', 'test', 'valid']:
+            cls_info = []
+            phase_dir = f'{self.root}/{phase}'
+            if not os.path.exists(phase_dir):
+                continue
+                
+            # 获取下面所有的目录 (过滤掉可能存在的非目录文件)
+            species = [d for d in os.listdir(phase_dir) if os.path.isdir(os.path.join(phase_dir, d))]
+            species.sort()
+            
+            for specie in species:
+                is_abnormal = (specie != 'good') 
+                specie_dir = f'{phase_dir}/{specie}'
+                
+                # 智能判断：图片是在 img/ 子文件夹里，还是直接在当前文件夹里？
+                if os.path.exists(f'{specie_dir}/img'):
+                    img_dir = f'{specie_dir}/img'
+                    img_rel_prefix = f'{phase}/{specie}/img'
+                else:
+                    img_dir = specie_dir
+                    img_rel_prefix = f'{phase}/{specie}'
+
+                # 过滤出真正的图片文件（防止误读到 label 文件夹）
+                valid_exts = ('.png', '.jpg', '.jpeg', '.bmp', '.tif')
+                img_names = [f for f in os.listdir(img_dir) if os.path.isfile(os.path.join(img_dir, f)) and f.lower().endswith(valid_exts)]
+                img_names.sort()
+
+                for img_name in img_names:
+                    # 确定掩码的相对路径 (假设它在 label/ 目录下，如果不存在会在后续生成全黑Mask)
+                    mask_rel_path = f'{phase}/{specie}/label/{img_name}' if is_abnormal else ''
+                    
+                    info_img = dict(
+                        img_path=f'{img_rel_prefix}/{img_name}',
+                        mask_path=mask_rel_path,
+                        cls_name=dataset_name,
+                        specie_name=specie,
+                        anomaly=1 if is_abnormal else 0,
+                    )
+                    cls_info.append(info_img)
+            info[phase][dataset_name] = cls_info
+            
+        with open(meta_path, 'w') as f:
+            f.write(json.dumps(info, indent=4) + "\n")
+
+    def __len__(self): return self.length
+    def get_cls_names(self): return self.cls_names
+
+    def __getitem__(self, index):
+        data = self.data_all[index]
+        img_path, mask_path, cls_name, anomaly = data['img_path'], data['mask_path'], data['cls_name'], data['anomaly']
+        
+        img = Image.open(os.path.join(self.root, img_path)).convert('RGB')
+        
+        if anomaly == 0:
+            img_mask = Image.fromarray(np.zeros((img.size[1], img.size[0])), mode='L')
+        else:
+            mask_full_path = os.path.join(self.root, mask_path)
+            if os.path.exists(mask_full_path):
+                img_mask = np.array(Image.open(mask_full_path).convert('L')) > 0
+                img_mask = Image.fromarray(img_mask.astype(np.uint8) * 255, mode='L')
+            else:
+                img_mask = Image.fromarray(np.zeros((img.size[1], img.size[0])), mode='L')
+                
+        if self.transform is not None: img = self.transform(img)
+        if self.target_transform is not None: img_mask = self.target_transform(img_mask)
+
+        return {'img': img, 'img_mask': img_mask, 'cls_name': cls_name, 'anomaly': anomaly, 'img_path': os.path.join(self.root, img_path)}
+
+# =================================================================
+# 2. 息肉分割数据集 (ColonDB, ClinicDB, Kvasir, CVC-300)
+# 适用结构: root/images, root/masks
+# =================================================================
+class PolypDataset(data.Dataset):
+    def __init__(self, root=None, transform=None, target_transform=None, train_aug=0, set='test', k_shot=0, save_dir=None, obj_name=None, shuffle_seed=None):
+        if root is None:
+            return
+        self.root = root
+        self.transform = transform
+        self.target_transform = target_transform
+        
+        dataset_name = os.path.basename(os.path.normpath(self.root))
+        self.CLSNAMES = [dataset_name]
+
+        self.data_all = []
+        meta_path = f'{self.root}/meta.json'
+        if not os.path.exists(meta_path):
+            self.make_meta_json()
+            
+        meta_info = json.load(open(meta_path, 'r'))
+        # 息肉通常作为 zero-shot 测试集，全部归为 test
+        meta_info = meta_info.get('test', {dataset_name: []})
+
+        self.cls_names = self.CLSNAMES if obj_name is None else [obj_name]
+        for cls_name in self.cls_names:
+            if k_shot > 0:
+                data_cls = meta_info.get(cls_name, [])
+                random.seed(shuffle_seed)
+                random.shuffle(data_cls)
+                # 支持重复采样：如果样本不足 k_shot，则重复采样凑够
+                if k_shot <= len(data_cls):
+                    self.data_all.extend(data_cls[:k_shot])
+                else:
+                    # 重复采样：先取全部，再重复取直到凑够 k_shot
+                    self.data_all.extend(data_cls)
+                    remaining = k_shot - len(data_cls)
+                    self.data_all.extend(data_cls[:remaining])
+            else:
+                self.data_all.extend(meta_info.get(cls_name, []))
+        self.length = len(self.data_all)
+
+    def make_meta_json(self):
+        meta_path = f'{self.root}/meta.json'
+        info = dict(train={}, test={})
+        dataset_name = self.CLSNAMES[0]
+        
+        img_dir = os.path.join(self.root, 'images')
+        mask_dir = os.path.join(self.root, 'masks')
+        
+        cls_info = []
+        if os.path.exists(img_dir):
+            img_names = os.listdir(img_dir)
+            img_names.sort()
+            for img_name in img_names:
+                # 兼容同名掩码或 _mask 后缀掩码
+                name_base, ext = os.path.splitext(img_name)
+                if os.path.exists(os.path.join(mask_dir, img_name)):
+                    mask_rel_path = f'masks/{img_name}'
+                elif os.path.exists(os.path.join(mask_dir, name_base + '_mask' + ext)):
+                    mask_rel_path = f'masks/{name_base}_mask{ext}'
+                else:
+                    mask_rel_path = ''
+                    
+                cls_info.append(dict(
+                    img_path=f'images/{img_name}',
+                    mask_path=mask_rel_path,
+                    cls_name=dataset_name,
+                    specie_name='polyp',
+                    anomaly=1 # 此类数据集默认图像均含异常区域
+                ))
+        
+        info['test'][dataset_name] = cls_info
+        info['train'][dataset_name] = []
+        with open(meta_path, 'w') as f:
+            f.write(json.dumps(info, indent=4) + "\n")
+
+    def __len__(self): return self.length
+    def get_cls_names(self): return self.cls_names
+
+    def __getitem__(self, index):
+        data = self.data_all[index]
+        img_path, mask_path, cls_name, anomaly = data['img_path'], data['mask_path'], data['cls_name'], data['anomaly']
+        
+        img = Image.open(os.path.join(self.root, img_path)).convert('RGB')
+        
+        mask_full_path = os.path.join(self.root, mask_path)
+        if mask_path and os.path.exists(mask_full_path):
+            img_mask = np.array(Image.open(mask_full_path).convert('L')) > 0
+            img_mask = Image.fromarray(img_mask.astype(np.uint8) * 255, mode='L')
+        else:
+            img_mask = Image.fromarray(np.zeros((img.size[1], img.size[0])), mode='L')
+                
+        if self.transform is not None: img = self.transform(img)
+        if self.target_transform is not None: img_mask = self.target_transform(img_mask)
+
+        return {'img': img, 'img_mask': img_mask, 'cls_name': cls_name, 'anomaly': anomaly, 'img_path': os.path.join(self.root, img_path)}
+
+
+# =================================================================
+# 3. DAGM 数据集
+# =================================================================
+class DAGMDataset(data.Dataset):
+    CLSNAMES = [f"Class{i}" for i in range(1, 11)]
+
+    def __init__(self, root=None, transform=None, target_transform=None, train_aug=0, set='test', k_shot=0, save_dir=None, obj_name=None, shuffle_seed=None):
+        if root is None:
+            return
+        self.root = root
+        self.transform = transform
+        self.target_transform = target_transform
+        self.train_aug = train_aug
+        self.set = set
+
+        self.data_all = []
+        meta_path = f'{self.root}/meta.json'
+        if not os.path.exists(meta_path):
+            self.make_meta_json()
+            
+        meta_info = json.load(open(meta_path, 'r'))
+        meta_info = meta_info.get(set, {cls: [] for cls in self.CLSNAMES})
+
+        self.cls_names = self.CLSNAMES if obj_name is None else [obj_name]
+        for cls_name in self.cls_names:
+            if k_shot > 0:
+                data_cls = meta_info.get(cls_name, [])
+                random.seed(shuffle_seed)
+                random.shuffle(data_cls)
+                if k_shot <= len(data_cls):
+                    self.data_all.extend(data_cls[:k_shot])
+                else:
+                    self.data_all.extend(data_cls)
+                    remaining = k_shot - len(data_cls)
+                    self.data_all.extend(data_cls[:remaining])
+            else:
+                self.data_all.extend(meta_info.get(cls_name, []))
+        self.length = len(self.data_all)
+
+    def make_meta_json(self):
+        meta_path = f'{self.root}/meta.json'
+        info = dict(train={}, test={})
+        for cls_name in self.CLSNAMES:
+            cls_dir = f'{self.root}/{cls_name}'
+            for phase in ['train', 'test']:
+                cls_info = []
+                # Check both lowercase and capitalized phase names
+                phase_dir = f'{cls_dir}/{phase}'
+                actual_phase = phase  # default to lowercase
+                if not os.path.exists(phase_dir):
+                    phase_dir = f'{cls_dir}/{phase.capitalize()}'
+                    actual_phase = phase.capitalize()  # use capitalized version
+                if not os.path.exists(phase_dir): continue
+                
+                # List all files in phase_dir (no species subdirectories)
+                img_names = os.listdir(phase_dir)
+                img_names.sort()
+                
+                for img_name in img_names:
+                    if not img_name.lower().endswith(('.jpg', '.jpeg', '.png', '.bmp', '.tif', '.tiff')):
+                        continue
+                    
+                    # Check if there's a corresponding mask in ground_truth folder
+                    # Try different possible mask paths
+                    mask_path = ''
+                    possible_mask_paths = [
+                        f'{cls_name}/ground_truth/{actual_phase}/{img_name}',
+                        f'{cls_name}/ground_truth/{img_name}',
+                    ]
+                    
+                    for possible_mask in possible_mask_paths:
+                        if os.path.exists(os.path.join(self.root, possible_mask)):
+                            mask_path = possible_mask
+                            break
+                    
+                    # If mask exists, it's abnormal (anomaly=1), otherwise normal (anomaly=0)
+                    is_abnormal = mask_path != ''
+                    
+                    info_img = dict(
+                        img_path=f'{cls_name}/{actual_phase}/{img_name}',
+                        mask_path=mask_path,
+                        cls_name=cls_name,
+                        specie_name='',
+                        anomaly=1 if is_abnormal else 0,
+                    )
+                    cls_info.append(info_img)
+                
+                info[phase][cls_name] = cls_info
+        with open(meta_path, 'w') as f:
+            f.write(json.dumps(info, indent=4) + "\n")
+
+    def __len__(self): return self.length
+    def get_cls_names(self): return self.cls_names
+
+    def __getitem__(self, index):
+        data = self.data_all[index]
+        img_path, mask_path, cls_name, anomaly = data['img_path'], data['mask_path'], data['cls_name'], data['anomaly']
+        
+        img = Image.open(os.path.join(self.root, img_path)).convert('RGB')
+        if anomaly == 0:
+            img_mask = Image.fromarray(np.zeros((img.size[1], img.size[0])), mode='L')
+        else:
+            mask_full_path = os.path.join(self.root, mask_path)
+            if mask_path and os.path.exists(mask_full_path):
+                img_mask = np.array(Image.open(mask_full_path).convert('L')) > 0
+                img_mask = Image.fromarray(img_mask.astype(np.uint8) * 255, mode='L')
+            else:
+                img_mask = Image.fromarray(np.zeros((img.size[1], img.size[0])), mode='L')
+                
+        if self.transform is not None: img = self.transform(img)
+        if self.target_transform is not None: img_mask = self.target_transform(img_mask)
+            
+        return {'img': img, 'img_mask': img_mask, 'cls_name': cls_name, 'anomaly': anomaly, 'img_path': os.path.join(self.root, img_path)}
+
+
+# =================================================================
+# 4. DTD-Synthetic 数据集
+# =================================================================
+class DTDSyntheticDataset(data.Dataset):
+    CLSNAMES = ["Blotchy_099", "Fibrous_183", "Marbled_078", "Matted_069", "Mesh_114", 
+                "Perforated_037", "Stratified_154", "Woven_001", "Woven_068", "Woven_104", "Woven_125"]
+
+    def __init__(self, root=None, transform=None, target_transform=None, train_aug=0, set='test', k_shot=0, save_dir=None, obj_name=None, shuffle_seed=None):
+        if root is None:
+            return
+        self.root = root
+        self.transform = transform
+        self.target_transform = target_transform
+        self.train_aug = train_aug
+        self.set = set
+
+        self.data_all = []
+        meta_path = f'{self.root}/meta.json'
+        if not os.path.exists(meta_path):
+            self.make_meta_json()
+            
+        meta_info = json.load(open(meta_path, 'r'))
+        meta_info = meta_info.get(set, {cls: [] for cls in self.CLSNAMES})
+
+        self.cls_names = self.CLSNAMES if obj_name is None else [obj_name]
+        for cls_name in self.cls_names:
+            if k_shot > 0:
+                data_cls = meta_info.get(cls_name, [])
+                random.seed(shuffle_seed)
+                random.shuffle(data_cls)
+                if k_shot <= len(data_cls):
+                    self.data_all.extend(data_cls[:k_shot])
+                else:
+                    self.data_all.extend(data_cls)
+                    remaining = k_shot - len(data_cls)
+                    self.data_all.extend(data_cls[:remaining])
+            else:
+                self.data_all.extend(meta_info.get(cls_name, []))
+        self.length = len(self.data_all)
+
+    def make_meta_json(self):
+        meta_path = f'{self.root}/meta.json'
+        info = dict(train={}, test={})
+        for cls_name in self.CLSNAMES:
+            cls_dir = f'{self.root}/{cls_name}'
+            for phase in ['train', 'test']:
+                cls_info = []
+                # Check both lowercase and capitalized phase names
+                phase_dir = f'{cls_dir}/{phase}'
+                if not os.path.exists(phase_dir):
+                    phase_dir = f'{cls_dir}/{phase.capitalize()}'
+                if not os.path.exists(phase_dir): continue
+                
+                # DTD-Synthetic structure: phase/good and phase/bad directories
+                species = os.listdir(phase_dir)
+                species.sort()
+                for specie in species:  # specie should be 'good' or 'bad'
+                    specie_dir = f'{phase_dir}/{specie}'
+                    if not os.path.isdir(specie_dir): continue
+                    
+                    is_abnormal = (specie == 'bad')  # bad = abnormal, good = normal
+                    img_names = os.listdir(specie_dir)
+                    img_names.sort()
+                    
+                    for img_name in img_names:
+                        if not img_name.lower().endswith(('.jpg', '.jpeg', '.png', '.bmp', '.tif', '.tiff')):
+                            continue
+                        
+                        # Determine mask path for abnormal samples
+                        mask_path = ''
+                        if is_abnormal:
+                            # Try to find mask in ground_truth/bad directory
+                            possible_mask = f'{cls_name}/ground_truth/bad/{img_name}'
+                            if os.path.exists(os.path.join(self.root, possible_mask)):
+                                mask_path = possible_mask
+                        
+                        info_img = dict(
+                            img_path=f'{cls_name}/{phase}/{specie}/{img_name}',
+                            mask_path=mask_path,
+                            cls_name=cls_name,
+                            specie_name=specie,
+                            anomaly=1 if is_abnormal else 0,
+                        )
+                        cls_info.append(info_img)
+                
+                info[phase][cls_name] = cls_info
+        with open(meta_path, 'w') as f:
+            f.write(json.dumps(info, indent=4) + "\n")
+
+    def __len__(self): return self.length
+    def get_cls_names(self): return self.cls_names
+
+    def __getitem__(self, index):
+        data = self.data_all[index]
+        img_path, mask_path, cls_name, anomaly = data['img_path'], data['mask_path'], data['cls_name'], data['anomaly']
+        
+        img = Image.open(os.path.join(self.root, img_path)).convert('RGB')
+        if anomaly == 0:
+            img_mask = Image.fromarray(np.zeros((img.size[1], img.size[0])), mode='L')
+        else:
+            mask_full_path = os.path.join(self.root, mask_path)
+            if mask_path and os.path.exists(mask_full_path):
+                img_mask = np.array(Image.open(mask_full_path).convert('L')) > 0
+                img_mask = Image.fromarray(img_mask.astype(np.uint8) * 255, mode='L')
+            else:
+                img_mask = Image.fromarray(np.zeros((img.size[1], img.size[0])), mode='L')
+                
+        if self.transform is not None: img = self.transform(img)
+        if self.target_transform is not None: img_mask = self.target_transform(img_mask)
+            
+        return {'img': img, 'img_mask': img_mask, 'cls_name': cls_name, 'anomaly': anomaly, 'img_path': os.path.join(self.root, img_path)}
+
+
+# =================================================================
+# 5. SDD 数据集 (Steel Defect Detection)
+# =================================================================
+class SDDDataset(data.Dataset):
+    CLSNAMES = [f"kos{i:02d}" for i in range(1, 18)]
+
+    def __init__(self, root=None, transform=None, target_transform=None, train_aug=0, set='test', k_shot=0, save_dir=None, obj_name=None, shuffle_seed=None):
+        if root is None:
+            return
+        self.root = root
+        self.transform = transform
+        self.target_transform = target_transform
+        self.train_aug = train_aug
+        self.set = set
+
+        self.data_all = []
+        meta_path = f'{self.root}/meta.json'
+        if not os.path.exists(meta_path):
+            self.make_meta_json()
+            
+        meta_info = json.load(open(meta_path, 'r'))
+        meta_info = meta_info.get(set, {cls: [] for cls in self.CLSNAMES})
+
+        self.cls_names = self.CLSNAMES if obj_name is None else [obj_name]
+        for cls_name in self.cls_names:
+            if k_shot > 0:
+                data_cls = meta_info.get(cls_name, [])
+                random.seed(shuffle_seed)
+                random.shuffle(data_cls)
+                if k_shot <= len(data_cls):
+                    self.data_all.extend(data_cls[:k_shot])
+                else:
+                    self.data_all.extend(data_cls)
+                    remaining = k_shot - len(data_cls)
+                    self.data_all.extend(data_cls[:remaining])
+            else:
+                self.data_all.extend(meta_info.get(cls_name, []))
+        self.length = len(self.data_all)
+
+    def make_meta_json(self):
+        meta_path = f'{self.root}/meta.json'
+        info = dict(train={}, test={})
+        for cls_name in self.CLSNAMES:
+            cls_dir = f'{self.root}/{cls_name}'
+            cls_info = []
+            if not os.path.exists(cls_dir): continue
+            img_names = os.listdir(cls_dir)
+            img_names.sort()
+            for img_name in img_names:
+                # Only process image files, skip label files (containing '_label.')
+                if (img_name.lower().endswith(('.jpg', '.jpeg', '.png')) and 
+                    '_label.' not in img_name):
+                    # SDD 标签文件名相同但扩展名是 .bmp
+                    name_base = os.path.splitext(img_name)[0]
+                    mask_name = f'{name_base}_label.bmp'
+                    mask_path = f'{cls_name}/{mask_name}'
+                    
+                    # Check if mask file exists
+                    mask_full_path = os.path.join(self.root, mask_path)
+                    if not os.path.exists(mask_full_path):
+                        mask_path = ''  # No mask found
+                    
+                    info_img = dict(
+                        img_path=f'{cls_name}/{img_name}',
+                        mask_path=mask_path,
+                        cls_name=cls_name,
+                        specie_name='good',
+                        anomaly=1 if mask_path else 0,  # anomaly=1 if mask exists
+                    )
+                    cls_info.append(info_img)
+            info['train'][cls_name] = cls_info  # Put in train for training
+            info['test'][cls_name] = cls_info  # Also put in test for testing
+        with open(meta_path, 'w') as f:
+            f.write(json.dumps(info, indent=4) + "\n")
+
+    def __len__(self): return self.length
+    def get_cls_names(self): return self.cls_names
+
+    def __getitem__(self, index):
+        data = self.data_all[index]
+        img_path, mask_path, cls_name, anomaly = data['img_path'], data['mask_path'], data['cls_name'], data['anomaly']
+        
+        img = Image.open(os.path.join(self.root, img_path)).convert('RGB')
+        
+        mask_full_path = os.path.join(self.root, mask_path)
+        if os.path.exists(mask_full_path):
+            img_mask = np.array(Image.open(mask_full_path).convert('L')) > 0
+            img_mask = Image.fromarray(img_mask.astype(np.uint8) * 255, mode='L')
+        else:
+            img_mask = Image.fromarray(np.zeros((img.size[1], img.size[0])), mode='L')
+                
+        if self.transform is not None: img = self.transform(img)
+        if self.target_transform is not None: img_mask = self.target_transform(img_mask)
+            
+        return {'img': img, 'img_mask': img_mask, 'cls_name': cls_name, 'anomaly': anomaly, 'img_path': os.path.join(self.root, img_path)}
+
+
+# =================================================================
+# 6. MPDD 数据集
+# =================================================================
+class MpddDataset(data.Dataset):
+    CLSNAMES = ['bracket_black', 'bracket_brown', 'bracket_white', 'connector', 'metal_plate', 'tubes']
+
+    def __init__(self, root=None, transform=None, target_transform=None, train_aug=0, set='test', k_shot=0, save_dir=None, obj_name=None, shuffle_seed=None):
+        if root is None:
+            return
+        self.root = root
+        self.transform = transform
+        self.target_transform = target_transform
+        self.train_aug = train_aug
+        self.set = set
+
+        self.data_all = []
+        meta_path = f'{self.root}/meta.json'
+        if not os.path.exists(meta_path):
+            self.make_meta_json()
+            
+        meta_info = json.load(open(meta_path, 'r'))
+        meta_info = meta_info.get(set, {cls: [] for cls in self.CLSNAMES})
+
+        self.cls_names = self.CLSNAMES if obj_name is None else [obj_name]
+        for cls_name in self.cls_names:
+            if k_shot > 0:
+                data_cls = meta_info.get(cls_name, [])
+                random.seed(shuffle_seed)
+                random.shuffle(data_cls)
+                # 支持重复采样：如果样本不足 k_shot，则重复采样凑够
+                if k_shot <= len(data_cls):
+                    self.data_all.extend(data_cls[:k_shot])
+                else:
+                    # 重复采样：先取全部，再重复取直到凑够 k_shot
+                    self.data_all.extend(data_cls)
+                    remaining = k_shot - len(data_cls)
+                    self.data_all.extend(data_cls[:remaining])
+            else:
+                self.data_all.extend(meta_info.get(cls_name, []))
+        self.length = len(self.data_all)
+
+    def make_meta_json(self):
+        meta_path = f'{self.root}/meta.json'
+        info = dict(train={}, test={})
+        for cls_name in self.CLSNAMES:
+            cls_dir = f'{self.root}/{cls_name}'
+            for phase in ['train', 'test']:
+                cls_info = []
+                if not os.path.exists(f'{cls_dir}/{phase}'): continue
+                species = os.listdir(f'{cls_dir}/{phase}')
+                species.sort()
+                for specie in species:
+                    is_abnormal = specie != 'good'
+                    img_names = os.listdir(f'{cls_dir}/{phase}/{specie}')
+                    mask_names = os.listdir(f'{cls_dir}/ground_truth/{specie}') if is_abnormal else None
+                    img_names.sort()
+                    mask_names.sort() if mask_names is not None else None
+                    for idx, img_name in enumerate(img_names):
+                        info_img = dict(
+                            img_path=f'{cls_name}/{phase}/{specie}/{img_name}',
+                            mask_path=f'{cls_name}/ground_truth/{specie}/{mask_names[idx]}' if is_abnormal and mask_names else '',
+                            cls_name=cls_name,
+                            specie_name=specie,
+                            anomaly=1 if is_abnormal else 0,
+                        )
+                        cls_info.append(info_img)
+                info[phase][cls_name] = cls_info
+        with open(meta_path, 'w') as f:
+            f.write(json.dumps(info, indent=4) + "\n")
+
+    def __len__(self): return self.length
+    def get_cls_names(self): return self.cls_names
+
+    def __getitem__(self, index):
+        data = self.data_all[index]
+        img_path, mask_path, cls_name, anomaly = data['img_path'], data['mask_path'], data['cls_name'], data['anomaly']
+        
+        img = Image.open(os.path.join(self.root, img_path)).convert('RGB')
+        if anomaly == 0:
+            img_mask = Image.fromarray(np.zeros((img.size[1], img.size[0])), mode='L')
+        else:
+            mask_full_path = os.path.join(self.root, mask_path)
+            if mask_path and os.path.exists(mask_full_path):
+                img_mask = np.array(Image.open(mask_full_path).convert('L')) > 0
+                img_mask = Image.fromarray(img_mask.astype(np.uint8) * 255, mode='L')
+            else:
+                img_mask = Image.fromarray(np.zeros((img.size[1], img.size[0])), mode='L')
+                
+        if self.transform is not None: img = self.transform(img)
+        if self.target_transform is not None: img_mask = self.target_transform(img_mask)
+            
+        return {'img': img, 'img_mask': img_mask, 'cls_name': cls_name, 'anomaly': anomaly, 'img_path': os.path.join(self.root, img_path)}

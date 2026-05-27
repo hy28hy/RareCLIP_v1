@@ -341,9 +341,12 @@ class RareCLIP_d():
                         
             if self.score_memory.shape[0] > self.keep_inum:
                 self.score_memory = self.score_memory[1:]
-                self.IF_memory = self.IF_memory[1:]
+                # 修复1：补上漏掉的 [1:]，让它也同步裁掉最老的数据
+                self.IF_memory = self.IF_memory[1:] 
+                
                 for l in self.l_list:
-                    self.AAIF_memory[l][self.k_shot:] = self.AAIF_memory[l][self.k_shot+1:]
+                    # 修复2：放弃切片赋值，使用 torch.cat 真正将最老的测试特征（索引为 k_shot）剔除，并缩小张量尺寸
+                    self.AAIF_memory[l] = torch.cat((self.AAIF_memory[l][:self.k_shot], self.AAIF_memory[l][self.k_shot+1:]), dim=0)
 
             return anomaly_map, anomaly_score
         

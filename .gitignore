@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+*.log
+*/exps/
+*/results/
+*/test_exps/
+*/fewshot_results/
+*/no_bank_results/
+*/no_bank_quick_test/
+*/visa_results/
+*/all_results/
+*/weights/
+*.pth
+*.pt
+*.ckpt
+
+# Cache
+cache/
+.dataset_cache/
+
+# LFS
+.ms_upload_lfs/

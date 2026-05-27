@@ -1,0 +1,210 @@
+26-05-25 22:53:32.589 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test colondb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ColonDB --seed 3 --num_workers 8 --k_shot 2
+26-05-25 22:56:21.439 - INFO: inference time: 70.4ms per image
+26-05-25 22:57:36.901 - INFO: 
+| objects     |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ColonDB |      79.48 |   31.93 |    22.4 |   64.36 |          0 |       0 |       0 |
+| mean        |      79.48 |   31.93 |    22.4 |   64.36 |          0 |       0 |       0 |
+26-05-25 23:05:20.019 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test colondb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ColonDB --seed 2 --num_workers 8 --k_shot 16
+26-05-25 23:13:13.248 - INFO: inference time: 67.3ms per image
+26-05-25 23:14:30.642 - INFO: 
+| objects     |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ColonDB |      75.98 |   27.88 |   19.67 |    58.4 |          0 |       0 |       0 |
+| mean        |      75.98 |   27.88 |   19.67 |    58.4 |          0 |       0 |       0 |
+26-05-25 23:19:59.613 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test colondb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ColonDB --seed 1 --num_workers 8 --k_shot 64
+26-05-25 23:30:26.569 - INFO: inference time: 463.6ms per image
+26-05-25 23:31:53.869 - INFO: 
+| objects     |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ColonDB |      75.03 |   27.68 |   19.84 |    56.3 |          0 |       0 |       0 |
+| mean        |      75.03 |   27.68 |   19.84 |    56.3 |          0 |       0 |       0 |
+26-05-25 23:36:13.974 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test colondb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ColonDB --seed 2 --num_workers 8 --k_shot 2
+26-05-25 23:40:12.750 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test colondb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ColonDB --seed 1 --num_workers 8 --k_shot 2
+26-05-25 23:40:46.635 - INFO: inference time: 75.7ms per image
+26-05-25 23:42:19.172 - INFO: inference time: 67.4ms per image
+26-05-25 23:42:24.134 - INFO: 
+| objects     |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ColonDB |      79.48 |   31.93 |    22.4 |   64.36 |          0 |       0 |       0 |
+| mean        |      79.48 |   31.93 |    22.4 |   64.36 |          0 |       0 |       0 |
+26-05-25 23:43:35.091 - INFO: 
+| objects     |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ColonDB |      79.48 |   31.93 |    22.4 |   64.36 |          0 |       0 |       0 |
+| mean        |      79.48 |   31.93 |    22.4 |   64.36 |          0 |       0 |       0 |
+26-05-25 23:48:28.754 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test colondb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ColonDB --seed 1 --num_workers 8 --k_shot 16
+26-05-25 23:48:29.034 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test colondb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ColonDB --num_workers 8 --k_shot 2
+26-05-25 23:48:58.629 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test colondb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ColonDB --num_workers 8 --k_shot 16
+26-05-25 23:52:26.618 - INFO: inference time: 76.7ms per image
+26-05-25 23:52:26.683 - INFO: inference time: 76.9ms per image
+26-05-25 23:52:37.965 - INFO: inference time: 72.5ms per image
+26-05-25 23:53:48.071 - INFO: 
+| objects     |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ColonDB |      79.48 |   31.93 |    22.4 |   64.36 |          0 |       0 |       0 |
+| mean        |      79.48 |   31.93 |    22.4 |   64.36 |          0 |       0 |       0 |
+26-05-25 23:53:49.051 - INFO: 
+| objects     |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ColonDB |      75.98 |   27.88 |   19.67 |    58.4 |          0 |       0 |       0 |
+| mean        |      75.98 |   27.88 |   19.67 |    58.4 |          0 |       0 |       0 |
+26-05-25 23:53:57.530 - INFO: 
+| objects     |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ColonDB |      75.98 |   27.88 |   19.67 |    58.4 |          0 |       0 |       0 |
+| mean        |      75.98 |   27.88 |   19.67 |    58.4 |          0 |       0 |       0 |
+26-05-25 23:59:23.392 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test colondb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ColonDB --seed 4 --num_workers 8 --k_shot 2
+26-05-25 23:59:23.432 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test colondb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ColonDB --num_workers 8 --k_shot 64
+26-05-25 23:59:23.906 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test colondb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ColonDB --seed 4 --num_workers 8 --k_shot 16
+26-05-26 00:01:06.826 - INFO: inference time: 66.2ms per image
+26-05-26 00:01:07.547 - INFO: inference time: 66.5ms per image
+26-05-26 00:01:08.706 - INFO: inference time: 66.9ms per image
+26-05-26 00:02:21.981 - INFO: 
+| objects     |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ColonDB |      75.98 |   27.88 |   19.67 |    58.4 |          0 |       0 |       0 |
+| mean        |      75.98 |   27.88 |   19.67 |    58.4 |          0 |       0 |       0 |
+26-05-26 00:02:22.841 - INFO: 
+| objects     |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ColonDB |      75.03 |   27.68 |   19.84 |    56.3 |          0 |       0 |       0 |
+| mean        |      75.03 |   27.68 |   19.84 |    56.3 |          0 |       0 |       0 |
+26-05-26 00:02:22.984 - INFO: 
+| objects     |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ColonDB |      79.48 |   31.93 |    22.4 |   64.36 |          0 |       0 |       0 |
+| mean        |      79.48 |   31.93 |    22.4 |   64.36 |          0 |       0 |       0 |
+26-05-26 00:11:28.083 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test colondb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ColonDB --seed 3 --num_workers 8 --k_shot 64
+26-05-26 00:11:28.183 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test colondb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ColonDB --seed 4 --num_workers 8 --k_shot 64
+26-05-26 00:11:28.728 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test colondb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ColonDB --seed 3 --num_workers 8 --k_shot 16
+26-05-26 00:15:07.574 - INFO: inference time: 75.0ms per image
+26-05-26 00:15:08.110 - INFO: inference time: 152.9ms per image
+26-05-26 00:15:10.932 - INFO: inference time: 76.0ms per image
+26-05-26 00:16:32.414 - INFO: 
+| objects     |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ColonDB |      75.03 |   27.68 |   19.84 |    56.3 |          0 |       0 |       0 |
+| mean        |      75.03 |   27.68 |   19.84 |    56.3 |          0 |       0 |       0 |
+26-05-26 00:16:32.455 - INFO: 
+| objects     |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ColonDB |      75.98 |   27.88 |   19.67 |    58.4 |          0 |       0 |       0 |
+| mean        |      75.98 |   27.88 |   19.67 |    58.4 |          0 |       0 |       0 |
+26-05-26 00:16:35.253 - INFO: 
+| objects     |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ColonDB |      75.03 |   27.68 |   19.84 |    56.3 |          0 |       0 |       0 |
+| mean        |      75.03 |   27.68 |   19.84 |    56.3 |          0 |       0 |       0 |
+26-05-26 00:22:39.993 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test colondb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ColonDB --seed 2 --num_workers 8 --k_shot 64
+26-05-26 00:26:46.281 - INFO: inference time: 80.4ms per image
+26-05-26 00:28:33.493 - INFO: 
+| objects     |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ColonDB |      75.03 |   27.68 |   19.84 |    56.3 |          0 |       0 |       0 |
+| mean        |      75.03 |   27.68 |   19.84 |    56.3 |          0 |       0 |       0 |
+26-05-26 04:45:03.596 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test colondb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ColonDB --num_workers 8 --features_list_rare  --no_bank 1
+26-05-26 04:45:45.070 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test colondb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ColonDB --seed 2 --num_workers 8 --features_list_rare  --no_bank 1
+26-05-26 04:47:31.270 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test colondb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ColonDB --seed 3 --num_workers 8 --features_list_rare  --no_bank 1
+26-05-26 04:47:32.449 - INFO: inference time: 65.0ms per image
+26-05-26 04:47:43.588 - INFO: inference time: 65.2ms per image
+26-05-26 04:47:58.909 - INFO: inference time: 64.9ms per image
+26-05-26 04:48:45.093 - INFO: 
+| objects     |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ColonDB |      78.14 |   28.27 |   19.91 |   57.92 |          0 |       0 |       0 |
+| mean        |      78.14 |   28.27 |   19.91 |   57.92 |          0 |       0 |       0 |
+26-05-26 04:48:55.264 - INFO: 
+| objects     |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ColonDB |      78.14 |   28.27 |   19.91 |   57.92 |          0 |       0 |       0 |
+| mean        |      78.14 |   28.27 |   19.91 |   57.92 |          0 |       0 |       0 |
+26-05-26 04:49:10.010 - INFO: 
+| objects     |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ColonDB |      78.14 |   28.27 |   19.91 |   57.92 |          0 |       0 |       0 |
+| mean        |      78.14 |   28.27 |   19.91 |   57.92 |          0 |       0 |       0 |
+26-05-26 04:53:19.719 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test colondb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ColonDB --seed 4 --num_workers 8 --features_list_rare  --no_bank 1
+26-05-26 04:53:20.049 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test colondb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ColonDB --seed 2 --num_workers 8 --features_list_rare  --k_shot 2 --no_bank 1
+26-05-26 04:53:29.375 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test colondb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ColonDB --seed 1 --num_workers 8 --features_list_rare  --k_shot 2 --no_bank 1
+26-05-26 04:53:48.624 - INFO: inference time: 64.7ms per image
+26-05-26 04:54:22.442 - INFO: inference time: 66.3ms per image
+26-05-26 04:54:30.776 - INFO: inference time: 65.5ms per image
+26-05-26 04:55:04.679 - INFO: 
+| objects     |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ColonDB |      78.14 |   28.27 |   19.91 |   57.92 |          0 |       0 |       0 |
+| mean        |      78.14 |   28.27 |   19.91 |   57.92 |          0 |       0 |       0 |
+26-05-26 04:55:32.749 - INFO: 
+| objects     |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ColonDB |      79.48 |   31.93 |    22.4 |   64.36 |          0 |       0 |       0 |
+| mean        |      79.48 |   31.93 |    22.4 |   64.36 |          0 |       0 |       0 |
+26-05-26 04:55:43.295 - INFO: 
+| objects     |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ColonDB |      79.48 |   31.93 |    22.4 |   64.36 |          0 |       0 |       0 |
+| mean        |      79.48 |   31.93 |    22.4 |   64.36 |          0 |       0 |       0 |
+26-05-26 04:59:40.120 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test colondb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ColonDB --seed 3 --num_workers 8 --features_list_rare  --k_shot 2 --no_bank 1
+26-05-26 04:59:47.799 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test colondb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ColonDB --seed 1 --num_workers 8 --features_list_rare  --k_shot 16 --no_bank 1
+26-05-26 04:59:48.438 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test colondb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ColonDB --num_workers 8 --features_list_rare  --k_shot 16 --no_bank 1
+26-05-26 05:00:42.394 - INFO: inference time: 65.1ms per image
+26-05-26 05:00:50.749 - INFO: inference time: 66.5ms per image
+26-05-26 05:00:51.081 - INFO: inference time: 65.6ms per image
+26-05-26 05:01:53.308 - INFO: 
+| objects     |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ColonDB |      79.48 |   31.93 |    22.4 |   64.36 |          0 |       0 |       0 |
+| mean        |      79.48 |   31.93 |    22.4 |   64.36 |          0 |       0 |       0 |
+26-05-26 05:02:00.485 - INFO: 
+| objects     |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ColonDB |      75.98 |   27.88 |   19.67 |    58.4 |          0 |       0 |       0 |
+| mean        |      75.98 |   27.88 |   19.67 |    58.4 |          0 |       0 |       0 |
+26-05-26 05:02:01.676 - INFO: 
+| objects     |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ColonDB |      75.98 |   27.88 |   19.67 |    58.4 |          0 |       0 |       0 |
+| mean        |      75.98 |   27.88 |   19.67 |    58.4 |          0 |       0 |       0 |
+26-05-26 05:06:28.325 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test colondb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ColonDB --seed 2 --num_workers 8 --features_list_rare  --k_shot 16 --no_bank 1
+26-05-26 05:06:36.473 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test colondb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ColonDB --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+26-05-26 05:06:37.329 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test colondb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ColonDB --seed 4 --num_workers 8 --features_list_rare  --k_shot 16 --no_bank 1
+26-05-26 05:07:30.687 - INFO: inference time: 65.3ms per image
+26-05-26 05:07:39.045 - INFO: inference time: 66.1ms per image
+26-05-26 05:07:40.134 - INFO: inference time: 65.8ms per image
+26-05-26 05:08:41.995 - INFO: 
+| objects     |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ColonDB |      75.98 |   27.88 |   19.67 |    58.4 |          0 |       0 |       0 |
+| mean        |      75.98 |   27.88 |   19.67 |    58.4 |          0 |       0 |       0 |
+26-05-26 05:08:48.764 - INFO: 
+| objects     |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ColonDB |      75.03 |   27.68 |   19.84 |    56.3 |          0 |       0 |       0 |
+| mean        |      75.03 |   27.68 |   19.84 |    56.3 |          0 |       0 |       0 |
+26-05-26 05:08:50.922 - INFO: 
+| objects     |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ColonDB |      75.98 |   27.88 |   19.67 |    58.4 |          0 |       0 |       0 |
+| mean        |      75.98 |   27.88 |   19.67 |    58.4 |          0 |       0 |       0 |
+26-05-26 05:13:16.558 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test colondb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ColonDB --seed 1 --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+26-05-26 05:13:18.385 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test colondb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ColonDB --seed 4 --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+26-05-26 05:13:29.071 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test colondb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ColonDB --seed 3 --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+26-05-26 05:14:19.323 - INFO: inference time: 65.9ms per image
+26-05-26 05:14:21.142 - INFO: inference time: 66.4ms per image
+26-05-26 05:14:31.244 - INFO: inference time: 65.5ms per image
+26-05-26 05:15:31.111 - INFO: 
+| objects     |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ColonDB |      75.03 |   27.68 |   19.84 |    56.3 |          0 |       0 |       0 |
+| mean        |      75.03 |   27.68 |   19.84 |    56.3 |          0 |       0 |       0 |
+26-05-26 05:15:31.541 - INFO: 
+| objects     |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ColonDB |      75.03 |   27.68 |   19.84 |    56.3 |          0 |       0 |       0 |
+| mean        |      75.03 |   27.68 |   19.84 |    56.3 |          0 |       0 |       0 |
+26-05-26 05:15:41.059 - INFO: 
+| objects     |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ColonDB |      75.03 |   27.68 |   19.84 |    56.3 |          0 |       0 |       0 |
+| mean        |      75.03 |   27.68 |   19.84 |    56.3 |          0 |       0 |       0 |

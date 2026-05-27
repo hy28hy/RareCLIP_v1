@@ -1,0 +1,7 @@
+26-04-29 23:55:57.162 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test retina --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Retina_OCT2017_AD --num_workers 8
+26-04-29 23:57:04.624 - INFO: inference time: 63.5ms per image
+26-04-29 23:57:05.712 - INFO: 
+| objects           |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Retina_OCT2017_AD |          0 |       0 |       0 |       0 |      91.74 |   90.49 |    97.2 |
+| mean              |          0 |       0 |       0 |       0 |      91.74 |   90.49 |    97.2 |

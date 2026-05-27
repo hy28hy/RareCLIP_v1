@@ -1,0 +1,7 @@
+26-04-29 23:27:45.180 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test brain_ad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Brain_AD --num_workers 8
+26-04-29 23:32:05.299 - INFO: inference time: 64.4ms per image
+26-04-29 23:42:47.728 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Brain_AD  |      96.73 |      51 |    41.3 |   80.38 |      70.09 |   90.82 |   89.85 |
+| mean      |      96.73 |      51 |    41.3 |   80.38 |      70.09 |   90.82 |   89.85 |

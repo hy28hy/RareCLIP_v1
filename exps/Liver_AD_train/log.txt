@@ -1,0 +1,6 @@
+26-04-29 17:53:24.134 - INFO: python train.py --train_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Liver_AD --train liver
+26-04-29 17:54:58.189 - INFO: epoch [1/5], loss:4.3062
+26-04-29 17:56:29.517 - INFO: epoch [2/5], loss:4.1386
+26-04-29 17:58:00.882 - INFO: epoch [3/5], loss:4.1209
+26-04-29 17:59:32.469 - INFO: epoch [4/5], loss:4.1141
+26-04-29 18:01:03.419 - INFO: epoch [5/5], loss:4.1110

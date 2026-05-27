@@ -1,0 +1,7 @@
+26-04-29 23:43:00.019 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test liver --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Liver_AD --num_workers 8
+26-04-29 23:44:43.637 - INFO: inference time: 63.4ms per image
+26-04-29 23:48:23.937 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Liver_AD  |      97.41 |   13.17 |     7.2 |   91.76 |      54.03 |   64.01 |   47.89 |
+| mean      |      97.41 |   13.17 |     7.2 |   91.76 |      54.03 |   64.01 |   47.89 |

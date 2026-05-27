@@ -1,0 +1,210 @@
+26-05-25 18:26:25.189 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test brain_ad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Brain_AD --seed 2 --num_workers 8 --k_shot 2
+26-05-25 18:28:17.066 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test brain_ad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Brain_AD --seed 3 --num_workers 8 --k_shot 2
+26-05-25 18:30:09.339 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test brain_ad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Brain_AD --num_workers 8 --k_shot 2
+26-05-25 18:31:04.966 - INFO: inference time: 67.6ms per image
+26-05-25 18:32:51.258 - INFO: inference time: 65.5ms per image
+26-05-25 18:33:23.616 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test brain_ad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Brain_AD --seed 1 --num_workers 8 --k_shot 2
+26-05-25 18:34:40.859 - INFO: inference time: 66.0ms per image
+26-05-25 18:38:05.417 - INFO: inference time: 69.6ms per image
+26-05-25 18:42:48.585 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Brain_AD  |      96.61 |   53.36 |   46.97 |   80.17 |      80.43 |   91.97 |   93.12 |
+| mean      |      96.61 |   53.36 |   46.97 |   80.17 |      80.43 |   91.97 |   93.12 |
+26-05-25 18:43:01.684 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test brain_ad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Brain_AD --seed 1 --num_workers 8 --k_shot 16
+26-05-25 18:44:28.478 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Brain_AD  |       96.6 |   52.54 |   46.06 |   80.78 |      78.05 |   91.36 |   92.61 |
+| mean      |       96.6 |   52.54 |   46.06 |   80.78 |      78.05 |   91.36 |   92.61 |
+26-05-25 18:44:43.066 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test brain_ad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Brain_AD --seed 2 --num_workers 8 --k_shot 16
+26-05-25 18:46:14.712 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Brain_AD  |      96.37 |   51.16 |   42.11 |   79.59 |      78.38 |   91.88 |   92.52 |
+| mean      |      96.37 |   51.16 |   42.11 |   79.59 |      78.38 |   91.88 |   92.52 |
+26-05-25 18:46:30.135 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test brain_ad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Brain_AD --seed 4 --num_workers 8 --k_shot 2
+26-05-25 18:47:33.743 - INFO: inference time: 66.9ms per image
+26-05-25 18:49:13.553 - INFO: inference time: 65.2ms per image
+26-05-25 18:49:56.283 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Brain_AD  |      97.09 |   54.58 |   48.99 |   81.55 |      74.66 |   90.85 |   91.76 |
+| mean      |      97.09 |   54.58 |   48.99 |   81.55 |      74.66 |   90.85 |   91.76 |
+26-05-25 18:50:10.524 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test brain_ad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Brain_AD --num_workers 8 --k_shot 16
+26-05-25 18:50:57.864 - INFO: inference time: 65.8ms per image
+26-05-25 18:54:49.235 - INFO: inference time: 68.9ms per image
+26-05-25 18:59:39.882 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Brain_AD  |      97.35 |   57.29 |   55.52 |   81.66 |      85.86 |   91.99 |   95.39 |
+| mean      |      97.35 |   57.29 |   55.52 |   81.66 |      85.86 |   91.99 |   95.39 |
+26-05-25 19:01:04.377 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Brain_AD  |      97.61 |   60.73 |   62.76 |   82.91 |      86.43 |   92.29 |   95.54 |
+| mean      |      97.61 |   60.73 |   62.76 |   82.91 |      86.43 |   92.29 |   95.54 |
+26-05-25 19:02:37.934 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Brain_AD  |       96.9 |    54.7 |   49.85 |   80.76 |      78.93 |   91.25 |   93.11 |
+| mean      |       96.9 |    54.7 |   49.85 |   80.76 |      78.93 |   91.25 |   93.11 |
+26-05-25 19:06:13.063 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Brain_AD  |      97.04 |   55.81 |    51.2 |   81.33 |       87.5 |   93.14 |   95.59 |
+| mean      |      97.04 |   55.81 |    51.2 |   81.33 |       87.5 |   93.14 |   95.59 |
+26-05-25 19:15:23.158 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test brain_ad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Brain_AD --seed 3 --num_workers 8 --k_shot 16
+26-05-25 19:15:23.338 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test brain_ad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Brain_AD --num_workers 8 --k_shot 64
+26-05-25 19:15:23.477 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test brain_ad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Brain_AD --seed 4 --num_workers 8 --k_shot 16
+26-05-25 19:15:49.211 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test brain_ad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Brain_AD --seed 1 --num_workers 8 --k_shot 64
+26-05-25 19:28:41.845 - INFO: inference time: 71.1ms per image
+26-05-25 19:28:51.027 - INFO: inference time: 72.0ms per image
+26-05-25 19:28:51.700 - INFO: inference time: 71.1ms per image
+26-05-25 19:28:58.476 - INFO: inference time: 69.7ms per image
+26-05-25 19:40:37.091 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Brain_AD  |      97.38 |   58.15 |   53.95 |    81.8 |      85.24 |    91.9 |   95.04 |
+| mean      |      97.38 |   58.15 |   53.95 |    81.8 |      85.24 |    91.9 |   95.04 |
+26-05-25 19:40:41.719 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Brain_AD  |      97.75 |   62.21 |   65.38 |   82.44 |      89.76 |   93.12 |   97.06 |
+| mean      |      97.75 |   62.21 |   65.38 |   82.44 |      89.76 |   93.12 |   97.06 |
+26-05-25 19:40:47.569 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Brain_AD  |       97.4 |   60.21 |   62.89 |    81.9 |      87.73 |   91.99 |   97.02 |
+| mean      |       97.4 |   60.21 |   62.89 |    81.9 |      87.73 |   91.99 |   97.02 |
+26-05-25 19:40:47.950 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Brain_AD  |      97.74 |   61.58 |   63.78 |   82.08 |       88.6 |   92.72 |   96.35 |
+| mean      |      97.74 |   61.58 |   63.78 |   82.08 |       88.6 |   92.72 |   96.35 |
+26-05-25 19:49:53.628 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test brain_ad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Brain_AD --seed 2 --num_workers 8 --k_shot 64
+26-05-25 19:49:53.655 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test brain_ad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Brain_AD --seed 3 --num_workers 8 --k_shot 64
+26-05-25 19:50:22.385 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test brain_ad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Brain_AD --seed 4 --num_workers 8 --k_shot 64
+26-05-25 20:06:13.249 - INFO: inference time: 88.1ms per image
+26-05-25 20:06:23.141 - INFO: inference time: 73.6ms per image
+26-05-25 20:06:42.544 - INFO: inference time: 73.0ms per image
+26-05-25 20:18:26.372 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Brain_AD  |      97.88 |      64 |   67.71 |   83.07 |      89.07 |   93.01 |   96.65 |
+| mean      |      97.88 |      64 |   67.71 |   83.07 |      89.07 |   93.01 |   96.65 |
+26-05-25 20:18:40.907 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Brain_AD  |      97.88 |   63.78 |   67.29 |   82.34 |      88.61 |   92.41 |   96.72 |
+| mean      |      97.88 |   63.78 |   67.29 |   82.34 |      88.61 |   92.41 |   96.72 |
+26-05-25 20:18:53.486 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Brain_AD  |      97.75 |   62.94 |   66.18 |   82.41 |      90.62 |   92.71 |   97.77 |
+| mean      |      97.75 |   62.94 |   66.18 |   82.41 |      90.62 |   92.71 |   97.77 |
+26-05-25 23:25:37.058 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test brain_ad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Brain_AD --num_workers 8 --features_list_rare  --no_bank 1
+26-05-25 23:30:33.277 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test brain_ad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Brain_AD --seed 2 --num_workers 8 --features_list_rare  --no_bank 1
+26-05-25 23:38:08.086 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test brain_ad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Brain_AD --seed 3 --num_workers 8 --features_list_rare  --no_bank 1
+26-05-25 23:52:40.060 - INFO: inference time: 115.8ms per image
+26-05-25 23:53:00.220 - INFO: inference time: 76.0ms per image
+26-05-26 00:00:14.253 - INFO: inference time: 84.4ms per image
+26-05-26 00:04:36.702 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Brain_AD  |      96.72 |   51.01 |   41.31 |    80.4 |      70.25 |   90.83 |   89.92 |
+| mean      |      96.72 |   51.01 |   41.31 |    80.4 |      70.25 |   90.83 |   89.92 |
+26-05-26 00:04:57.101 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Brain_AD  |      96.79 |   51.59 |   43.12 |   80.67 |       68.9 |   90.66 |    89.5 |
+| mean      |      96.79 |   51.59 |   43.12 |   80.67 |       68.9 |   90.66 |    89.5 |
+26-05-26 00:11:29.088 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test brain_ad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Brain_AD --seed 4 --num_workers 8 --features_list_rare  --no_bank 1
+26-05-26 00:11:56.208 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test brain_ad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Brain_AD --seed 1 --num_workers 8 --features_list_rare  --k_shot 2 --no_bank 1
+26-05-26 00:12:16.485 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Brain_AD  |      96.62 |   50.28 |    42.2 |   79.79 |      68.89 |   90.63 |   89.37 |
+| mean      |      96.62 |   50.28 |    42.2 |   79.79 |      68.89 |   90.63 |   89.37 |
+26-05-26 00:14:24.450 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test brain_ad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Brain_AD --seed 2 --num_workers 8 --features_list_rare  --k_shot 2 --no_bank 1
+26-05-26 00:28:29.621 - INFO: inference time: 101.7ms per image
+26-05-26 00:30:22.611 - INFO: inference time: 89.0ms per image
+26-05-26 00:33:50.665 - INFO: inference time: 79.9ms per image
+26-05-26 00:40:38.275 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Brain_AD  |      96.72 |   51.04 |   42.82 |   80.19 |      69.64 |    90.7 |   89.88 |
+| mean      |      96.72 |   51.04 |   42.82 |   80.19 |      69.64 |    90.7 |   89.88 |
+26-05-26 00:42:20.707 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Brain_AD  |      97.09 |   54.58 |   48.99 |   81.55 |      74.66 |   90.85 |   91.76 |
+| mean      |      97.09 |   54.58 |   48.99 |   81.55 |      74.66 |   90.85 |   91.76 |
+26-05-26 00:45:38.860 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Brain_AD  |      96.61 |   53.36 |   46.97 |   80.17 |      80.43 |   91.97 |   93.12 |
+| mean      |      96.61 |   53.36 |   46.97 |   80.17 |      80.43 |   91.97 |   93.12 |
+26-05-26 00:46:45.501 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test brain_ad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Brain_AD --seed 3 --num_workers 8 --features_list_rare  --k_shot 2 --no_bank 1
+26-05-26 00:46:46.237 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test brain_ad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Brain_AD --num_workers 8 --features_list_rare  --k_shot 16 --no_bank 1
+26-05-26 00:47:47.944 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test brain_ad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Brain_AD --seed 1 --num_workers 8 --features_list_rare  --k_shot 16 --no_bank 1
+26-05-26 01:02:28.059 - INFO: inference time: 88.9ms per image
+26-05-26 01:02:29.314 - INFO: inference time: 104.7ms per image
+26-05-26 01:02:40.576 - INFO: inference time: 87.4ms per image
+26-05-26 01:14:28.782 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Brain_AD  |       96.6 |   52.54 |   46.06 |   80.78 |      78.05 |   91.36 |   92.61 |
+| mean      |       96.6 |   52.54 |   46.06 |   80.78 |      78.05 |   91.36 |   92.61 |
+26-05-26 01:14:29.546 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Brain_AD  |      97.04 |   55.81 |    51.2 |   81.33 |       87.5 |   93.14 |   95.59 |
+| mean      |      97.04 |   55.81 |    51.2 |   81.33 |       87.5 |   93.14 |   95.59 |
+26-05-26 01:14:34.527 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Brain_AD  |      97.35 |   57.29 |   55.52 |   81.66 |      85.86 |   91.99 |   95.39 |
+| mean      |      97.35 |   57.29 |   55.52 |   81.66 |      85.86 |   91.99 |   95.39 |
+26-05-26 01:19:16.714 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test brain_ad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Brain_AD --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+26-05-26 01:19:17.327 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test brain_ad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Brain_AD --seed 4 --num_workers 8 --features_list_rare  --k_shot 16 --no_bank 1
+26-05-26 01:19:47.094 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test brain_ad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Brain_AD --seed 2 --num_workers 8 --features_list_rare  --k_shot 16 --no_bank 1
+26-05-26 01:27:40.487 - INFO: inference time: 71.9ms per image
+26-05-26 01:27:41.111 - INFO: inference time: 69.7ms per image
+26-05-26 01:27:49.330 - INFO: inference time: 71.1ms per image
+26-05-26 01:39:34.666 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Brain_AD  |      97.75 |   62.21 |   65.38 |   82.44 |      89.76 |   93.12 |   97.06 |
+| mean      |      97.75 |   62.21 |   65.38 |   82.44 |      89.76 |   93.12 |   97.06 |
+26-05-26 01:39:36.740 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Brain_AD  |      97.61 |   60.73 |   62.76 |   82.91 |      86.43 |   92.29 |   95.54 |
+| mean      |      97.61 |   60.73 |   62.76 |   82.91 |      86.43 |   92.29 |   95.54 |
+26-05-26 01:39:38.465 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Brain_AD  |       97.4 |   60.21 |   62.89 |    81.9 |      87.73 |   91.99 |   97.02 |
+| mean      |       97.4 |   60.21 |   62.89 |    81.9 |      87.73 |   91.99 |   97.02 |
+26-05-26 01:46:40.584 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test brain_ad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Brain_AD --seed 4 --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+26-05-26 01:46:41.216 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test brain_ad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Brain_AD --seed 3 --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+26-05-26 01:46:41.217 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test brain_ad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MedAD/Brain_AD --seed 1 --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+26-05-26 01:55:38.611 - INFO: inference time: 77.3ms per image
+26-05-26 01:55:45.489 - INFO: inference time: 71.3ms per image
+26-05-26 01:55:47.071 - INFO: inference time: 87.8ms per image
+26-05-26 02:07:25.287 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Brain_AD  |      97.75 |   62.94 |   66.18 |   82.41 |      90.62 |   92.71 |   97.77 |
+| mean      |      97.75 |   62.94 |   66.18 |   82.41 |      90.62 |   92.71 |   97.77 |
+26-05-26 02:07:31.997 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Brain_AD  |      97.74 |   61.58 |   63.78 |   82.08 |       88.6 |   92.72 |   96.35 |
+| mean      |      97.74 |   61.58 |   63.78 |   82.08 |       88.6 |   92.72 |   96.35 |
+26-05-26 02:07:34.723 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Brain_AD  |      97.88 |   63.78 |   67.29 |   82.34 |      88.61 |   92.41 |   96.72 |
+| mean      |      97.88 |   63.78 |   67.29 |   82.34 |      88.61 |   92.41 |   96.72 |

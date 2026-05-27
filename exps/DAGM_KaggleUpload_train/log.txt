@@ -1,0 +1,1 @@
+26-05-27 04:20:53.951 - INFO: python train.py --train_set_path /data/chenxuwu/zihaowan_workplace/dataset/DAGM/DAGM_KaggleUpload --train dagm

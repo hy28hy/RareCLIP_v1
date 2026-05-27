@@ -1,0 +1,6 @@
+26-04-29 16:15:23.671 - INFO: python train.py --train_set_path /data/chenxuwu/zihaowan_workplace/dataset/Kvasir --train kvasir
+26-04-29 16:16:35.972 - INFO: epoch [1/5], loss:3.2694
+26-04-29 16:17:46.404 - INFO: epoch [2/5], loss:3.5889
+26-04-29 16:18:57.495 - INFO: epoch [3/5], loss:3.7419
+26-04-29 16:20:08.557 - INFO: epoch [4/5], loss:3.8239
+26-04-29 16:21:19.708 - INFO: epoch [5/5], loss:3.8653

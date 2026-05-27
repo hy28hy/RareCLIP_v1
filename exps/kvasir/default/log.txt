@@ -1,0 +1,210 @@
+26-05-26 00:23:06.923 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test kvasir --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/Kvasir --seed 1 --num_workers 8 --k_shot 2
+26-05-26 00:34:13.603 - INFO: inference time: 65.2ms per image
+26-05-26 00:40:23.484 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Kvasir    |       79.1 |   45.58 |   37.16 |   47.94 |          0 |       0 |       0 |
+| mean      |       79.1 |   45.58 |   37.16 |   47.94 |          0 |       0 |       0 |
+26-05-26 00:45:12.582 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test kvasir --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/Kvasir --num_workers 8 --k_shot 16
+26-05-26 00:52:52.012 - INFO: inference time: 65.3ms per image
+26-05-26 00:58:06.598 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test kvasir --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/Kvasir --num_workers 8 --k_shot 2
+26-05-26 00:59:28.777 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Kvasir    |      80.34 |   46.93 |   38.57 |   48.54 |          0 |       0 |       0 |
+| mean      |      80.34 |   46.93 |   38.57 |   48.54 |          0 |       0 |       0 |
+26-05-26 01:01:31.733 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test kvasir --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/Kvasir --seed 4 --num_workers 8 --k_shot 16
+26-05-26 01:03:41.474 - INFO: inference time: 67.3ms per image
+26-05-26 01:04:55.882 - INFO: inference time: 64.8ms per image
+26-05-26 01:08:09.303 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test kvasir --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/Kvasir --seed 3 --num_workers 8 --k_shot 2
+26-05-26 01:10:05.479 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Kvasir    |       79.1 |   45.58 |   37.16 |   47.94 |          0 |       0 |       0 |
+| mean      |       79.1 |   45.58 |   37.16 |   47.94 |          0 |       0 |       0 |
+26-05-26 01:11:07.997 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Kvasir    |      80.34 |   46.93 |   38.57 |   48.54 |          0 |       0 |       0 |
+| mean      |      80.34 |   46.93 |   38.57 |   48.54 |          0 |       0 |       0 |
+26-05-26 01:14:42.909 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test kvasir --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/Kvasir --seed 4 --num_workers 8 --k_shot 2
+26-05-26 01:19:16.669 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test kvasir --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/Kvasir --seed 3 --num_workers 8 --k_shot 64
+26-05-26 01:19:18.763 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test kvasir --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/Kvasir --seed 2 --num_workers 8 --k_shot 2
+26-05-26 01:21:19.737 - INFO: inference time: 74.0ms per image
+26-05-26 01:26:03.382 - INFO: inference time: 68.6ms per image
+26-05-26 01:26:06.764 - INFO: inference time: 67.4ms per image
+26-05-26 01:26:12.727 - INFO: inference time: 68.7ms per image
+26-05-26 01:28:47.547 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Kvasir    |       79.1 |   45.58 |   37.16 |   47.94 |          0 |       0 |       0 |
+| mean      |       79.1 |   45.58 |   37.16 |   47.94 |          0 |       0 |       0 |
+26-05-26 01:30:31.563 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test kvasir --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/Kvasir --seed 2 --num_workers 8 --k_shot 16
+26-05-26 01:32:15.893 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Kvasir    |       79.1 |   45.58 |   37.16 |   47.94 |          0 |       0 |       0 |
+| mean      |       79.1 |   45.58 |   37.16 |   47.94 |          0 |       0 |       0 |
+26-05-26 01:32:20.546 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Kvasir    |      80.44 |   47.17 |   38.95 |   48.06 |          0 |       0 |       0 |
+| mean      |      80.44 |   47.17 |   38.95 |   48.06 |          0 |       0 |       0 |
+26-05-26 01:32:26.192 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Kvasir    |       79.1 |   45.58 |   37.16 |   47.94 |          0 |       0 |       0 |
+| mean      |       79.1 |   45.58 |   37.16 |   47.94 |          0 |       0 |       0 |
+26-05-26 01:36:50.810 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test kvasir --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/Kvasir --seed 3 --num_workers 8 --k_shot 16
+26-05-26 01:37:00.915 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test kvasir --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/Kvasir --seed 1 --num_workers 8 --k_shot 16
+26-05-26 01:39:14.437 - INFO: inference time: 66.8ms per image
+26-05-26 01:45:22.617 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Kvasir    |      80.34 |   46.93 |   38.57 |   48.54 |          0 |       0 |       0 |
+| mean      |      80.34 |   46.93 |   38.57 |   48.54 |          0 |       0 |       0 |
+26-05-26 01:48:36.345 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test kvasir --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/Kvasir --seed 1 --num_workers 8 --k_shot 64
+26-05-26 01:51:23.425 - INFO: inference time: 131.4ms per image
+26-05-26 01:51:45.438 - INFO: inference time: 131.9ms per image
+26-05-26 01:53:22.140 - INFO: inference time: 70.2ms per image
+26-05-26 01:57:53.676 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Kvasir    |      80.34 |   46.93 |   38.57 |   48.54 |          0 |       0 |       0 |
+| mean      |      80.34 |   46.93 |   38.57 |   48.54 |          0 |       0 |       0 |
+26-05-26 01:58:16.648 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Kvasir    |      80.34 |   46.93 |   38.57 |   48.54 |          0 |       0 |       0 |
+| mean      |      80.34 |   46.93 |   38.57 |   48.54 |          0 |       0 |       0 |
+26-05-26 01:59:25.764 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Kvasir    |      80.44 |   47.17 |   38.95 |   48.06 |          0 |       0 |       0 |
+| mean      |      80.44 |   47.17 |   38.95 |   48.06 |          0 |       0 |       0 |
+26-05-26 02:02:29.535 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test kvasir --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/Kvasir --seed 2 --num_workers 8 --k_shot 64
+26-05-26 02:02:31.374 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test kvasir --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/Kvasir --num_workers 8 --k_shot 64
+26-05-26 02:10:21.988 - INFO: inference time: 126.6ms per image
+26-05-26 02:13:34.272 - INFO: inference time: 66.4ms per image
+26-05-26 02:16:39.248 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Kvasir    |      80.44 |   47.17 |   38.95 |   48.06 |          0 |       0 |       0 |
+| mean      |      80.44 |   47.17 |   38.95 |   48.06 |          0 |       0 |       0 |
+26-05-26 02:19:48.551 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Kvasir    |      80.44 |   47.17 |   38.95 |   48.06 |          0 |       0 |       0 |
+| mean      |      80.44 |   47.17 |   38.95 |   48.06 |          0 |       0 |       0 |
+26-05-26 02:25:51.639 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test kvasir --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/Kvasir --seed 4 --num_workers 8 --k_shot 64
+26-05-26 02:32:54.295 - INFO: inference time: 126.2ms per image
+26-05-26 02:38:43.843 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Kvasir    |      80.44 |   47.17 |   38.95 |   48.06 |          0 |       0 |       0 |
+| mean      |      80.44 |   47.17 |   38.95 |   48.06 |          0 |       0 |       0 |
+26-05-26 05:59:44.784 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test kvasir --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/Kvasir --seed 3 --num_workers 8 --features_list_rare  --no_bank 1
+26-05-26 05:59:53.148 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test kvasir --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/Kvasir --num_workers 8 --features_list_rare  --no_bank 1
+26-05-26 05:59:54.160 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test kvasir --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/Kvasir --seed 2 --num_workers 8 --features_list_rare  --no_bank 1
+26-05-26 06:00:57.136 - INFO: inference time: 64.3ms per image
+26-05-26 06:01:04.372 - INFO: inference time: 63.2ms per image
+26-05-26 06:01:05.547 - INFO: inference time: 63.4ms per image
+26-05-26 06:06:39.855 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Kvasir    |      80.92 |    47.5 |   38.73 |   46.88 |          0 |       0 |       0 |
+| mean      |      80.92 |    47.5 |   38.73 |   46.88 |          0 |       0 |       0 |
+26-05-26 06:06:42.756 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Kvasir    |      80.92 |    47.5 |   38.73 |   46.88 |          0 |       0 |       0 |
+| mean      |      80.92 |    47.5 |   38.73 |   46.88 |          0 |       0 |       0 |
+26-05-26 06:06:45.783 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Kvasir    |      80.92 |    47.5 |   38.73 |   46.88 |          0 |       0 |       0 |
+| mean      |      80.92 |    47.5 |   38.73 |   46.88 |          0 |       0 |       0 |
+26-05-26 06:11:15.457 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test kvasir --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/Kvasir --seed 2 --num_workers 8 --features_list_rare  --k_shot 2 --no_bank 1
+26-05-26 06:11:15.577 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test kvasir --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/Kvasir --seed 4 --num_workers 8 --features_list_rare  --no_bank 1
+26-05-26 06:11:25.137 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test kvasir --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/Kvasir --seed 1 --num_workers 8 --features_list_rare  --k_shot 2 --no_bank 1
+26-05-26 06:12:28.134 - INFO: inference time: 63.5ms per image
+26-05-26 06:14:02.495 - INFO: inference time: 67.4ms per image
+26-05-26 06:14:16.777 - INFO: inference time: 72.9ms per image
+26-05-26 06:18:23.872 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Kvasir    |      80.92 |    47.5 |   38.73 |   46.88 |          0 |       0 |       0 |
+| mean      |      80.92 |    47.5 |   38.73 |   46.88 |          0 |       0 |       0 |
+26-05-26 06:19:47.893 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Kvasir    |       79.1 |   45.58 |   37.16 |   47.94 |          0 |       0 |       0 |
+| mean      |       79.1 |   45.58 |   37.16 |   47.94 |          0 |       0 |       0 |
+26-05-26 06:20:03.607 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Kvasir    |       79.1 |   45.58 |   37.16 |   47.94 |          0 |       0 |       0 |
+| mean      |       79.1 |   45.58 |   37.16 |   47.94 |          0 |       0 |       0 |
+26-05-26 06:22:31.257 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test kvasir --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/Kvasir --seed 3 --num_workers 8 --features_list_rare  --k_shot 2 --no_bank 1
+26-05-26 06:23:04.239 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test kvasir --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/Kvasir --seed 1 --num_workers 8 --features_list_rare  --k_shot 16 --no_bank 1
+26-05-26 06:23:12.980 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test kvasir --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/Kvasir --num_workers 8 --features_list_rare  --k_shot 16 --no_bank 1
+26-05-26 06:25:52.217 - INFO: inference time: 70.3ms per image
+26-05-26 06:25:52.842 - INFO: inference time: 67.6ms per image
+26-05-26 06:26:03.964 - INFO: inference time: 71.7ms per image
+26-05-26 06:31:34.892 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Kvasir    |       79.1 |   45.58 |   37.16 |   47.94 |          0 |       0 |       0 |
+| mean      |       79.1 |   45.58 |   37.16 |   47.94 |          0 |       0 |       0 |
+26-05-26 06:31:36.615 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Kvasir    |      80.34 |   46.93 |   38.57 |   48.54 |          0 |       0 |       0 |
+| mean      |      80.34 |   46.93 |   38.57 |   48.54 |          0 |       0 |       0 |
+26-05-26 06:31:43.908 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Kvasir    |      80.34 |   46.93 |   38.57 |   48.54 |          0 |       0 |       0 |
+| mean      |      80.34 |   46.93 |   38.57 |   48.54 |          0 |       0 |       0 |
+26-05-26 06:36:09.960 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test kvasir --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/Kvasir --seed 2 --num_workers 8 --features_list_rare  --k_shot 16 --no_bank 1
+26-05-26 06:36:10.032 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test kvasir --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/Kvasir --seed 4 --num_workers 8 --features_list_rare  --k_shot 16 --no_bank 1
+26-05-26 06:36:19.739 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test kvasir --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/Kvasir --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+26-05-26 06:39:01.715 - INFO: inference time: 70.5ms per image
+26-05-26 06:39:02.384 - INFO: inference time: 72.7ms per image
+26-05-26 06:39:08.405 - INFO: inference time: 67.3ms per image
+26-05-26 06:44:41.906 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Kvasir    |      80.34 |   46.93 |   38.57 |   48.54 |          0 |       0 |       0 |
+| mean      |      80.34 |   46.93 |   38.57 |   48.54 |          0 |       0 |       0 |
+26-05-26 06:44:42.962 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Kvasir    |      80.34 |   46.93 |   38.57 |   48.54 |          0 |       0 |       0 |
+| mean      |      80.34 |   46.93 |   38.57 |   48.54 |          0 |       0 |       0 |
+26-05-26 06:44:46.277 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Kvasir    |      80.44 |   47.17 |   38.95 |   48.06 |          0 |       0 |       0 |
+| mean      |      80.44 |   47.17 |   38.95 |   48.06 |          0 |       0 |       0 |
+26-05-26 06:49:18.053 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test kvasir --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/Kvasir --seed 1 --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+26-05-26 06:49:18.093 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test kvasir --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/Kvasir --seed 3 --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+26-05-26 06:49:27.001 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test kvasir --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/Kvasir --seed 4 --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+26-05-26 06:52:08.170 - INFO: inference time: 70.5ms per image
+26-05-26 06:52:09.761 - INFO: inference time: 72.3ms per image
+26-05-26 06:52:13.373 - INFO: inference time: 67.4ms per image
+26-05-26 06:57:51.335 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Kvasir    |      80.44 |   47.17 |   38.95 |   48.06 |          0 |       0 |       0 |
+| mean      |      80.44 |   47.17 |   38.95 |   48.06 |          0 |       0 |       0 |
+26-05-26 06:57:52.962 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Kvasir    |      80.44 |   47.17 |   38.95 |   48.06 |          0 |       0 |       0 |
+| mean      |      80.44 |   47.17 |   38.95 |   48.06 |          0 |       0 |       0 |
+26-05-26 06:57:53.200 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| Kvasir    |      80.44 |   47.17 |   38.95 |   48.06 |          0 |       0 |       0 |
+| mean      |      80.44 |   47.17 |   38.95 |   48.06 |          0 |       0 |       0 |

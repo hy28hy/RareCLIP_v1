@@ -1,0 +1,6 @@
+26-04-29 15:50:43.472 - INFO: python train.py --train_set_path /data/chenxuwu/zihaowan_workplace/dataset/MPDD --train mpdd
+26-04-29 15:52:14.780 - INFO: epoch [1/5], loss:4.3643
+26-04-29 15:53:45.515 - INFO: epoch [2/5], loss:4.1912
+26-04-29 15:55:16.492 - INFO: epoch [3/5], loss:4.1521
+26-04-29 15:56:47.138 - INFO: epoch [4/5], loss:4.1386
+26-04-29 15:58:18.039 - INFO: epoch [5/5], loss:4.1316

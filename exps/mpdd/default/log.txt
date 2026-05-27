@@ -1,0 +1,261 @@
+26-05-25 18:10:19.476 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test mpdd --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MPDD --num_workers 8 --k_shot 2
+26-05-25 18:10:57.926 - INFO: inference time: 65.1ms per image
+26-05-25 18:11:32.444 - INFO: 
+| objects       |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:--------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| bracket_black |      98.82 |   36.23 |   24.41 |   97.69 |      89.63 |   85.71 |   93.62 |
+| bracket_brown |      93.2  |    7.47 |    3.79 |   87.99 |      42.99 |   80.31 |   61.36 |
+| bracket_white |      98.65 |   21.5  |   11.46 |   93.97 |      60.33 |   67.42 |   72.44 |
+| connector     |      98.32 |   46.88 |   40.95 |   94.44 |      90.95 |   83.87 |   75.77 |
+| metal_plate   |      99.52 |   90.35 |   96.41 |   98.07 |     100    |  100    |  100    |
+| tubes         |      98.6  |   67.24 |   69.75 |   95.5  |      96.69 |   94.89 |   98.78 |
+| mean          |      97.85 |   44.94 |   41.13 |   94.61 |      80.1  |   85.37 |   83.66 |
+26-05-25 18:11:46.604 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test mpdd --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MPDD --seed 4 --num_workers 8 --k_shot 2
+26-05-25 18:11:51.777 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test mpdd --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MPDD --seed 1 --num_workers 8 --k_shot 2
+26-05-25 18:12:30.563 - INFO: inference time: 65.8ms per image
+26-05-25 18:12:34.323 - INFO: inference time: 64.5ms per image
+26-05-25 18:13:06.593 - INFO: 
+| objects       |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:--------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| bracket_black |      98.88 |   38.15 |   26.22 |   97.04 |      85.64 |   82    |   91.47 |
+| bracket_brown |      92.83 |    8.32 |    3.92 |   87.12 |      44.65 |   80.31 |   66.46 |
+| bracket_white |      98.64 |   13.46 |    4.69 |   94.73 |      53.33 |   68.18 |   55.44 |
+| connector     |      98.31 |   46.21 |   39.88 |   94.35 |      88.1  |   77.78 |   71.73 |
+| metal_plate   |      99.48 |   90.07 |   96.17 |   97.93 |     100    |  100    |  100    |
+| tubes         |      98.48 |   67.64 |   69.54 |   95.17 |      97.15 |   97.1  |   99.01 |
+| mean          |      97.77 |   43.97 |   40.07 |   94.39 |      78.14 |   84.23 |   80.68 |
+26-05-25 18:13:10.195 - INFO: 
+| objects       |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:--------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| bracket_black |      98.73 |   37.44 |   24.74 |   96.52 |      84.38 |   80.7  |   90.75 |
+| bracket_brown |      93.42 |    7.86 |    3.83 |   88.93 |      42.23 |   80.31 |   59.75 |
+| bracket_white |      98.71 |   15.17 |    5.64 |   94.7  |      55.78 |   66.67 |   54.66 |
+| connector     |      98.36 |   48.03 |   43.15 |   94.53 |      92.38 |   83.87 |   79.02 |
+| metal_plate   |      99.47 |   89.84 |   96.04 |   97.92 |     100    |  100    |  100    |
+| tubes         |      98.46 |   67.46 |   69.3  |   95.1  |      95.83 |   94.96 |   98.51 |
+| mean          |      97.86 |   44.3  |   40.45 |   94.62 |      78.43 |   84.42 |   80.45 |
+26-05-25 18:13:23.038 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test mpdd --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MPDD --seed 3 --num_workers 8 --k_shot 16
+26-05-25 18:13:27.231 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test mpdd --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MPDD --num_workers 8 --k_shot 16
+26-05-25 18:14:18.551 - INFO: inference time: 65.9ms per image
+26-05-25 18:14:20.178 - INFO: inference time: 64.4ms per image
+26-05-25 18:14:52.981 - INFO: 
+| objects       |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:--------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| bracket_black |      98.83 |   35.39 |   25.82 |   97.4  |      91.42 |   86.87 |   94.4  |
+| bracket_brown |      95.18 |   16.56 |    8.19 |   92.61 |      72.93 |   84.96 |   81.92 |
+| bracket_white |      99.84 |   25.49 |   17.94 |   98.42 |      99    |   95.08 |   99.04 |
+| connector     |      99.01 |   58.34 |   62.9  |   96.62 |     100    |  100    |  100    |
+| metal_plate   |      99.59 |   91.1  |   97.18 |   97.79 |     100    |  100    |  100    |
+| tubes         |      98.92 |   71.76 |   74.48 |   95.99 |      96.92 |   96.24 |   98.84 |
+| mean          |      98.56 |   49.77 |   47.75 |   96.47 |      93.38 |   93.86 |   95.7  |
+26-05-25 18:14:54.580 - INFO: 
+| objects       |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:--------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| bracket_black |      98.9  |   35.3  |   24.42 |   97.51 |      94.02 |   91.3  |   96.33 |
+| bracket_brown |      95.21 |   13.62 |    6.37 |   92.1  |      69.68 |   86.21 |   76.45 |
+| bracket_white |      99.76 |   21.1  |   11.21 |   97.89 |      93.78 |   86.96 |   93.72 |
+| connector     |      98.93 |   57.45 |   61.2  |   96.43 |     100    |  100    |  100    |
+| metal_plate   |      99.63 |   91.54 |   97.43 |   98.09 |     100    |  100    |  100    |
+| tubes         |      99.01 |   72.73 |   75.98 |   96.22 |      97.64 |   96.24 |   99.05 |
+| mean          |      98.57 |   48.62 |   46.1  |   96.37 |      92.52 |   93.45 |   94.26 |
+26-05-25 18:15:07.515 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test mpdd --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MPDD --seed 2 --num_workers 8 --k_shot 64
+26-05-25 18:15:09.435 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test mpdd --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MPDD --seed 4 --num_workers 8 --k_shot 16
+26-05-25 18:15:59.371 - INFO: inference time: 64.4ms per image
+26-05-25 18:16:33.619 - INFO: 
+| objects       |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:--------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| bracket_black |      98.57 |   33.14 |   20.54 |   96.96 |      88.76 |   84.21 |   93.35 |
+| bracket_brown |      95.02 |   14.53 |    7.09 |   92.44 |      76.32 |   83.61 |   88.55 |
+| bracket_white |      99.82 |   26.4  |   17.67 |   98.48 |      95    |   88.14 |   95.34 |
+| connector     |      98.96 |   57.09 |   60    |   96.49 |      98.33 |   96.55 |   95.71 |
+| metal_plate   |      99.59 |   91.12 |   97.22 |   97.8  |     100    |  100    |  100    |
+| tubes         |      99.07 |   72.84 |   75.89 |   96.59 |      97.01 |   96.3  |   98.88 |
+| mean          |      98.51 |   49.19 |   46.4  |   96.46 |      92.57 |   91.47 |   95.3  |
+26-05-25 18:16:48.832 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test mpdd --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MPDD --seed 3 --num_workers 8 --k_shot 64
+26-05-25 18:16:54.987 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test mpdd --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MPDD --seed 2 --num_workers 8 --k_shot 2
+26-05-25 18:17:36.205 - INFO: inference time: 64.9ms per image
+26-05-25 18:18:09.227 - INFO: 
+| objects       |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:--------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| bracket_black |      98.56 |   38.28 |   25.67 |   97.23 |      81.78 |   80.7  |   90.07 |
+| bracket_brown |      93.24 |    7.64 |    4.02 |   88.47 |      41.55 |   79.69 |   59.98 |
+| bracket_white |      98.58 |   23.11 |   10.16 |   94.44 |      60.89 |   67.42 |   71.45 |
+| connector     |      98.25 |   48.29 |   43.81 |   94.06 |      92.62 |   82.35 |   79.93 |
+| metal_plate   |      99.48 |   90.06 |   96.18 |   97.96 |     100    |  100    |  100    |
+| tubes         |      98.57 |   67.85 |   69.86 |   95.44 |      97.28 |   97.01 |   99.03 |
+| mean          |      97.78 |   45.87 |   41.62 |   94.6  |      79.02 |   84.53 |   83.41 |
+26-05-25 18:18:23.325 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test mpdd --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MPDD --seed 1 --num_workers 8 --k_shot 16
+26-05-25 18:18:48.581 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test mpdd --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MPDD --seed 3 --num_workers 8 --k_shot 2
+26-05-25 18:19:14.970 - INFO: inference time: 65.5ms per image
+26-05-25 18:19:29.343 - INFO: inference time: 64.5ms per image
+26-05-25 18:19:50.337 - INFO: 
+| objects       |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:--------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| bracket_black |      98.44 |   34.85 |   21.85 |   96.33 |      85.7  |   82.14 |   91.09 |
+| bracket_brown |      94.93 |   12.58 |    5.67 |   91.7  |      69.68 |   85.47 |   77.15 |
+| bracket_white |      99.78 |   27.12 |   17.66 |   98.67 |      95    |   88.52 |   95.53 |
+| connector     |      98.86 |   56.59 |   58.82 |   96.09 |      97.86 |   96.55 |   93.8  |
+| metal_plate   |      99.6  |   91.11 |   97.23 |   97.91 |     100    |  100    |  100    |
+| tubes         |      98.96 |   72.57 |   75.42 |   96.15 |      97.06 |   97.01 |   98.94 |
+| mean          |      98.43 |   49.14 |   46.11 |   96.14 |      90.88 |   91.62 |   92.75 |
+26-05-25 18:20:03.443 - INFO: 
+| objects       |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:--------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| bracket_black |      99.16 |   39.45 |   27.47 |   97.76 |      90.56 |   87.23 |   94.44 |
+| bracket_brown |      92.95 |    8    |    3.97 |   88.08 |      43.97 |   80.31 |   66.7  |
+| bracket_white |      98.72 |   13.35 |    4.78 |   94.35 |      49.44 |   66.67 |   51.58 |
+| connector     |      98.47 |   54.78 |   56.1  |   94.75 |      99.52 |   96.55 |   99.01 |
+| metal_plate   |      99.46 |   89.93 |   96.03 |   97.88 |     100    |  100    |  100    |
+| tubes         |      98.5  |   67.04 |   69.18 |   95.23 |      95.2  |   93.53 |   98.18 |
+| mean          |      97.88 |   45.42 |   42.92 |   94.68 |      79.78 |   87.38 |   84.99 |
+26-05-25 18:20:03.565 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test mpdd --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MPDD --num_workers 8 --k_shot 64
+26-05-25 18:20:17.070 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test mpdd --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MPDD --seed 2 --num_workers 8 --k_shot 16
+26-05-25 18:21:09.647 - INFO: inference time: 65.7ms per image
+26-05-25 18:21:18.543 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test mpdd --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MPDD --seed 4 --num_workers 8 --k_shot 64
+26-05-25 18:21:45.666 - INFO: 
+| objects       |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:--------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| bracket_black |      98.57 |   34.89 |   24.07 |   96.95 |      89.89 |   87.13 |   93.65 |
+| bracket_brown |      95.06 |   15.74 |    7.87 |   92.59 |      77.38 |   86.21 |   87.64 |
+| bracket_white |      99.75 |   23.04 |   12.64 |   98.59 |      94.56 |   86.96 |   95.2  |
+| connector     |      98.69 |   55.74 |   57.69 |   95.62 |      98.33 |   96.55 |   95.71 |
+| metal_plate   |      99.61 |   91.35 |   97.34 |   98.07 |     100    |  100    |  100    |
+| tubes         |      98.92 |   72.04 |   74.99 |   96.07 |      98.01 |   97.01 |   99.23 |
+| mean          |      98.43 |   48.8  |   45.76 |   96.32 |      93.03 |   92.31 |   95.24 |
+26-05-25 18:22:00.910 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test mpdd --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MPDD --seed 1 --num_workers 8 --k_shot 64
+26-05-25 21:44:47.914 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test mpdd --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MPDD --seed 3 --num_workers 8 --features_list_rare  --no_bank 1
+26-05-25 21:44:48.261 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test mpdd --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MPDD --seed 2 --num_workers 8 --features_list_rare  --no_bank 1
+26-05-25 21:44:52.017 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test mpdd --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MPDD --num_workers 8 --features_list_rare  --no_bank 1
+26-05-25 21:46:11.937 - INFO: inference time: 70.1ms per image
+26-05-25 21:46:12.403 - INFO: inference time: 69.8ms per image
+26-05-25 21:46:13.505 - INFO: inference time: 70.3ms per image
+26-05-25 21:46:49.858 - INFO: 
+| objects       |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:--------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| bracket_black |      98.94 |   38.38 |   26.42 |   97.64 |      88.23 |   83.5  |   92.89 |
+| bracket_brown |      91.85 |    6.67 |    3.4  |   85.45 |      30.47 |   79.69 |   58.27 |
+| bracket_white |      97.72 |   13.89 |    4.71 |   90.98 |      49.56 |   66.67 |   56.99 |
+| connector     |      98.34 |   48.61 |   45.05 |   94.42 |      93.57 |   87.5  |   82.08 |
+| metal_plate   |      99.32 |   88.37 |   94.75 |   97.75 |     100    |  100    |  100    |
+| tubes         |      97.78 |   66.02 |   66.53 |   93.35 |      92.8  |   93.33 |   97.44 |
+| mean          |      97.33 |   43.66 |   40.14 |   93.26 |      75.77 |   85.11 |   81.28 |
+26-05-25 21:46:50.628 - INFO: 
+| objects       |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:--------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| bracket_black |      98.94 |   38.38 |   26.42 |   97.64 |      88.23 |   83.5  |   92.89 |
+| bracket_brown |      91.85 |    6.67 |    3.4  |   85.45 |      30.47 |   79.69 |   58.27 |
+| bracket_white |      97.72 |   13.89 |    4.71 |   90.98 |      49.56 |   66.67 |   56.99 |
+| connector     |      98.34 |   48.61 |   45.05 |   94.42 |      93.57 |   87.5  |   82.08 |
+| metal_plate   |      99.32 |   88.37 |   94.75 |   97.75 |     100    |  100    |  100    |
+| tubes         |      97.78 |   66.02 |   66.53 |   93.35 |      92.8  |   93.33 |   97.44 |
+| mean          |      97.33 |   43.66 |   40.14 |   93.26 |      75.77 |   85.11 |   81.28 |
+26-05-25 21:46:51.225 - INFO: 
+| objects       |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:--------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| bracket_black |      98.94 |   38.38 |   26.42 |   97.64 |      88.23 |   83.5  |   92.89 |
+| bracket_brown |      91.85 |    6.67 |    3.4  |   85.45 |      30.47 |   79.69 |   58.27 |
+| bracket_white |      97.72 |   13.89 |    4.71 |   90.98 |      49.56 |   66.67 |   56.99 |
+| connector     |      98.34 |   48.61 |   45.05 |   94.42 |      93.57 |   87.5  |   82.08 |
+| metal_plate   |      99.32 |   88.37 |   94.75 |   97.75 |     100    |  100    |  100    |
+| tubes         |      97.78 |   66.02 |   66.53 |   93.35 |      92.8  |   93.33 |   97.44 |
+| mean          |      97.33 |   43.66 |   40.14 |   93.26 |      75.77 |   85.11 |   81.28 |
+26-05-25 21:51:25.871 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test mpdd --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MPDD --seed 2 --num_workers 8 --features_list_rare  --k_shot 2 --no_bank 1
+26-05-25 21:51:26.272 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test mpdd --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MPDD --seed 1 --num_workers 8 --features_list_rare  --k_shot 2 --no_bank 1
+26-05-25 21:51:51.469 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test mpdd --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MPDD --seed 4 --num_workers 8 --features_list_rare  --no_bank 1
+26-05-25 21:53:03.333 - INFO: inference time: 73.6ms per image
+26-05-25 21:53:03.656 - INFO: inference time: 73.9ms per image
+26-05-25 21:53:12.705 - INFO: inference time: 69.4ms per image
+26-05-25 21:53:39.546 - INFO: 
+| objects       |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:--------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| bracket_black |      98.56 |   38.28 |   25.67 |   97.23 |      81.78 |   80.7  |   90.07 |
+| bracket_brown |      93.24 |    7.64 |    4.02 |   88.47 |      41.55 |   79.69 |   59.98 |
+| bracket_white |      98.58 |   23.11 |   10.16 |   94.44 |      60.89 |   67.42 |   71.45 |
+| connector     |      98.25 |   48.29 |   43.81 |   94.06 |      92.62 |   82.35 |   79.93 |
+| metal_plate   |      99.48 |   90.06 |   96.18 |   97.96 |     100    |  100    |  100    |
+| tubes         |      98.57 |   67.85 |   69.86 |   95.44 |      97.28 |   97.01 |   99.03 |
+| mean          |      97.78 |   45.87 |   41.62 |   94.6  |      79.02 |   84.53 |   83.41 |
+26-05-25 21:53:39.717 - INFO: 
+| objects       |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:--------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| bracket_black |      98.73 |   37.44 |   24.74 |   96.52 |      84.38 |   80.7  |   90.75 |
+| bracket_brown |      93.42 |    7.86 |    3.83 |   88.93 |      42.23 |   80.31 |   59.75 |
+| bracket_white |      98.71 |   15.17 |    5.64 |   94.7  |      55.78 |   66.67 |   54.66 |
+| connector     |      98.36 |   48.03 |   43.15 |   94.53 |      92.38 |   83.87 |   79.02 |
+| metal_plate   |      99.47 |   89.84 |   96.04 |   97.92 |     100    |  100    |  100    |
+| tubes         |      98.46 |   67.46 |   69.3  |   95.1  |      95.83 |   94.96 |   98.51 |
+| mean          |      97.86 |   44.3  |   40.45 |   94.62 |      78.43 |   84.42 |   80.45 |
+26-05-25 21:53:47.219 - INFO: 
+| objects       |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:--------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| bracket_black |      98.94 |   38.38 |   26.42 |   97.64 |      88.23 |   83.5  |   92.89 |
+| bracket_brown |      91.85 |    6.67 |    3.4  |   85.45 |      30.47 |   79.69 |   58.27 |
+| bracket_white |      97.72 |   13.89 |    4.71 |   90.98 |      49.56 |   66.67 |   56.99 |
+| connector     |      98.34 |   48.61 |   45.05 |   94.42 |      93.57 |   87.5  |   82.08 |
+| metal_plate   |      99.32 |   88.37 |   94.75 |   97.75 |     100    |  100    |  100    |
+| tubes         |      97.78 |   66.02 |   66.53 |   93.35 |      92.8  |   93.33 |   97.44 |
+| mean          |      97.33 |   43.66 |   40.14 |   93.26 |      75.77 |   85.11 |   81.28 |
+26-05-25 21:58:14.387 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test mpdd --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MPDD --seed 1 --num_workers 8 --features_list_rare  --k_shot 16 --no_bank 1
+26-05-25 21:58:15.984 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test mpdd --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MPDD --num_workers 8 --features_list_rare  --k_shot 16 --no_bank 1
+26-05-25 21:58:24.582 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test mpdd --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MPDD --seed 3 --num_workers 8 --features_list_rare  --k_shot 2 --no_bank 1
+26-05-25 22:05:12.061 - INFO: inference time: 67.2ms per image
+26-05-25 22:05:15.544 - INFO: inference time: 68.4ms per image
+26-05-25 22:05:16.609 - INFO: inference time: 68.0ms per image
+26-05-25 22:05:51.217 - INFO: 
+| objects       |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:--------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| bracket_black |      99.16 |   39.45 |   27.47 |   97.76 |      90.56 |   87.23 |   94.44 |
+| bracket_brown |      92.95 |    8    |    3.97 |   88.08 |      43.97 |   80.31 |   66.7  |
+| bracket_white |      98.72 |   13.35 |    4.78 |   94.35 |      49.44 |   66.67 |   51.58 |
+| connector     |      98.47 |   54.78 |   56.1  |   94.75 |      99.52 |   96.55 |   99.01 |
+| metal_plate   |      99.46 |   89.93 |   96.03 |   97.88 |     100    |  100    |  100    |
+| tubes         |      98.5  |   67.04 |   69.18 |   95.23 |      95.2  |   93.53 |   98.18 |
+| mean          |      97.88 |   45.42 |   42.92 |   94.68 |      79.78 |   87.38 |   84.99 |
+26-05-25 22:05:54.035 - INFO: 
+| objects       |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:--------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| bracket_black |      98.44 |   34.85 |   21.85 |   96.33 |      85.7  |   82.14 |   91.09 |
+| bracket_brown |      94.93 |   12.58 |    5.67 |   91.7  |      69.68 |   85.47 |   77.15 |
+| bracket_white |      99.78 |   27.12 |   17.66 |   98.67 |      95    |   88.52 |   95.53 |
+| connector     |      98.86 |   56.59 |   58.82 |   96.09 |      97.86 |   96.55 |   93.8  |
+| metal_plate   |      99.6  |   91.11 |   97.23 |   97.91 |     100    |  100    |  100    |
+| tubes         |      98.96 |   72.57 |   75.42 |   96.15 |      97.06 |   97.01 |   98.94 |
+| mean          |      98.43 |   49.14 |   46.11 |   96.14 |      90.88 |   91.62 |   92.75 |
+26-05-25 22:05:54.524 - INFO: 
+| objects       |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:--------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| bracket_black |      98.9  |   35.3  |   24.42 |   97.51 |      94.02 |   91.3  |   96.33 |
+| bracket_brown |      95.21 |   13.62 |    6.37 |   92.1  |      69.68 |   86.21 |   76.45 |
+| bracket_white |      99.76 |   21.1  |   11.21 |   97.89 |      93.78 |   86.96 |   93.72 |
+| connector     |      98.93 |   57.45 |   61.2  |   96.43 |     100    |  100    |  100    |
+| metal_plate   |      99.63 |   91.54 |   97.43 |   98.09 |     100    |  100    |  100    |
+| tubes         |      99.01 |   72.73 |   75.98 |   96.22 |      97.64 |   96.24 |   99.05 |
+| mean          |      98.57 |   48.62 |   46.1  |   96.37 |      92.52 |   93.45 |   94.26 |
+26-05-25 22:10:27.160 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test mpdd --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MPDD --seed 2 --num_workers 8 --features_list_rare  --k_shot 16 --no_bank 1
+26-05-25 22:10:27.752 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test mpdd --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MPDD --seed 4 --num_workers 8 --features_list_rare  --k_shot 16 --no_bank 1
+26-05-25 22:10:47.189 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test mpdd --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MPDD --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+26-05-25 22:13:54.453 - INFO: inference time: 139.9ms per image
+26-05-25 22:13:54.734 - INFO: inference time: 139.9ms per image
+26-05-25 22:14:32.921 - INFO: 
+| objects       |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:--------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| bracket_black |      98.57 |   33.14 |   20.54 |   96.96 |      88.76 |   84.21 |   93.35 |
+| bracket_brown |      95.02 |   14.53 |    7.09 |   92.44 |      76.32 |   83.61 |   88.55 |
+| bracket_white |      99.82 |   26.4  |   17.67 |   98.48 |      95    |   88.14 |   95.34 |
+| connector     |      98.96 |   57.09 |   60    |   96.49 |      98.33 |   96.55 |   95.71 |
+| metal_plate   |      99.59 |   91.12 |   97.22 |   97.8  |     100    |  100    |  100    |
+| tubes         |      99.07 |   72.84 |   75.89 |   96.59 |      97.01 |   96.3  |   98.88 |
+| mean          |      98.51 |   49.19 |   46.4  |   96.46 |      92.57 |   91.47 |   95.3  |
+26-05-25 22:14:33.776 - INFO: 
+| objects       |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:--------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| bracket_black |      98.57 |   34.89 |   24.07 |   96.95 |      89.89 |   87.13 |   93.65 |
+| bracket_brown |      95.06 |   15.74 |    7.87 |   92.59 |      77.38 |   86.21 |   87.64 |
+| bracket_white |      99.75 |   23.04 |   12.64 |   98.59 |      94.56 |   86.96 |   95.2  |
+| connector     |      98.69 |   55.74 |   57.69 |   95.62 |      98.33 |   96.55 |   95.71 |
+| metal_plate   |      99.61 |   91.35 |   97.34 |   98.07 |     100    |  100    |  100    |
+| tubes         |      98.92 |   72.04 |   74.99 |   96.07 |      98.01 |   97.01 |   99.23 |
+| mean          |      98.43 |   48.8  |   45.76 |   96.32 |      93.03 |   92.31 |   95.24 |
+26-05-25 22:18:58.803 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test mpdd --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MPDD --seed 4 --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+26-05-25 22:18:59.055 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test mpdd --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MPDD --seed 3 --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+26-05-25 22:19:24.022 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test mpdd --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/MPDD --seed 1 --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1

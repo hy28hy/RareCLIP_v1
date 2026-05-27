@@ -1,0 +1,28 @@
+26-05-26 07:17:17.137 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test cvc-300 --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-300 --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+CVC-300(1/1):   0%|          | 0/60 [00:00<?, ?it/s]                                                    Traceback (most recent call last):
+  File "/data/chenxuwu/zihaowan_workplace/RareCLIP/test.py", line 257, in <module>
+    test(args, default_args)
+  File "/data/chenxuwu/zihaowan_workplace/RareCLIP/test.py", line 154, in test
+    anomaly_map, anomaly_score = model.process_image_and_update(input_image, update=args.online)
+TypeError: cannot unpack non-iterable NoneType object
+26-05-26 07:21:58.771 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test cvc-300 --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-300 --seed 4 --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+26-05-26 07:21:58.858 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test cvc-300 --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-300 --seed 3 --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+CVC-300(1/1):   0%|          | 0/60 [00:00<?, ?it/s]CVC-300(1/1):   0%|          | 0/60 [00:00<?, ?it/s]                                                    Traceback (most recent call last):
+  File "/data/chenxuwu/zihaowan_workplace/RareCLIP/test.py", line 257, in <module>
+    test(args, default_args)
+  File "/data/chenxuwu/zihaowan_workplace/RareCLIP/test.py", line 154, in test
+    anomaly_map, anomaly_score = model.process_image_and_update(input_image, update=args.online)
+TypeError: cannot unpack non-iterable NoneType object
+                                                    Traceback (most recent call last):
+  File "/data/chenxuwu/zihaowan_workplace/RareCLIP/test.py", line 257, in <module>
+    test(args, default_args)
+  File "/data/chenxuwu/zihaowan_workplace/RareCLIP/test.py", line 154, in test
+    anomaly_map, anomaly_score = model.process_image_and_update(input_image, update=args.online)
+TypeError: cannot unpack non-iterable NoneType object
+26-05-26 07:24:08.053 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test cvc-300 --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-300 --seed 1 --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+CVC-300(1/1):   0%|          | 0/60 [00:00<?, ?it/s]                                                    Traceback (most recent call last):
+  File "/data/chenxuwu/zihaowan_workplace/RareCLIP/test.py", line 257, in <module>
+    test(args, default_args)
+  File "/data/chenxuwu/zihaowan_workplace/RareCLIP/test.py", line 154, in test
+    anomaly_map, anomaly_score = model.process_image_and_update(input_image, update=args.online)
+TypeError: cannot unpack non-iterable NoneType object

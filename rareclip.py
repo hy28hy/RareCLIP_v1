@@ -105,6 +105,11 @@ class RareCLIP():
         self.Rs_temp = args.Rs_temp
         self.max_Rs_num = args.max_Rs_num
         self.other = args.other
+        self.no_bank = getattr(args, 'no_bank', 0)
+
+        # No-bank mode: disable PFM/PSM prototype feature memory bank
+        if self.no_bank:
+            args.features_list_rare = []
 
         self.k_shot = args.k_shot
         self.normal_feature_num = [[0 for _ in self.l_list] for _ in self.r_list]
@@ -317,14 +322,20 @@ class RareCLIP():
                 for ri, r in enumerate(self.r_list):
                     for l in self.l_list:
                         self.PFM[ri][l], self.PSM[ri][l], self.normal_feature_num[ri][l] = self.sample(F_ref=self.PFM[ri][l], S_ref = self.PSM[ri][l], normal_fnum=self.normal_feature_num[ri][l])
-                return 
+                # 返回默认的全零异常图和异常分数
+                return torch.zeros_like(image).squeeze(0), 0.0
             
             ## Results Combination
-            anomaly_map_rare /= len(self.l_list) * len(self.r_list)
-            foreground_score /= len(self.l_list)
+            rare_div = len(self.l_list) * len(self.r_list)
+            if rare_div > 0:
+                anomaly_map_rare /= rare_div
+            if len(self.l_list) > 0:
+                foreground_score /= len(self.l_list)
             if self.k_shot:
-                k_shot_map /= len(self.l_list) * len(self.r_list)
-                k_shot_score /= len(self.l_list)
+                if rare_div > 0:
+                    k_shot_map /= rare_div
+                if len(self.l_list) > 0:
+                    k_shot_score /= len(self.l_list)
                 anomaly_map_rare = ((1 - self.k_shot / self.tested_num) * anomaly_map_rare + k_shot_map * self.normal_weight) / (1 - self.k_shot / self.tested_num + self.normal_weight)
                 foreground_score = ((1 - self.k_shot / self.tested_num) * foreground_score + k_shot_score * self.normal_weight) / (1 - self.k_shot / self.tested_num + self.normal_weight)
             if foreground_score > 0:
@@ -364,9 +375,11 @@ class RareCLIP():
                         self.PSM[ri][l] = self.PSM[ri][l][1:]
             if self.score_memory.shape[0] > self.keep_inum:
                 self.score_memory = self.score_memory[1:]
-                self.IF_memory = self.IF_memory
+                # 修复1：补上漏掉的 [1:]，让它也同步裁掉最老的数据
+                self.IF_memory = self.IF_memory[1:] 
+                
                 for l in self.l_list:
-                    self.AAIF_memory[l][self.k_shot:] = self.AAIF_memory[l][self.k_shot+1:]
-
+                    # 修复2：放弃切片赋值，使用 torch.cat 真正将最老的测试特征（索引为 k_shot）剔除，并缩小张量尺寸
+                    self.AAIF_memory[l] = torch.cat((self.AAIF_memory[l][:self.k_shot], self.AAIF_memory[l][self.k_shot+1:]), dim=0)
             return anomaly_map, anomaly_score
         

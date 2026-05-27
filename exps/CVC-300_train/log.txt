@@ -1,0 +1,6 @@
+26-04-29 16:21:31.943 - INFO: python train.py --train_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-300 --train cvc-300
+26-04-29 16:21:37.897 - INFO: epoch [1/5], loss:4.2236
+26-04-29 16:21:41.898 - INFO: epoch [2/5], loss:3.3843
+26-04-29 16:21:45.866 - INFO: epoch [3/5], loss:3.1855
+26-04-29 16:21:49.840 - INFO: epoch [4/5], loss:3.1055
+26-04-29 16:21:53.829 - INFO: epoch [5/5], loss:3.0884

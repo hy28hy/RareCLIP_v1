@@ -1,0 +1,270 @@
+26-05-25 18:16:24.811 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test btad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/BTech_Dataset_transformed --seed 1 --num_workers 8 --k_shot 2
+26-05-25 18:17:22.002 - INFO: inference time: 65.7ms per image
+26-05-25 18:18:03.262 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test btad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/BTech_Dataset_transformed --seed 2 --num_workers 8 --k_shot 2
+26-05-25 18:18:30.855 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| 01        |      97.51 |   64.64 |   65.87 |   83.01 |      98.15 |   97.92 |   99.36 |
+| 02        |      96.41 |   62.55 |   65.5  |   65.51 |      89.98 |   94.94 |   98.38 |
+| 03        |      98.9  |   54.64 |   57.25 |   95.74 |      99.65 |   96.39 |   97.78 |
+| mean      |      97.6  |   60.61 |   62.88 |   81.42 |      95.93 |   96.41 |   98.51 |
+26-05-25 18:18:46.143 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test btad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/BTech_Dataset_transformed --num_workers 8 --k_shot 16
+26-05-25 18:19:01.689 - INFO: inference time: 64.3ms per image
+26-05-25 18:19:47.735 - INFO: inference time: 65.7ms per image
+26-05-25 18:20:10.533 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| 01        |      97.54 |   65.13 |   66.59 |   84.83 |      97.86 |   97.92 |   99.31 |
+| 02        |      96.23 |   62.12 |   64.76 |   66.3  |      88.37 |   94.56 |   98.1  |
+| 03        |      98.86 |   53.29 |   55.29 |   95.55 |      99.93 |   96.47 |   99.35 |
+| mean      |      97.55 |   60.18 |   62.21 |   82.23 |      95.39 |   96.32 |   98.92 |
+26-05-25 18:20:26.048 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test btad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/BTech_Dataset_transformed --seed 1 --num_workers 8 --k_shot 16
+26-05-25 18:20:58.867 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| 01        |      97.72 |   64.51 |   66.48 |   81.66 |      98.35 |   98.97 |   99.47 |
+| 02        |      96.85 |   65.66 |   72.35 |   61.77 |      90.55 |   94.66 |   98.46 |
+| 03        |      99.09 |   56.14 |   58.5  |   96.13 |      99.93 |   97.56 |   99.46 |
+| mean      |      97.89 |   62.1  |   65.78 |   79.85 |      96.28 |   97.06 |   99.13 |
+26-05-25 18:21:14.407 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test btad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/BTech_Dataset_transformed --seed 4 --num_workers 8 --k_shot 16
+26-05-25 18:21:29.389 - INFO: inference time: 64.4ms per image
+26-05-25 18:22:16.629 - INFO: inference time: 65.7ms per image
+26-05-25 18:22:33.958 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test btad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/BTech_Dataset_transformed --seed 3 --num_workers 8 --k_shot 2
+26-05-25 18:22:42.713 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| 01        |      97.72 |   64.43 |   66.31 |   81.93 |      98.25 |   97.92 |   99.4  |
+| 02        |      96.9  |   65.9  |   72.68 |   61.37 |      91    |   94.61 |   98.57 |
+| 03        |      99.04 |   56.1  |   58.03 |   96.15 |      99.93 |   97.56 |   99.35 |
+| mean      |      97.88 |   62.14 |   65.67 |   79.82 |      96.39 |   96.7  |   99.11 |
+26-05-25 18:22:57.600 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test btad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/BTech_Dataset_transformed --num_workers 8 --k_shot 64
+26-05-25 18:23:16.751 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test btad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/BTech_Dataset_transformed --num_workers 8 --k_shot 2
+26-05-25 18:23:29.606 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| 01        |      97.72 |   64.53 |   66.56 |   81.72 |      98.64 |   98.97 |   99.55 |
+| 02        |      96.96 |   66.28 |   73.14 |   61.79 |      92.85 |   95.07 |   98.85 |
+| 03        |      99.02 |   57.24 |   59.6  |   95.93 |      99.94 |   96.47 |   99.4  |
+| mean      |      97.9  |   62.68 |   66.44 |   79.81 |      97.14 |   96.84 |   99.27 |
+26-05-25 18:23:32.223 - INFO: inference time: 65.6ms per image
+26-05-25 18:23:44.327 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test btad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/BTech_Dataset_transformed --seed 3 --num_workers 8 --k_shot 64
+26-05-25 18:24:12.542 - INFO: inference time: 64.5ms per image
+26-05-25 18:24:16.269 - INFO: inference time: 67.5ms per image
+26-05-25 18:24:45.048 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| 01        |      97.62 |   65.32 |   66.89 |   83.02 |      98.83 |   97.96 |   99.57 |
+| 02        |      96.41 |   63.27 |   66.56 |   66.31 |      93.55 |   96.3  |   98.95 |
+| 03        |      98.89 |   54.28 |   57.2  |   95.7  |      99.8  |   95.24 |   98.15 |
+| mean      |      97.64 |   60.96 |   63.55 |   81.68 |      97.4  |   96.5  |   98.89 |
+26-05-25 18:24:59.014 - INFO: inference time: 66.0ms per image
+26-05-25 18:24:59.423 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test btad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/BTech_Dataset_transformed --seed 2 --num_workers 8 --k_shot 16
+26-05-25 18:25:22.259 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| 01        |      97.68 |   64.66 |   66.57 |   80.51 |      98.64 |   98.97 |   99.55 |
+| 02        |      96.82 |   65.85 |   72.59 |   59.78 |      91.92 |   95.84 |   98.68 |
+| 03        |      99.07 |   57.68 |   60.58 |   96.06 |      99.99 |   98.8  |   99.94 |
+| mean      |      97.85 |   62.73 |   66.58 |   78.78 |      96.85 |   97.87 |   99.39 |
+26-05-25 18:25:25.907 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| 01        |      97.76 |   65.72 |   67.31 |   84.6  |      98.25 |   97.96 |   99.39 |
+| 02        |      96.38 |   62.92 |   66.39 |   65.52 |      90.12 |   94.89 |   98.39 |
+| 03        |      99    |   55.12 |   57.8  |   96.14 |      99.82 |   94.12 |   98.41 |
+| mean      |      97.71 |   61.25 |   63.83 |   82.09 |      96.06 |   95.66 |   98.73 |
+26-05-25 18:25:35.586 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test btad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/BTech_Dataset_transformed --seed 4 --num_workers 8 --k_shot 64
+26-05-25 18:25:40.733 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test btad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/BTech_Dataset_transformed --seed 4 --num_workers 8 --k_shot 2
+26-05-25 18:26:00.710 - INFO: inference time: 64.9ms per image
+26-05-25 18:26:10.053 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| 01        |      97.68 |   64.37 |   66.35 |   80.45 |      99.13 |   98.97 |   99.68 |
+| 02        |      96.93 |   66.27 |   73.04 |   60.58 |      93.5  |   96.28 |   98.94 |
+| 03        |      98.99 |   56.93 |   59.67 |   95.87 |      99.99 |   98.8  |   99.94 |
+| mean      |      97.87 |   62.52 |   66.35 |   78.96 |      97.54 |   98.01 |   99.52 |
+26-05-25 18:26:38.553 - INFO: inference time: 65.7ms per image
+26-05-25 18:26:49.305 - INFO: inference time: 64.6ms per image
+26-05-25 18:27:12.457 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| 01        |      97.77 |   64.74 |   66.41 |   82.25 |      97.47 |   97.92 |   99.16 |
+| 02        |      96.94 |   66.15 |   72.57 |   62.02 |      90.23 |   94.79 |   98.42 |
+| 03        |      99.02 |   56.01 |   58.57 |   95.97 |      99.95 |   97.62 |   99.46 |
+| mean      |      97.91 |   62.3  |   65.85 |   80.08 |      95.88 |   96.77 |   99.01 |
+26-05-25 18:27:26.749 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test btad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/BTech_Dataset_transformed --seed 1 --num_workers 8 --k_shot 64
+26-05-25 18:27:50.660 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| 01        |      97.75 |   65.39 |   66.99 |   84.8  |      98.15 |   97.92 |   99.39 |
+| 02        |      96.51 |   63.03 |   66.32 |   67.26 |      91.17 |   95.38 |   98.59 |
+| 03        |      99.02 |   53.91 |   55.69 |   96.16 |      99.95 |   96.47 |   99.48 |
+| mean      |      97.76 |   60.78 |   63    |   82.74 |      96.42 |   96.59 |   99.15 |
+26-05-25 18:28:00.486 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| 01        |      97.69 |   64.58 |   66.47 |   80.59 |      99.13 |   98.97 |   99.68 |
+| 02        |      96.76 |   65.33 |   72.07 |   60.05 |      92.67 |   95.42 |   98.79 |
+| 03        |      99.06 |   58.47 |   61.13 |   96.26 |     100    |  100    |  100    |
+| mean      |      97.84 |   62.79 |   66.56 |   78.97 |      97.26 |   98.13 |   99.49 |
+26-05-25 18:28:05.846 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test btad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/BTech_Dataset_transformed --seed 3 --num_workers 8 --k_shot 16
+26-05-25 18:28:42.592 - INFO: inference time: 65.9ms per image
+26-05-25 18:29:08.815 - INFO: inference time: 65.6ms per image
+26-05-25 18:29:54.379 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| 01        |      97.65 |   64.3  |   66.22 |   80.57 |      98.15 |   96.91 |   99.35 |
+| 02        |      96.88 |   65.86 |   72.67 |   59.21 |      91.47 |   94.96 |   98.64 |
+| 03        |      99.06 |   57.69 |   60.03 |   96.23 |      99.99 |   98.8  |   99.88 |
+| mean      |      97.86 |   62.62 |   66.31 |   78.67 |      96.54 |   96.89 |   99.29 |
+26-05-25 18:30:21.214 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| 01        |      97.7  |   64.56 |   66.49 |   81.52 |      98.83 |   97.96 |   99.57 |
+| 02        |      96.95 |   66.21 |   72.79 |   62.09 |      92.47 |   94.79 |   98.79 |
+| 03        |      98.83 |   54.71 |   57.05 |   95.37 |      99.91 |   97.5  |   99.26 |
+| mean      |      97.83 |   61.83 |   65.44 |   79.66 |      97.07 |   96.75 |   99.21 |
+26-05-25 18:30:38.250 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test btad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/BTech_Dataset_transformed --seed 2 --num_workers 8 --k_shot 64
+26-05-25 18:31:56.359 - INFO: inference time: 66.8ms per image
+26-05-25 18:33:08.565 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| 01        |      97.66 |   64.66 |   66.37 |   80.35 |      98.54 |   97.92 |   99.49 |
+| 02        |      96.94 |   66.47 |   73.08 |   59.85 |      92.08 |   95.88 |   98.69 |
+| 03        |      99.07 |   57.35 |   60.33 |   96.24 |      99.99 |   98.8  |   99.94 |
+| mean      |      97.89 |   62.83 |   66.59 |   78.81 |      96.87 |   97.53 |   99.38 |
+26-05-25 22:25:11.944 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test btad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/BTech_Dataset_transformed --seed 2 --num_workers 8 --features_list_rare  --no_bank 1
+26-05-25 22:31:20.240 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test btad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/BTech_Dataset_transformed --seed 3 --num_workers 8 --features_list_rare  --no_bank 1
+26-05-25 22:31:21.472 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test btad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/BTech_Dataset_transformed --num_workers 8 --features_list_rare  --no_bank 1
+26-05-25 22:33:29.016 - INFO: inference time: 191.6ms per image
+26-05-25 22:33:44.691 - INFO: inference time: 70.6ms per image
+26-05-25 22:33:45.941 - INFO: inference time: 70.4ms per image
+26-05-25 22:34:41.155 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| 01        |      97.04 |   65.42 |   66.44 |   84.6  |      97.47 |   96.91 |   99.13 |
+| 02        |      95.66 |   60.02 |   60.06 |   66.01 |      87.45 |   95.01 |   97.81 |
+| 03        |      99.03 |   55.42 |   57.48 |   96.16 |      99.93 |   96.47 |   99.36 |
+| mean      |      97.24 |   60.29 |   61.33 |   82.26 |      94.95 |   96.13 |   98.77 |
+26-05-25 22:34:53.538 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| 01        |      97.43 |   65.66 |   66.94 |   82.7  |      98.64 |   96.97 |   99.46 |
+| 02        |      95.93 |   62.2  |   63.37 |   65.51 |      91.6  |   95.02 |   98.61 |
+| 03        |      99.1  |   53.65 |   56.72 |   96.52 |      99.72 |   95.24 |   97.61 |
+| mean      |      97.49 |   60.5  |   62.35 |   81.58 |      96.65 |   95.74 |   98.56 |
+26-05-25 22:34:55.474 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| 01        |      97.27 |   65.43 |   66.17 |   84.73 |      97.96 |   96.91 |   99.29 |
+| 02        |      96.2  |   62.66 |   62.85 |   65.23 |      90.43 |   94.74 |   98.43 |
+| 03        |      99.09 |   55.52 |   58.82 |   96.49 |      99.87 |   95.35 |   98.63 |
+| mean      |      97.52 |   61.2  |   62.62 |   82.15 |      96.09 |   95.66 |   98.78 |
+26-05-25 22:40:03.508 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test btad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/BTech_Dataset_transformed --seed 1 --num_workers 8 --features_list_rare  --k_shot 2 --no_bank 1
+26-05-25 22:40:03.867 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test btad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/BTech_Dataset_transformed --seed 2 --num_workers 8 --features_list_rare  --k_shot 2 --no_bank 1
+26-05-25 22:40:30.437 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test btad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/BTech_Dataset_transformed --seed 4 --num_workers 8 --features_list_rare  --no_bank 1
+26-05-25 22:42:30.778 - INFO: inference time: 74.5ms per image
+26-05-25 22:42:31.257 - INFO: inference time: 75.4ms per image
+26-05-25 22:42:40.984 - INFO: inference time: 71.0ms per image
+26-05-25 22:43:37.489 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| 01        |      97.51 |   64.64 |   65.87 |   83.01 |      98.15 |   97.92 |   99.36 |
+| 02        |      96.41 |   62.55 |   65.5  |   65.51 |      89.98 |   94.94 |   98.38 |
+| 03        |      98.9  |   54.64 |   57.25 |   95.74 |      99.65 |   96.39 |   97.78 |
+| mean      |      97.6  |   60.61 |   62.88 |   81.42 |      95.93 |   96.41 |   98.51 |
+26-05-25 22:43:37.688 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| 01        |      97.54 |   65.13 |   66.59 |   84.83 |      97.86 |   97.92 |   99.31 |
+| 02        |      96.23 |   62.12 |   64.76 |   66.3  |      88.37 |   94.56 |   98.1  |
+| 03        |      98.86 |   53.29 |   55.29 |   95.55 |      99.93 |   96.47 |   99.35 |
+| mean      |      97.55 |   60.18 |   62.21 |   82.23 |      95.39 |   96.32 |   98.92 |
+26-05-25 22:43:48.498 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| 01        |      97.61 |   65.72 |   67.59 |   86.48 |      98.35 |   97.92 |   99.44 |
+| 02        |      95.94 |   61.04 |   61.75 |   66.68 |      91.17 |   95.67 |   98.56 |
+| 03        |      99.07 |   54.41 |   56.38 |   96.45 |      99.93 |   96.47 |   99.35 |
+| mean      |      97.54 |   60.39 |   61.91 |   83.21 |      96.48 |   96.69 |   99.12 |
+26-05-25 22:53:32.179 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test btad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/BTech_Dataset_transformed --seed 3 --num_workers 8 --features_list_rare  --k_shot 2 --no_bank 1
+26-05-25 22:53:32.196 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test btad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/BTech_Dataset_transformed --num_workers 8 --features_list_rare  --k_shot 16 --no_bank 1
+26-05-25 22:53:33.489 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test btad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/BTech_Dataset_transformed --seed 1 --num_workers 8 --features_list_rare  --k_shot 16 --no_bank 1
+26-05-25 22:56:03.058 - INFO: inference time: 74.6ms per image
+26-05-25 22:56:11.331 - INFO: inference time: 77.0ms per image
+26-05-25 22:56:12.326 - INFO: inference time: 74.6ms per image
+26-05-25 22:57:12.068 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| 01        |      97.62 |   65.32 |   66.89 |   83.02 |      98.83 |   97.96 |   99.57 |
+| 02        |      96.41 |   63.27 |   66.56 |   66.31 |      93.55 |   96.3  |   98.95 |
+| 03        |      98.89 |   54.28 |   57.2  |   95.7  |      99.8  |   95.24 |   98.15 |
+| mean      |      97.64 |   60.96 |   63.55 |   81.68 |      97.4  |   96.5  |   98.89 |
+26-05-25 22:57:17.823 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| 01        |      97.72 |   64.51 |   66.48 |   81.66 |      98.35 |   98.97 |   99.47 |
+| 02        |      96.85 |   65.66 |   72.35 |   61.77 |      90.55 |   94.66 |   98.46 |
+| 03        |      99.09 |   56.14 |   58.5  |   96.13 |      99.93 |   97.56 |   99.46 |
+| mean      |      97.89 |   62.1  |   65.78 |   79.85 |      96.28 |   97.06 |   99.13 |
+26-05-25 22:57:20.136 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| 01        |      97.72 |   64.43 |   66.31 |   81.93 |      98.25 |   97.92 |   99.4  |
+| 02        |      96.9  |   65.9  |   72.68 |   61.37 |      91    |   94.61 |   98.57 |
+| 03        |      99.04 |   56.1  |   58.03 |   96.15 |      99.93 |   97.56 |   99.35 |
+| mean      |      97.88 |   62.14 |   65.67 |   79.82 |      96.39 |   96.7  |   99.11 |
+26-05-25 23:03:29.596 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test btad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/BTech_Dataset_transformed --seed 2 --num_workers 8 --features_list_rare  --k_shot 16 --no_bank 1
+26-05-25 23:03:29.645 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test btad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/BTech_Dataset_transformed --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+26-05-25 23:04:03.083 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test btad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/BTech_Dataset_transformed --seed 4 --num_workers 8 --features_list_rare  --k_shot 16 --no_bank 1
+26-05-25 23:08:12.694 - INFO: inference time: 74.7ms per image
+26-05-25 23:08:19.896 - INFO: inference time: 115.3ms per image
+26-05-25 23:09:20.785 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| 01        |      97.77 |   64.74 |   66.41 |   82.25 |      97.47 |   97.92 |   99.16 |
+| 02        |      96.94 |   66.15 |   72.57 |   62.02 |      90.23 |   94.79 |   98.42 |
+| 03        |      99.02 |   56.01 |   58.57 |   95.97 |      99.95 |   97.62 |   99.46 |
+| mean      |      97.91 |   62.3  |   65.85 |   80.08 |      95.88 |   96.77 |   99.01 |
+26-05-25 23:09:27.385 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| 01        |      97.72 |   64.53 |   66.56 |   81.72 |      98.64 |   98.97 |   99.55 |
+| 02        |      96.96 |   66.28 |   73.14 |   61.79 |      92.85 |   95.07 |   98.85 |
+| 03        |      99.02 |   57.24 |   59.6  |   95.93 |      99.94 |   96.47 |   99.4  |
+| mean      |      97.9  |   62.68 |   66.44 |   79.81 |      97.14 |   96.84 |   99.27 |
+26-05-25 23:13:06.437 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test btad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/BTech_Dataset_transformed --seed 1 --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+26-05-25 23:13:06.518 - INFO: inference time: 234.9ms per image
+26-05-25 23:13:19.547 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test btad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/BTech_Dataset_transformed --seed 3 --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+26-05-25 23:14:15.343 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| 01        |      97.68 |   64.66 |   66.57 |   80.51 |      98.64 |   98.97 |   99.55 |
+| 02        |      96.82 |   65.85 |   72.59 |   59.78 |      91.92 |   95.84 |   98.68 |
+| 03        |      99.07 |   57.68 |   60.58 |   96.06 |      99.99 |   98.8  |   99.94 |
+| mean      |      97.85 |   62.73 |   66.58 |   78.78 |      96.85 |   97.87 |   99.39 |
+26-05-25 23:19:01.233 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test btad --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/BTech_Dataset_transformed --seed 4 --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+26-05-25 23:22:06.208 - INFO: inference time: 114.9ms per image
+26-05-25 23:23:13.843 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| 01        |      97.65 |   64.3  |   66.22 |   80.57 |      98.15 |   96.91 |   99.35 |
+| 02        |      96.88 |   65.86 |   72.67 |   59.21 |      91.47 |   94.96 |   98.64 |
+| 03        |      99.06 |   57.69 |   60.03 |   96.23 |      99.99 |   98.8  |   99.88 |
+| mean      |      97.86 |   62.62 |   66.31 |   78.67 |      96.54 |   96.89 |   99.29 |
+26-05-25 23:25:26.771 - INFO: inference time: 195.7ms per image
+26-05-25 23:26:35.564 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| 01        |      97.68 |   64.37 |   66.35 |   80.45 |      99.13 |   98.97 |   99.68 |
+| 02        |      96.93 |   66.27 |   73.04 |   60.58 |      93.5  |   96.28 |   98.94 |
+| 03        |      98.99 |   56.93 |   59.67 |   95.87 |      99.99 |   98.8  |   99.94 |
+| mean      |      97.87 |   62.52 |   66.35 |   78.96 |      97.54 |   98.01 |   99.52 |
+26-05-25 23:30:17.441 - INFO: inference time: 277.1ms per image
+26-05-25 23:31:40.457 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| 01        |      97.69 |   64.58 |   66.47 |   80.59 |      99.13 |   98.97 |   99.68 |
+| 02        |      96.76 |   65.33 |   72.07 |   60.05 |      92.67 |   95.42 |   98.79 |
+| 03        |      99.06 |   58.47 |   61.13 |   96.26 |     100    |  100    |  100    |
+| mean      |      97.84 |   62.79 |   66.56 |   78.97 |      97.26 |   98.13 |   99.49 |

@@ -1,0 +1,7 @@
+26-04-29 23:57:18.271 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test colondb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ColonDB --num_workers 8
+26-04-29 23:57:46.132 - INFO: inference time: 66.0ms per image
+26-04-29 23:58:55.669 - INFO: 
+| objects     |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ColonDB |      78.11 |   28.25 |   19.88 |   57.91 |          0 |       0 |       0 |
+| mean        |      78.11 |   28.25 |   19.88 |   57.91 |          0 |       0 |       0 |

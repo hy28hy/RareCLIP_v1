@@ -1,0 +1,210 @@
+26-05-25 23:36:14.014 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test clinicdb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ClinicDB --num_workers 8 --k_shot 2
+26-05-25 23:41:31.424 - INFO: inference time: 72.4ms per image
+26-05-25 23:43:46.963 - INFO: 
+| objects      |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:-------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ClinicDB |      85.58 |   45.25 |   36.84 |   68.02 |          0 |       0 |       0 |
+| mean         |      85.58 |   45.25 |   36.84 |   68.02 |          0 |       0 |       0 |
+26-05-25 23:48:29.056 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test clinicdb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ClinicDB --seed 4 --num_workers 8 --k_shot 2
+26-05-25 23:53:10.712 - INFO: inference time: 65.3ms per image
+26-05-25 23:55:19.898 - INFO: 
+| objects      |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:-------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ClinicDB |      85.58 |   45.25 |   36.84 |   68.02 |          0 |       0 |       0 |
+| mean         |      85.58 |   45.25 |   36.84 |   68.02 |          0 |       0 |       0 |
+26-05-26 00:00:12.611 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test clinicdb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ClinicDB --seed 3 --num_workers 8 --k_shot 16
+26-05-26 00:01:51.247 - INFO: inference time: 64.8ms per image
+26-05-26 00:03:58.281 - INFO: 
+| objects      |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:-------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ClinicDB |      81.93 |   39.43 |   29.91 |   61.84 |          0 |       0 |       0 |
+| mean         |      81.93 |   39.43 |   29.91 |   61.84 |          0 |       0 |       0 |
+26-05-26 00:11:29.449 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test clinicdb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ClinicDB --seed 2 --num_workers 8 --k_shot 64
+26-05-26 00:16:03.651 - INFO: inference time: 65.5ms per image
+26-05-26 00:18:17.562 - INFO: 
+| objects      |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:-------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ClinicDB |      79.75 |   37.92 |   28.93 |   59.54 |          0 |       0 |       0 |
+| mean         |      79.75 |   37.92 |   28.93 |   59.54 |          0 |       0 |       0 |
+26-05-26 00:22:38.061 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test clinicdb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ClinicDB --seed 2 --num_workers 8 --k_shot 2
+26-05-26 00:22:38.163 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test clinicdb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ClinicDB --seed 3 --num_workers 8 --k_shot 2
+26-05-26 00:28:14.417 - INFO: inference time: 71.5ms per image
+26-05-26 00:28:17.161 - INFO: inference time: 74.2ms per image
+26-05-26 00:30:20.426 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test clinicdb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ClinicDB --seed 1 --num_workers 8 --k_shot 2
+26-05-26 00:30:27.272 - INFO: 
+| objects      |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:-------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ClinicDB |      85.58 |   45.25 |   36.84 |   68.02 |          0 |       0 |       0 |
+| mean         |      85.58 |   45.25 |   36.84 |   68.02 |          0 |       0 |       0 |
+26-05-26 00:30:29.388 - INFO: 
+| objects      |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:-------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ClinicDB |      85.58 |   45.25 |   36.84 |   68.02 |          0 |       0 |       0 |
+| mean         |      85.58 |   45.25 |   36.84 |   68.02 |          0 |       0 |       0 |
+26-05-26 00:33:34.175 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test clinicdb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ClinicDB --seed 2 --num_workers 8 --k_shot 16
+26-05-26 00:33:51.133 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test clinicdb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ClinicDB --seed 1 --num_workers 8 --k_shot 16
+26-05-26 00:34:23.878 - INFO: inference time: 116.5ms per image
+26-05-26 00:35:16.499 - INFO: inference time: 66.2ms per image
+26-05-26 00:35:27.972 - INFO: inference time: 67.7ms per image
+26-05-26 00:36:35.305 - INFO: 
+| objects      |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:-------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ClinicDB |      85.58 |   45.25 |   36.84 |   68.02 |          0 |       0 |       0 |
+| mean         |      85.58 |   45.25 |   36.84 |   68.02 |          0 |       0 |       0 |
+26-05-26 00:37:21.424 - INFO: 
+| objects      |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:-------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ClinicDB |      81.93 |   39.43 |   29.91 |   61.84 |          0 |       0 |       0 |
+| mean         |      81.93 |   39.43 |   29.91 |   61.84 |          0 |       0 |       0 |
+26-05-26 00:37:32.455 - INFO: 
+| objects      |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:-------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ClinicDB |      81.93 |   39.43 |   29.91 |   61.84 |          0 |       0 |       0 |
+| mean         |      81.93 |   39.43 |   29.91 |   61.84 |          0 |       0 |       0 |
+26-05-26 00:45:11.165 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test clinicdb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ClinicDB --num_workers 8 --k_shot 64
+26-05-26 00:45:11.195 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test clinicdb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ClinicDB --num_workers 8 --k_shot 16
+26-05-26 00:45:11.855 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test clinicdb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ClinicDB --seed 1 --num_workers 8 --k_shot 64
+26-05-26 00:50:39.861 - INFO: inference time: 78.0ms per image
+26-05-26 00:50:41.974 - INFO: inference time: 77.6ms per image
+26-05-26 00:51:43.102 - INFO: inference time: 67.3ms per image
+26-05-26 00:53:10.042 - INFO: 
+| objects      |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:-------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ClinicDB |      81.93 |   39.43 |   29.91 |   61.84 |          0 |       0 |       0 |
+| mean         |      81.93 |   39.43 |   29.91 |   61.84 |          0 |       0 |       0 |
+26-05-26 00:53:12.442 - INFO: 
+| objects      |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:-------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ClinicDB |      79.75 |   37.92 |   28.93 |   59.54 |          0 |       0 |       0 |
+| mean         |      79.75 |   37.92 |   28.93 |   59.54 |          0 |       0 |       0 |
+26-05-26 00:54:01.293 - INFO: 
+| objects      |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:-------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ClinicDB |      79.75 |   37.92 |   28.93 |   59.54 |          0 |       0 |       0 |
+| mean         |      79.75 |   37.92 |   28.93 |   59.54 |          0 |       0 |       0 |
+26-05-26 00:57:45.193 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test clinicdb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ClinicDB --seed 4 --num_workers 8 --k_shot 16
+26-05-26 00:58:06.204 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test clinicdb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ClinicDB --seed 4 --num_workers 8 --k_shot 64
+26-05-26 01:02:45.219 - INFO: inference time: 122.6ms per image
+26-05-26 01:02:46.764 - INFO: inference time: 73.6ms per image
+26-05-26 01:05:02.791 - INFO: 
+| objects      |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:-------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ClinicDB |      79.75 |   37.92 |   28.93 |   59.54 |          0 |       0 |       0 |
+| mean         |      79.75 |   37.92 |   28.93 |   59.54 |          0 |       0 |       0 |
+26-05-26 01:05:04.209 - INFO: 
+| objects      |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:-------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ClinicDB |      81.93 |   39.43 |   29.91 |   61.84 |          0 |       0 |       0 |
+| mean         |      81.93 |   39.43 |   29.91 |   61.84 |          0 |       0 |       0 |
+26-05-26 01:08:18.516 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test clinicdb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ClinicDB --seed 3 --num_workers 8 --k_shot 64
+26-05-26 01:09:57.220 - INFO: inference time: 66.7ms per image
+26-05-26 01:12:06.716 - INFO: 
+| objects      |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:-------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ClinicDB |      79.75 |   37.92 |   28.93 |   59.54 |          0 |       0 |       0 |
+| mean         |      79.75 |   37.92 |   28.93 |   59.54 |          0 |       0 |       0 |
+26-05-26 05:20:06.317 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test clinicdb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ClinicDB --seed 3 --num_workers 8 --features_list_rare  --no_bank 1
+26-05-26 05:20:08.128 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test clinicdb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ClinicDB --num_workers 8 --features_list_rare  --no_bank 1
+26-05-26 05:20:20.191 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test clinicdb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ClinicDB --seed 2 --num_workers 8 --features_list_rare  --no_bank 1
+26-05-26 05:20:51.251 - INFO: inference time: 64.8ms per image
+26-05-26 05:20:52.299 - INFO: inference time: 63.4ms per image
+26-05-26 05:21:03.924 - INFO: inference time: 63.7ms per image
+26-05-26 05:22:52.242 - INFO: 
+| objects      |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:-------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ClinicDB |      83.58 |   40.64 |   31.53 |   63.59 |          0 |       0 |       0 |
+| mean         |      83.58 |   40.64 |   31.53 |   63.59 |          0 |       0 |       0 |
+26-05-26 05:22:54.931 - INFO: 
+| objects      |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:-------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ClinicDB |      83.58 |   40.64 |   31.53 |   63.59 |          0 |       0 |       0 |
+| mean         |      83.58 |   40.64 |   31.53 |   63.59 |          0 |       0 |       0 |
+26-05-26 05:23:05.224 - INFO: 
+| objects      |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:-------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ClinicDB |      83.58 |   40.64 |   31.53 |   63.59 |          0 |       0 |       0 |
+| mean         |      83.58 |   40.64 |   31.53 |   63.59 |          0 |       0 |       0 |
+26-05-26 05:27:27.021 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test clinicdb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ClinicDB --seed 2 --num_workers 8 --features_list_rare  --k_shot 2 --no_bank 1
+26-05-26 05:27:37.260 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test clinicdb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ClinicDB --seed 4 --num_workers 8 --features_list_rare  --no_bank 1
+26-05-26 05:27:37.614 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test clinicdb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ClinicDB --seed 1 --num_workers 8 --features_list_rare  --k_shot 2 --no_bank 1
+26-05-26 05:28:21.544 - INFO: inference time: 63.8ms per image
+26-05-26 05:29:03.483 - INFO: inference time: 66.9ms per image
+26-05-26 05:29:13.071 - INFO: inference time: 68.1ms per image
+26-05-26 05:30:29.274 - INFO: 
+| objects      |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:-------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ClinicDB |      83.58 |   40.64 |   31.53 |   63.59 |          0 |       0 |       0 |
+| mean         |      83.58 |   40.64 |   31.53 |   63.59 |          0 |       0 |       0 |
+26-05-26 05:31:06.369 - INFO: 
+| objects      |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:-------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ClinicDB |      85.58 |   45.25 |   36.84 |   68.02 |          0 |       0 |       0 |
+| mean         |      85.58 |   45.25 |   36.84 |   68.02 |          0 |       0 |       0 |
+26-05-26 05:31:17.213 - INFO: 
+| objects      |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:-------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ClinicDB |      85.58 |   45.25 |   36.84 |   68.02 |          0 |       0 |       0 |
+| mean         |      85.58 |   45.25 |   36.84 |   68.02 |          0 |       0 |       0 |
+26-05-26 05:35:04.193 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test clinicdb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ClinicDB --seed 3 --num_workers 8 --features_list_rare  --k_shot 2 --no_bank 1
+26-05-26 05:35:04.282 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test clinicdb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ClinicDB --seed 1 --num_workers 8 --features_list_rare  --k_shot 16 --no_bank 1
+26-05-26 05:35:14.591 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test clinicdb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ClinicDB --num_workers 8 --features_list_rare  --k_shot 16 --no_bank 1
+26-05-26 05:36:41.195 - INFO: inference time: 67.0ms per image
+26-05-26 05:36:41.342 - INFO: inference time: 66.7ms per image
+26-05-26 05:36:50.393 - INFO: inference time: 66.8ms per image
+26-05-26 05:38:43.747 - INFO: 
+| objects      |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:-------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ClinicDB |      81.93 |   39.43 |   29.91 |   61.84 |          0 |       0 |       0 |
+| mean         |      81.93 |   39.43 |   29.91 |   61.84 |          0 |       0 |       0 |
+26-05-26 05:38:43.980 - INFO: 
+| objects      |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:-------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ClinicDB |      85.58 |   45.25 |   36.84 |   68.02 |          0 |       0 |       0 |
+| mean         |      85.58 |   45.25 |   36.84 |   68.02 |          0 |       0 |       0 |
+26-05-26 05:38:52.214 - INFO: 
+| objects      |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:-------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ClinicDB |      81.93 |   39.43 |   29.91 |   61.84 |          0 |       0 |       0 |
+| mean         |      81.93 |   39.43 |   29.91 |   61.84 |          0 |       0 |       0 |
+26-05-26 05:43:19.141 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test clinicdb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ClinicDB --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+26-05-26 05:43:21.484 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test clinicdb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ClinicDB --seed 2 --num_workers 8 --features_list_rare  --k_shot 16 --no_bank 1
+26-05-26 05:43:32.008 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test clinicdb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ClinicDB --seed 4 --num_workers 8 --features_list_rare  --k_shot 16 --no_bank 1
+26-05-26 05:44:54.992 - INFO: inference time: 66.7ms per image
+26-05-26 05:44:57.490 - INFO: inference time: 66.3ms per image
+26-05-26 05:45:07.112 - INFO: inference time: 67.5ms per image
+26-05-26 05:46:57.320 - INFO: 
+| objects      |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:-------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ClinicDB |      79.75 |   37.92 |   28.93 |   59.54 |          0 |       0 |       0 |
+| mean         |      79.75 |   37.92 |   28.93 |   59.54 |          0 |       0 |       0 |
+26-05-26 05:46:58.210 - INFO: 
+| objects      |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:-------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ClinicDB |      81.93 |   39.43 |   29.91 |   61.84 |          0 |       0 |       0 |
+| mean         |      81.93 |   39.43 |   29.91 |   61.84 |          0 |       0 |       0 |
+26-05-26 05:47:09.476 - INFO: 
+| objects      |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:-------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ClinicDB |      81.93 |   39.43 |   29.91 |   61.84 |          0 |       0 |       0 |
+| mean         |      81.93 |   39.43 |   29.91 |   61.84 |          0 |       0 |       0 |
+26-05-26 05:51:32.161 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test clinicdb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ClinicDB --seed 4 --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+26-05-26 05:51:40.239 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test clinicdb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ClinicDB --seed 3 --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+26-05-26 05:51:41.521 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test clinicdb --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ClinicDB --seed 1 --num_workers 8 --features_list_rare  --k_shot 64 --no_bank 1
+26-05-26 05:53:08.682 - INFO: inference time: 66.6ms per image
+26-05-26 05:53:16.922 - INFO: inference time: 68.0ms per image
+26-05-26 05:53:17.331 - INFO: inference time: 66.8ms per image
+26-05-26 05:55:09.792 - INFO: 
+| objects      |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:-------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ClinicDB |      79.75 |   37.92 |   28.93 |   59.54 |          0 |       0 |       0 |
+| mean         |      79.75 |   37.92 |   28.93 |   59.54 |          0 |       0 |       0 |
+26-05-26 05:55:17.751 - INFO: 
+| objects      |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:-------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ClinicDB |      79.75 |   37.92 |   28.93 |   59.54 |          0 |       0 |       0 |
+| mean         |      79.75 |   37.92 |   28.93 |   59.54 |          0 |       0 |       0 |
+26-05-26 05:55:17.845 - INFO: 
+| objects      |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:-------------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-ClinicDB |      79.75 |   37.92 |   28.93 |   59.54 |          0 |       0 |       0 |
+| mean         |      79.75 |   37.92 |   28.93 |   59.54 |          0 |       0 |       0 |

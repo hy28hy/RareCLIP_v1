@@ -1,0 +1,6 @@
+26-05-27 04:20:49.300 - INFO: python train.py --train_set_path /data/chenxuwu/zihaowan_workplace/dataset/DAGM/DAGM_KaggleUpload --train dagm --k_shot 2
+26-05-27 04:20:55.701 - INFO: epoch [1/5], loss:5.1855
+26-05-27 04:20:57.971 - INFO: epoch [2/5], loss:4.5391
+26-05-27 04:21:00.979 - INFO: epoch [3/5], loss:4.4414
+26-05-27 04:21:03.337 - INFO: epoch [4/5], loss:4.3984
+26-05-27 04:21:06.411 - INFO: epoch [5/5], loss:4.3574

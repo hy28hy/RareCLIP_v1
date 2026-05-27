@@ -1,0 +1,7 @@
+26-04-30 00:09:07.619 - INFO: python test.py --load_path /data/chenxuwu/zihaowan_workplace/RareCLIP/weights/visa_pretrained.pth --test cvc-300 --test_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-300 --num_workers 8
+26-04-30 00:09:13.464 - INFO: inference time: 82.5ms per image
+26-04-30 00:09:22.835 - INFO: 
+| objects   |   auroc_px |   f1_px |   ap_px |   aupro |   auroc_sp |   f1_sp |   ap_sp |
+|:----------|-----------:|--------:|--------:|--------:|-----------:|--------:|--------:|
+| CVC-300   |      87.12 |    24.4 |   12.32 |   66.26 |          0 |       0 |       0 |
+| mean      |      87.12 |    24.4 |   12.32 |   66.26 |          0 |       0 |       0 |

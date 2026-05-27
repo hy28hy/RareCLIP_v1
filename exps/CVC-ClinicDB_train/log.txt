@@ -1,0 +1,6 @@
+26-04-29 16:12:04.489 - INFO: python train.py --train_set_path /data/chenxuwu/zihaowan_workplace/dataset/CVC-ClinicDB --train clinicdb
+26-04-29 16:12:43.114 - INFO: epoch [1/5], loss:3.4047
+26-04-29 16:13:19.980 - INFO: epoch [2/5], loss:3.4009
+26-04-29 16:13:57.009 - INFO: epoch [3/5], loss:3.5477
+26-04-29 16:14:34.226 - INFO: epoch [4/5], loss:3.7069
+26-04-29 16:15:11.681 - INFO: epoch [5/5], loss:3.7921
