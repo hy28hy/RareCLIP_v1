@@ -320,6 +320,9 @@ echo "Exit code: $TRAIN_EXIT_CODE"
 
 if [ $TRAIN_EXIT_CODE -ne 0 ]; then
     echo "ERROR: Training failed with exit code $TRAIN_EXIT_CODE"
+    echo "===== Last 100 lines of all_training.log ====="
+    tail -100 "${PROJECT_DIR}/all_training.log" 2>/dev/null || echo "Log file not found"
+    echo "===== End of log ====="
     exit $TRAIN_EXIT_CODE
 fi
 
