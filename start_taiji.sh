@@ -51,6 +51,24 @@ echo "===== Code ready! ====="
 echo ""
 echo "===== Step 1: Installing dependencies ====="
 
+# Install git-lfs first
+echo "Installing git-lfs..."
+if ! command -v git-lfs &> /dev/null; then
+    # Try to install git-lfs via package manager
+    yum install -y git-lfs 2>/dev/null || \
+    apt-get update && apt-get install -y git-lfs 2>/dev/null || \
+    echo "Warning: Could not install git-lfs via package manager"
+    
+    # If still not installed, download binary
+    if ! command -v git-lfs &> /dev/null; then
+        echo "Downloading git-lfs binary..."
+        curl -sL https://github.com/git-lfs/git-lfs/releases/download/v3.6.1/git-lfs-linux-amd64-v3.6.1.tar.gz | tar xz -C /usr/local/bin/
+        git lfs version
+    fi
+fi
+
+git lfs version
+
 pip install --index-url https://mirrors.tencent.com/pypi/simple/ \
     einops ftfy opencv-python pandas Pillow regex \
     scikit-image scikit-learn tabulate tqdm timm modelscope
