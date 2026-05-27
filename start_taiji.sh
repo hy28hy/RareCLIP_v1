@@ -108,8 +108,8 @@ if __name__ == "__main__":
     main()
 DATASET_EOF
 
-# Ensure modelscope is installed for current Python
-python3 -m pip install --index-url https://mirrors.tencent.com/pypi/simple/ modelscope
+# Ensure modelscope is installed
+pip install --index-url https://mirrors.tencent.com/pypi/simple/ modelscope
 
 python3 download_dataset.py
 
