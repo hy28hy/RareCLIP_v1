@@ -68,44 +68,56 @@ cat > download_dataset.py << 'DATASET_EOF'
 #!/usr/bin/env python3
 """Download RareCLIP datasets from ModelScope"""
 import os
+import shutil
 from modelscope import snapshot_download
 
-# Dataset mapping: local_name -> modelscope_dataset_id
-DATASETS = {
-    "BTech_Dataset_transformed": "zihaowan/BTech_Dataset_transformed",
-    "CVC-300": "zihaowan/CVC-300",
-    "CVC-ClinicDB": "zihaowan/CVC-ClinicDB",
-    "CVC-ColonDB": "zihaowan/CVC-ColonDB",
-    "DAGM": "zihaowan/DAGM",
-    "DTD-Synthetic": "zihaowan/DTD-Synthetic",
-    "Kvasir": "zihaowan/Kvasir",
-    "MedAD": "zihaowan/MedAD",
-    "MPDD": "zihaowan/MPDD",
-    "mvtec": "zihaowan/mvtec",
-    "SDD": "zihaowan/SDD",
-    "visa": "zihaowan/visa",
-}
+# Dataset ID on ModelScope
+DATASET_ID = "coolwan/dataset_all_new1"
 
 def main():
-    base_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "datasets")
-    os.makedirs(base_dir, exist_ok=True)
+    print(f"\n{'='*60}")
+    print(f"Downloading dataset: {DATASET_ID}")
+    print(f"{'='*60}")
     
-    for name, dataset_id in DATASETS.items():
-        print(f"\n{'='*60}")
-        print(f"Downloading: {name}")
-        print(f"Dataset ID: {dataset_id}")
-        print(f"{'='*60}")
-        try:
-            local_path = snapshot_download(dataset_id, cache_dir=base_dir)
-            print(f"Downloaded to: {local_path}")
-        except Exception as e:
-            print(f"ERROR downloading {name}: {e}")
-            continue
+    try:
+        # Download dataset using snapshot_download
+        cache_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "datasets_cache")
+        os.makedirs(cache_dir, exist_ok=True)
+        
+        local_path = snapshot_download(DATASET_ID, cache_dir=cache_dir)
+        print(f"Downloaded to: {local_path}")
+        
+        # Copy to datasets directory
+        datasets_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "datasets")
+        os.makedirs(datasets_dir, exist_ok=True)
+        
+        # List contents of downloaded dataset
+        print(f"\nContents of downloaded dataset:")
+        for item in os.listdir(local_path):
+            src = os.path.join(local_path, item)
+            dst = os.path.join(datasets_dir, item)
+            if os.path.isdir(src):
+                if os.path.exists(dst):
+                    shutil.rmtree(dst)
+                shutil.copytree(src, dst)
+                print(f"  Copied directory: {item} -> {dst}")
+            else:
+                shutil.copy2(src, dst)
+                print(f"  Copied file: {item} -> {dst}")
+        
+        print(f"\nAll files copied to: {datasets_dir}")
+        
+    except Exception as e:
+        print(f"ERROR downloading dataset: {e}")
+        import traceback
+        traceback.print_exc()
+        return 1
     
-    print("\nAll datasets downloaded!")
+    print("\nDataset download completed!")
+    return 0
 
 if __name__ == "__main__":
-    main()
+    exit(main())
 DATASET_EOF
 
 # Ensure modelscope is installed - use Python that has pip
