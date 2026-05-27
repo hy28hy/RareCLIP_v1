@@ -108,10 +108,14 @@ if __name__ == "__main__":
     main()
 DATASET_EOF
 
-# Ensure modelscope is installed
-pip install --index-url https://mirrors.tencent.com/pypi/simple/ modelscope
+# Ensure modelscope is installed for the Python that will run download_dataset.py
+# Find the correct Python path
+PYTHON_BIN=$(which python3)
+echo "Python binary: $PYTHON_BIN"
+$PYTHON_BIN -m pip install --index-url https://mirrors.tencent.com/pypi/simple/ modelscope
 
-python3 download_dataset.py
+# Run download_dataset.py with the same Python
+$PYTHON_BIN download_dataset.py
 
 if [ $? -ne 0 ]; then
     echo "ERROR: Dataset download failed"
