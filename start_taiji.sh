@@ -230,6 +230,13 @@ run_gpu_tasks() {
     
     for task in "${tasks[@]}"; do
         IFS="|" read -r DATASET_NAME DATASET_PATH K_SHOT SAVE_PATH <<< "$task"
+        
+        # Check if dataset path exists
+        if [ ! -d "$DATASET_PATH" ]; then
+            echo "[$(date '+%Y-%m-%d %H:%M:%S')] GPU $gpu_id: SKIP $DATASET_NAME (dataset not found at $DATASET_PATH)"
+            continue
+        fi
+        
         echo "[$(date '+%Y-%m-%d %H:%M:%S')] GPU $gpu_id: Starting $DATASET_NAME (k=$K_SHOT)"
         
         python3 train.py \
