@@ -58,83 +58,74 @@ pip install --index-url https://mirrors.tencent.com/pypi/simple/ \
 echo "===== Dependencies installed! ====="
 
 # =============================================================================
-# Step 2: Download dataset from ModelScope
+# Step 2: Download dataset from ModelScope (git lfs clone)
 # =============================================================================
 echo ""
-echo "===== Step 2: Downloading dataset from ModelScope ====="
+echo "===== Step 2: Downloading dataset from ModelScope (git lfs clone) ====="
 
-# Create download_dataset.py on the fly
-cat > download_dataset.py << 'DATASET_EOF'
-#!/usr/bin/env python3
-"""Download RareCLIP datasets from ModelScope"""
-import os
-import shutil
-from modelscope import snapshot_download
+DATASET_DIR="${PROJECT_DIR}/datasets"
+DATASET_ZIP="${DATASET_DIR}/dataset_all_new1/dataset_all.zip"
 
-# Dataset ID on ModelScope
-DATASET_ID = "coolwan/dataset_all_new1"
+# Create datasets directory
+mkdir -p "$DATASET_DIR"
+cd "$DATASET_DIR"
 
-def main():
-    print(f"\n{'='*60}")
-    print(f"Downloading dataset: {DATASET_ID}")
-    print(f"{'='*60}")
-    
-    try:
-        # Download dataset using snapshot_download
-        cache_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "datasets_cache")
-        os.makedirs(cache_dir, exist_ok=True)
-        
-        local_path = snapshot_download(DATASET_ID, cache_dir=cache_dir)
-        print(f"Downloaded to: {local_path}")
-        
-        # Copy to datasets directory
-        datasets_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "datasets")
-        os.makedirs(datasets_dir, exist_ok=True)
-        
-        # List contents of downloaded dataset
-        print(f"\nContents of downloaded dataset:")
-        for item in os.listdir(local_path):
-            src = os.path.join(local_path, item)
-            dst = os.path.join(datasets_dir, item)
-            if os.path.isdir(src):
-                if os.path.exists(dst):
-                    shutil.rmtree(dst)
-                shutil.copytree(src, dst)
-                print(f"  Copied directory: {item} -> {dst}")
-            else:
-                shutil.copy2(src, dst)
-                print(f"  Copied file: {item} -> {dst}")
-        
-        print(f"\nAll files copied to: {datasets_dir}")
-        
-    except Exception as e:
-        print(f"ERROR downloading dataset: {e}")
-        import traceback
-        traceback.print_exc()
-        return 1
-    
-    print("\nDataset download completed!")
-    return 0
-
-if __name__ == "__main__":
-    exit(main())
-DATASET_EOF
-
-# Ensure modelscope is installed - use Python that has pip
-# /usr/bin/python3.12 has pip, /workspace/osworld/bin/python3 does not
-PYTHON_BIN="/usr/bin/python3.12"
-echo "Using Python: $PYTHON_BIN"
-$PYTHON_BIN -m pip install --index-url https://mirrors.tencent.com/pypi/simple/ modelscope
-
-# Run download_dataset.py with the same Python
-$PYTHON_BIN download_dataset.py
+# Clone dataset using git lfs
+echo "Cloning dataset coolwan/dataset_all_new1..."
+GIT_LFS_SKIP_SMUDGE=1 git clone https://oauth2:ms-092c9102-b9bb-4e35-8aa0-622dfe6cbdad@www.modelscope.cn/datasets/coolwan/dataset_all_new1.git dataset_all_new1 2>&1 | tail -10
 
 if [ $? -ne 0 ]; then
-    echo "ERROR: Dataset download failed"
+    echo "ERROR: Git clone failed"
     exit 1
 fi
 
-echo "===== Dataset ready! ====="
+# Download the large zip file using git lfs pull
+cd dataset_all_new1
+echo "Downloading large files using git lfs pull..."
+GIT_TERMINAL_PROMPT=0 git lfs pull 2>&1 | tail -20
+
+if [ $? -ne 0 ]; then
+    echo "ERROR: Git LFS pull failed"
+    exit 1
+fi
+
+# Check if dataset_all.zip exists
+if [ ! -f "dataset_all.zip" ]; then
+    echo "ERROR: dataset_all.zip not found after git lfs pull"
+    ls -la
+    exit 1
+fi
+
+echo "dataset_all.zip downloaded successfully!"
+ls -lh dataset_all.zip
+
+# Go back to project directory
+cd "$PROJECT_DIR"
+
+echo "===== Dataset downloaded! ====="
+
+# =============================================================================
+# Step 2.5: Extract dataset_all.zip
+# =============================================================================
+echo ""
+echo "===== Step 2.5: Extracting dataset_all.zip ====="
+
+cd "$DATASET_DIR/dataset_all_new1"
+echo "Extracting dataset_all.zip..."
+unzip -q dataset_all.zip -d "$DATASET_DIR/"
+
+if [ $? -ne 0 ]; then
+    echo "ERROR: Unzip failed"
+    exit 1
+fi
+
+echo "Extraction completed!"
+ls -la "$DATASET_DIR/"
+
+# Go back to project directory
+cd "$PROJECT_DIR"
+
+echo "===== Dataset extracted! ====="
 
 # =============================================================================
 # Step 3: Run 8-GPU parallel training
