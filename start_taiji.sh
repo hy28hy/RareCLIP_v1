@@ -108,10 +108,10 @@ if __name__ == "__main__":
     main()
 DATASET_EOF
 
-# Ensure modelscope is installed for the Python that will run download_dataset.py
-# Find the correct Python path
-PYTHON_BIN=$(which python3)
-echo "Python binary: $PYTHON_BIN"
+# Ensure modelscope is installed - use Python that has pip
+# /usr/bin/python3.12 has pip, /workspace/osworld/bin/python3 does not
+PYTHON_BIN="/usr/bin/python3.12"
+echo "Using Python: $PYTHON_BIN"
 $PYTHON_BIN -m pip install --index-url https://mirrors.tencent.com/pypi/simple/ modelscope
 
 # Run download_dataset.py with the same Python
